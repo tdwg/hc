@@ -1,7 +1,7 @@
 ---
 name: HC terms
 about: Use this template to create one issue per original HC term. For the title,
-  use "Term - original name of the HC term"
+  use "Term - original name of the HC term", e.g., Term - dataset name
 title: ''
 labels: ''
 assignees: ''
