@@ -877,6 +877,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 			<td>2022-05-29</td>
 		</tr>
 		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identificationReferences-2022-05-29">http://rs.tdwg.org/dwc/terms/version/identificationReferences-2022-05-29</a></td>
+		</tr>
+		<tr>
 			<td>Label</td>
 			<td>Identification References</td>
 		</tr>
@@ -921,6 +925,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		<tr>
 			<td>Modified</td>
 			<td>2022-05-29</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/dwc/terms/version/identifiedBy-2022-05-29">http://rs.tdwg.org/dwc/terms/version/identifiedBy-2022-05-29</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
