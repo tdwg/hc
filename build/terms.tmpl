@@ -1,0 +1,55 @@
+{#
+    This template is NOT used by jekyll, but by the build script
+    to create the terms/index.md file, which mostly contains html.
+#}
+---
+container: fluid
+---
+
+# Chronometric Age quick reference guide
+
+This document is intended to be an easy-to-read reference the currently recommended terms that extend the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) with vocabulary for chronometric ages. This document is not part of the standard. It draws on the [term names and definitions](../list/) from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. The category `ChronometricAge` corresponds to the parent class, which is a special category term used to group the rest of the terms for convenience. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). CSV files with the [full history](https://github.com/tdwg/chrono/blob/master/vocabulary/term_versions.csv) of the terms, with [horizontal and vertical lists](https://github.com/tdwg/chrono/tree/master/dist) of these terms and the schema for the [Darwin Core Archive extension](https://github.com/tdwg/chrono/tree/master/dist) can be found in the [Chronometric Age repository](https://github.com/tdwg/chrono).
+
+{% for class_group in class_groups %}
+
+## {{ class_group.label }}
+
+{% if class_group.label == 'UseWithIRI' %}
+For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
+{% endif %}
+<div class="my-4">
+    {% for term in class_group.terms %}
+    <a class="btn btn-sm btn-outline-secondary m-1" href="#{{ term.namespace }}:{{ term.label }}">{{ term.label }}</a>
+    {% endfor %}
+</div>
+
+{% if class_group.label != 'Record-level' and class_group.label != 'UseWithIRI' %}
+{# Class #}
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">{{ class_group.label }} <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="{{ class_group.iri }}">{{ class_group.iri }}</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>{{ class_group.definition }}</td></tr>
+        <tr><td class="theme-label">Comments</td><td>{{ class_group.comments }}</td></tr>
+        <tr><td class="theme-label">Examples</td><td>{{ class_group.examples }}</td></tr>
+    </tbody>
+</table>
+{%endif %}
+
+{% for term in class_group.terms %}
+{# Term #}
+<p class="invisible">
+    <a id="{{ term.namespace }}:{{ term.label }}"></a>{% if term.namespace != "dwciri" %}<a id="{{ term.label }}"></a>{% endif %}
+</p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">{{ term.label }} <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>{{ term.definition }}</td></tr>
+        <tr><td class="theme-label">Comments</td><td>{{ term.comments }}</td></tr>
+        <tr><td class="theme-label">Examples</td><td>{{ term.examples }}</td></tr>
+    </tbody>
+</table>
+{% endfor %}
+
+{% endfor %}

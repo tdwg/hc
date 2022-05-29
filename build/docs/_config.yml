@@ -1,0 +1,35 @@
+# SITE SETTINGS
+title: Humboldt Core Extension
+description: Vocabulary maintained by the Darwin Core Maintenance Interest Group to facilitate the sharing of information about biological inventories.
+# url: "https://chrono.tdwg.org/"
+navbar:
+  left:
+  - text: Terms
+    menu:
+    - text: Darwin Core
+      href: https://dwc.tdwg.org/list/
+    - text: Humboldt Core Extension
+      href: list/
+  - text: Guides
+    menu:
+    - text: Darwin Core Quick Reference
+      href: https://dwc.tdwg.org/terms/
+    - text: Humboldt Core Quick Reference
+      href: terms/
+    - text: Text (Darwin Core Archive)
+      href: https://dwc.tdwg.org/text/
+    - text: RDF
+      href: https://dwc.tdwg.org/rdf/
+    - text: XML
+      href: https://dwc.tdwg.org/xml/
+    - text: Questions & Answers
+      href: https://github.com/tdwg/dwc-qa/blob/master/README.md
+  right:
+  - text: GitHub
+    href: https://github.com/tdwg/hc
+
+# BUILD SETTINGS
+markdown: kramdown
+remote_theme: tdwg/tdwg-theme-jekyll
+plugins:
+  - jekyll-feed
