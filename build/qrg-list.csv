@@ -1,7 +1,7 @@
 recommended_term_iri
 http://rs.tdwg.org/hc/terms/samplingPerformedBy
-http://rs.tdwg.org/hc/terms/identifiedBy
-http://rs.tdwg.org/hc/terms/identificationReferences
+http://rs.tdwg.org/dwc/terms/identifiedBy
+http://rs.tdwg.org/dwc/terms/identificationReferences
 http://rs.tdwg.org/hc/terms/siteCount
 http://rs.tdwg.org/hc/terms/siteNestingDescription
 http://rs.tdwg.org/hc/terms/verbatimSiteNames
