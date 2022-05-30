@@ -18,6 +18,7 @@ from jinja2 import FileSystemLoader, Environment
 NAMESPACES = {
     'http://rs.tdwg.org/hc/iri/' : 'hciri',
     'http://rs.tdwg.org/hc/terms/' : 'hc',
+    'http://rs.tdwg.org/dwc/terms/' : 'dwc',
     'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
 
 
