@@ -1,7 +1,6 @@
 recommended_term_iri
+http://rs.tdwg.org/dwc/terms/Event
 http://rs.tdwg.org/hc/terms/samplingPerformedBy
-http://rs.tdwg.org/dwc/terms/identifiedBy
-http://rs.tdwg.org/dwc/terms/identificationReferences
 http://rs.tdwg.org/hc/terms/siteCount
 http://rs.tdwg.org/hc/terms/siteNestingDescription
 http://rs.tdwg.org/hc/terms/verbatimSiteNames
@@ -44,3 +43,6 @@ http://rs.tdwg.org/hc/terms/samplingEffortValue
 http://rs.tdwg.org/hc/terms/samplingEffortUnit
 http://rs.tdwg.org/hc/terms/taxonCompletenessReported
 http://rs.tdwg.org/hc/terms/taxonCompletenessProtocols
+http://rs.tdwg.org/dwc/terms/Identification
+http://rs.tdwg.org/dwc/terms/identifiedBy
+http://rs.tdwg.org/dwc/terms/identificationReferences
