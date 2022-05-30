@@ -1,3 +1,3 @@
 # Folder "old"
 
-This folder contains an archive of out of ate vocabulary files.
+This folder contains an archive of out of date vocabulary files.

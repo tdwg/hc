@@ -40,7 +40,7 @@ http://rs.tdwg.org/hc/terms/hasMaterialSamples
 http://rs.tdwg.org/hc/terms/materialSampleTypes
 http://rs.tdwg.org/hc/terms/isSamplingEffortReported
 http://rs.tdwg.org/hc/terms/samplingEffortProtocol
-http://rs.tdwg.org/hc/terms/Sampling Effort Value
+http://rs.tdwg.org/hc/terms/SamplingEffortValue
 http://rs.tdwg.org/hc/terms/samplingEffortUnit
 http://rs.tdwg.org/hc/terms/taxonCompletenessReported
 http://rs.tdwg.org/hc/terms/taxonCompletenessProtocols
