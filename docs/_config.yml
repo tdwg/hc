@@ -1,5 +1,5 @@
 # SITE SETTINGS
-title: Humboldt Core Extension
+title: Humboldt Extension
 description: Vocabulary maintained by the Darwin Core Maintenance Interest Group to facilitate the sharing of information about biological inventories.
 # url: "https://chrono.tdwg.org/"
 navbar:
@@ -8,13 +8,17 @@ navbar:
     menu:
     - text: Darwin Core
       href: https://dwc.tdwg.org/list/
-    - text: Humboldt Core Extension
+    - text: Chronometric Age
+      href: https://tdwg.github.io/chrono/list/
+    - text: Humboldt Extension
       href: list/
   - text: Guides
     menu:
     - text: Darwin Core Quick Reference
       href: https://dwc.tdwg.org/terms/
-    - text: Humboldt Core Quick Reference
+    - text: Chronometric Age Quick Reference
+      href: https://tdwg.github.io/chrono/terms/
+    - text: Humboldt Extension Quick Reference
       href: terms/
     - text: Text (Darwin Core Archive)
       href: https://dwc.tdwg.org/text/

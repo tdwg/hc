@@ -1,6 +1,6 @@
 # Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-06-28 CC0
-# Modified for use with Humboldt Core 2022-05-29
+# Modified for use with Humboldt Extension 2022-05-29
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -34,7 +34,7 @@ organized_in_categories = True
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
 display_order = [ 'http://rs.tdwg.org/dwc/terms/Event', 'http://rs.tdwg.org/dwc/terms/Identification']
-display_label = ['Humboldt Core Event terms', 'Identification terms']
+display_label = ['Humboldt Extension Event terms', 'Identification terms']
 display_comments = ['','']
 display_id = ['event', 'identification']
 

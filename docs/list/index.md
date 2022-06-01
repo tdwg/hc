@@ -1,7 +1,7 @@
-# Humboldt Core Extension Vocabulary List of Terms
+# Humboldt Extension Vocabulary List of Terms
 
 Title
-: Humboldt Core Extension Vocabulary List of Terms
+: Humboldt Extension Vocabulary List of Terms
 
 Namespace IRI:
 : http://rs.tdwg.org/hc/terms/
@@ -25,7 +25,7 @@ Latest version
 : <http://rs.tdwg.org/dwc/doc/hc/>
 
 Abstract
-: The Humboldt Core Extension Vocabulary is a standard for transmitting information about ... . This document lists all terms in namespaces currently used in the vocabulary.
+: The Humboldt Extension Vocabulary is a standard for transmitting information about biological inventories. This document lists all terms in namespaces currently used in the vocabulary.
 
 Contributors
 : fill in
@@ -34,14 +34,14 @@ Creator
 : TDWG Humboldt Core Task Group
 
 Bibliographic citation
-: TDWG Humboldt core Task Group. 202x. Humboldt Core Extension Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hc/202x-xx-xx>
+: TDWG Humboldt Core Task Group. 202x. Humboldt Extension Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hc/202x-xx-xx>
 
 
 ## 1 Introduction
 
-This document contains all versions of terms in the Humboldt Core Extension vocabulary (<http://rs.tdwg.org/version/hc/202x-xx-xx>). The vocabulary uses the namespace abbreviation `hc:`. 
+This document contains all versions of terms in the Humboldt Extension vocabulary (<http://rs.tdwg.org/version/hc/202x-xx-xx>). The vocabulary uses the namespace abbreviation `hc:`. 
 
-For a simplified list that contains only the currently recommended terms, see the Humboldt Core Quick Reference Guide (<https://tdwg.github.io/hc/terms/>).
+For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://tdwg.github.io/hc/terms/>).
 
 ### 1.1 Status of the content of this document
 
@@ -62,7 +62,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 
 **Classes**
 
-**Humboldt Core Event terms**
+**Humboldt Extension Event terms**
 
 [hc:absentTaxa](#hc_absentTaxa) |
 [hc:abundanceCap](#hc_abundanceCap) |
@@ -119,7 +119,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 
 **Classes**
 
-**Humboldt Core Event terms**
+**Humboldt Extension Event terms**
 
 [Absent Taxa](#hc_absentTaxa) |
 [Abundance Cap](#hc_abundanceCap) |
