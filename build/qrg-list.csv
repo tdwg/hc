@@ -1,14 +1,23 @@
 recommended_term_iri
-http://rs.tdwg.org/dwc/terms/Event
+group:General Dataset & Identification
 http://rs.tdwg.org/hc/terms/samplingPerformedBy
+http://rs.tdwg.org/dwc/terms/identifiedBy
+http://rs.tdwg.org/dwc/terms/identificationReferences
+group:Geospatial Scope & Habitat
+http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers
+http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers
 http://rs.tdwg.org/hc/terms/siteCount
 http://rs.tdwg.org/hc/terms/siteNestingDescription
 http://rs.tdwg.org/hc/terms/verbatimSiteNames
 http://rs.tdwg.org/hc/terms/verbatimSiteDescriptions
-http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers
-http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers
+http://rs.tdwg.org/hc/terms/habitatScope
+http://rs.tdwg.org/hc/terms/excludedHabitatScope
+http://rs.tdwg.org/hc/terms/reportedWeather
+http://rs.tdwg.org/hc/terms/reportedExtremeConditions
+group:Temporal Scope
 http://rs.tdwg.org/hc/terms/eventDuration
 http://rs.tdwg.org/hc/terms/eventDurationUnit
+group:Taxonomic Scope
 http://rs.tdwg.org/hc/terms/targetTaxonomicScope
 http://rs.tdwg.org/hc/terms/excludedTaxonomicScope
 http://rs.tdwg.org/hc/terms/targetLifestageScope
@@ -17,10 +26,7 @@ http://rs.tdwg.org/hc/terms/targetDegreeOfEstablishmentScope
 http://rs.tdwg.org/hc/terms/excludedDegreeOfEstablishmentScope
 http://rs.tdwg.org/hc/terms/targetGrowthFormScope
 http://rs.tdwg.org/hc/terms/excludedGrowthFormScope
-http://rs.tdwg.org/hc/terms/habitatScope
-http://rs.tdwg.org/hc/terms/excludedHabitatScope
-http://rs.tdwg.org/hc/terms/reportedWeather
-http://rs.tdwg.org/hc/terms/reportedExtremeConditions
+group:Methodology Description
 http://rs.tdwg.org/hc/terms/inventoryTypes
 http://rs.tdwg.org/hc/terms/compilationType
 http://rs.tdwg.org/hc/terms/compilationSourceTypes
@@ -37,12 +43,10 @@ http://rs.tdwg.org/hc/terms/hasVouchers
 http://rs.tdwg.org/hc/terms/voucherInstitutions
 http://rs.tdwg.org/hc/terms/hasMaterialSamples
 http://rs.tdwg.org/hc/terms/materialSampleTypes
+group:Completeness & Effort
 http://rs.tdwg.org/hc/terms/isSamplingEffortReported
 http://rs.tdwg.org/hc/terms/samplingEffortProtocol
 http://rs.tdwg.org/hc/terms/samplingEffortValue
 http://rs.tdwg.org/hc/terms/samplingEffortUnit
 http://rs.tdwg.org/hc/terms/taxonCompletenessReported
 http://rs.tdwg.org/hc/terms/taxonCompletenessProtocols
-http://rs.tdwg.org/dwc/terms/Identification
-http://rs.tdwg.org/dwc/terms/identifiedBy
-http://rs.tdwg.org/dwc/terms/identificationReferences

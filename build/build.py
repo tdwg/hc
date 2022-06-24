@@ -21,16 +21,6 @@ NAMESPACES = {
     'http://rs.tdwg.org/dwc/terms/' : 'dwc',
     'http://rs.tdwg.org/dwc/terms/attributes/' : 'tdwgutility'}
 
-
-class ProvidedTermsError(Exception):
-    """inconsistency in the available terms Error"""
-    pass
-
-
-class RdfTypeError(Exception):
-    """rdftype encountered that is not known by builder"""
-    pass
-
 class DwcNamespaceError(Exception):
     """Namespace link is not available in the currently provided links"""
     pass
@@ -50,7 +40,6 @@ class DwcBuildReader():
 
     def __exit__(self, *args):
         self.open_dwc_term.close()
-
 
 class DwcDigester(object):
 
@@ -81,6 +70,7 @@ class DwcDigester(object):
 
         # create the defined data-object for the different outputs
         self.template_data = self.process_terms()
+        self.properties = self.properties_list()
 
     def versions(self):
         """Iterator providing the terms as represented in the normative term
@@ -91,28 +81,12 @@ class DwcDigester(object):
                 if vterm["status"] == "recommended":
                     yield vterm
 
-    def qrg_versions(self):
-        """Iterator providing the terms as represented in the Quick Reference Guide list
-        """
-        with DwcBuildReader(self.qrg_term_versions) as versions:
-            for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
-                iri = vterm['recommended_term_iri']
-                if iri.find('http://rs.tdwg.org/chrono/terms/') != -1 and \
-                        iri.find('/ChronometricAge') == -1:
-                    yield vterm['recommended_term_iri'].rpartition('/')[-1]
-
     def _store_versions(self):
         """Collect all the versions data in a dictionary as the
         term_versions_data attribute
         """
         for term in self.versions():
             self.term_versions_data[term["term_iri"]] = term
-
-    @property
-    def _version_terms(self):
-        """Get an overview of the terms in the term_versions file
-        """
-        return set(self.term_versions_data.keys())
 
     def _select_versions_term(self, term_iri):
         """Select a specific term of the versions data, using term_iri match
@@ -213,35 +187,37 @@ class DwcDigester(object):
                 ...
             ]
         """
-        template_data = []
-#        in_class = "Record-level"
-        # sequence matters in config and it starts with Record-level which we populate here ad-hoc
-        class_group = None
-#        class_group = {}
-#        class_group["label"] = "Record-level"
-#        class_group["iri"] = None
-#        class_group["class"] = None
-#        class_group["definition"] = None
-#        class_group["comments"] = None
-#        class_group["rdf_type"] = None
-#        class_group["terms"] = []
-#       class_group["namespace"] = None
-
+        termdict = {}
         for term in self.versions(): # sequence of the terms file used as order
             term_data = self.get_term_definition(term['term_iri'])
-            # new class encountered
-            if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
-                # store previous section in template_data
-                if class_group is not None:
+            termdict[term['term_iri']] = term_data
+
+        template_data = []
+        class_group = {}
+
+        with DwcBuildReader(self.qrg_term_versions) as versions:
+            for vterm in csv.DictReader(io.TextIOWrapper(versions), delimiter=','):
+                iri = vterm['recommended_term_iri']
+                if iri.find('group:') == 0:
+                    # Row is a group indicator starting with the string "group:"
+                    # Make a class group to put terms in
+                    class_group = {}
+                    group_name = iri.rpartition(':')[-1].strip()
+                    class_group["label"] = group_name
+                    class_group["iri"] = None
+                    class_group["class"] = None
+                    class_group["definition"] = None
+                    class_group["comments"] = None
+                    class_group["rdf_type"] = None
+                    class_group["namespace"] = None
+                    class_group["terms"] = []
                     template_data.append(class_group)
-                #start new class group
-                class_group = term_data
-                class_group["terms"] = []
-                in_class = term_data["label"] # check on the class working in
-            else:
-                class_group['terms'].append(term_data)
-        # save the last class to template_data
-        template_data.append(class_group)
+                else:
+                    # Row is a term to be listed with the most recent class_group
+                    # Add the term, getting the details from the dictionary created from
+                    # the term_versions.csv rather than the qrg_list.csv
+                    term_data = termdict.get(iri)
+                    class_group['terms'].append(term_data)
         return template_data
 
     def create_html(self, html_template="terms.tmpl",
@@ -272,28 +248,16 @@ class DwcDigester(object):
         index_page.write(str(html))
         index_page.close()
 
-    def simple_dwc_terms(self):
-        """Only extract those terms that are simple dwc, defined as `simple`
-        in the flags column of the config file of terms
+    def properties_list(self):
+        """Make a list of all properties in the qrg-list
         """
         properties = []
-        for term in self.versions():
-            term_data = self.get_term_definition(term['term_iri'])
-#            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property" and
-#                term["flags"] == "simple"):
-            if (term_data["rdf_type"] == "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"):
-                properties.append(term_data["label"])
+        for group in self.template_data:
+            for term in group['terms']:
+                properties.append(term.get('label'))
         return properties
 
-    def qrg_terms(self):
-        """Only extract those terms that are in the qrg list
-        """
-        properties = []
-        for term in self.qrg_versions():
-            properties.append(term)
-        return properties
-
-    def create_dwc_list(self, file_output="../dist/simple_chrono_vertical.csv"):
+    def create_dwc_list(self, file_output="../dist/simple_hc_vertical.csv"):
         """Build a list of simple dwc terms and write it to file
 
         Parameters
@@ -302,10 +266,10 @@ class DwcDigester(object):
             relative path and filename to write the resulting list
         """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
-            for term in self.qrg_terms():
+            for term in self.properties:
                 dwc_list_file.write(term + "\n")
 
-    def create_dwc_header(self, file_output="../dist/simple_chrono_horizontal.csv"):
+    def create_dwc_header(self, file_output="../dist/simple_hc_horizontal.csv"):
         """Build a header of simple dwc terms and write it to file
 
         Parameters
@@ -314,8 +278,7 @@ class DwcDigester(object):
             relative path and filename to write the resulting list
         """
         with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
-            properties = self.qrg_terms()
-            dwc_header_file.write(",".join(properties))
+            dwc_header_file.write(",".join(self.properties))
             dwc_header_file.write("\n")
 
 def main():

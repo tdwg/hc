@@ -7,63 +7,14 @@ container: fluid
 This document is intended to be an easy-to-read reference the currently recommended terms that extend the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) with vocabulary to describe biological inventories. This document is not part of the standard. It draws on the [term names and definitions](../list/) from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). CSV files with the [full history](https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv) of the terms, with [horizontal and vertical lists](https://github.com/tdwg/hc/tree/master/dist) of these terms and the schema for the [Darwin Core Archive extension](https://github.com/tdwg/hc/tree/master/dist) can be found in the [Humboldt Extension repository](https://github.com/tdwg/hc).
 
 
-## Event
+## General Dataset & Identification
 
 <div class="my-4">
         <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingPerformedBy">samplingPerformedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:siteCount">siteCount</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:siteNestingDescription">siteNestingDescription</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:verbatimSiteNames">verbatimSiteNames</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:verbatimSiteDescriptions">verbatimSiteDescriptions</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:geospatialScopeAreaInSquareKilometers">geospatialScopeAreaInSquareKilometers</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:totalAreaSampledInSquareKilometers">totalAreaSampledInSquareKilometers</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:eventDuration">eventDuration</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:eventDurationUnit">eventDurationUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetTaxonomicScope">targetTaxonomicScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedTaxonomicScope">excludedTaxonomicScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetLifestageScope">targetLifestageScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedLifeStageScope">excludedLifeStageScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetDegreeOfEstablishmentScope">targetDegreeOfEstablishmentScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedDegreeOfEstablishmentScope">excludedDegreeOfEstablishmentScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetGrowthFormScope">targetGrowthFormScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedGrowthFormScope">excludedGrowthFormScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:habitatScope">habitatScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedHabitatScope">excludedHabitatScope</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:reportedWeather">reportedWeather</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:reportedExtremeConditions">reportedExtremeConditions</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:inventoryTypes">inventoryTypes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:compilationType">compilationType</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:compilationSourceTypes">compilationSourceTypes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolNames">protocolNames</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolDescription">protocolDescription</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolReferences">protocolReferences</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbundanceReported">isAbundanceReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbundanceCapReported">isAbundanceCapReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:abundanceCap">abundanceCap</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isVegetationCoverReported">isVegetationCoverReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbsenceReported">isAbsenceReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:absentTaxa">absentTaxa</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:hasVouchers">hasVouchers</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:voucherInstitutions">voucherInstitutions</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:hasMaterialSamples">hasMaterialSamples</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:materialSampleTypes">materialSampleTypes</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isSamplingEffortReported">isSamplingEffortReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortProtocol">samplingEffortProtocol</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortValue">samplingEffortValue</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortUnit">samplingEffortUnit</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:taxonCompletenessReported">taxonCompletenessReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:taxonCompletenessProtocols">taxonCompletenessProtocols</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identifiedBy">identifiedBy</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationReferences">identificationReferences</a>
     </div>
 
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Event <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Event">http://rs.tdwg.org/dwc/terms/Event</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>An action that occurs at some location during some time.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A specimen collection process. A camera trap image capture.  A marine trawl.</td></tr>
-    </tbody>
-</table>
 
 <p class="invisible">
     <a id="hc:samplingPerformedBy"></a><a id="samplingPerformedBy"></a></p>
@@ -74,6 +25,68 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Definition</td><td>A person, group, or organization responsible for recording the Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>The sampling Event could be at any level of hierarchy. In the case of a higher level Event (parent), include all the organizations or people involved in the child Events that contributed to the parent Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>North American Butterlfy Association</code>, <code>KK Wall</code>, <code>JJ Green</code>, <code>LL Pink and FF Grey | Aspen Center for Environmental Studies</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="dwc:identifiedBy"></a><a id="identifiedBy"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identifiedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>James L. Patton</code>, <code>Theodore Pappenfuss | Robert Macey</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="dwc:identificationReferences"></a><a id="identificationReferences"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">identificationReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code>, <code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></td></tr>
+    </tbody>
+</table>
+
+
+## Geospatial Scope & Habitat
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:geospatialScopeAreaInSquareKilometers">geospatialScopeAreaInSquareKilometers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:totalAreaSampledInSquareKilometers">totalAreaSampledInSquareKilometers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:siteCount">siteCount</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:siteNestingDescription">siteNestingDescription</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:verbatimSiteNames">verbatimSiteNames</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:verbatimSiteDescriptions">verbatimSiteDescriptions</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:habitatScope">habitatScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedHabitatScope">excludedHabitatScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:reportedWeather">reportedWeather</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:reportedExtremeConditions">reportedExtremeConditions</a>
+    </div>
+
+
+<p class="invisible">
+    <a id="hc:geospatialScopeAreaInSquareKilometers"></a><a id="geospatialScopeAreaInSquareKilometers"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">geospatialScopeAreaInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers">http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Total area in km2 of the geospatial scope of the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Geospatial scope refers to the Event location reported using the dwc:Location class terms. This area is always greater than or equal to totalAreaSampledInSquareKilometers.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>25</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="hc:totalAreaSampledInSquareKilometers"></a><a id="totalAreaSampledInSquareKilometers"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">totalAreaSampledInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers">http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Total area in km2 surveyed during the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This area is always less than or equal to geospatialScopeAreaInSquareKilometers.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>0.8</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -121,27 +134,59 @@ This document is intended to be an easy-to-read reference the currently recommen
     </tbody>
 </table>
 <p class="invisible">
-    <a id="hc:geospatialScopeAreaInSquareKilometers"></a><a id="geospatialScopeAreaInSquareKilometers"></a></p>
+    <a id="hc:habitatScope"></a><a id="habitatScope"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">geospatialScopeAreaInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers">http://rs.tdwg.org/hc/terms/geospatialScopeAreaInSquareKilometers</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Total area in km2 of the geospatial scope of the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Geospatial scope refers to the Event location reported using the dwc:Location class terms. This area is always greater than or equal to totalAreaSampledInSquareKilometers.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>25</code></td></tr>
+        <tr class="table-secondary"><th colspan="2">habitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/habitatScope">http://rs.tdwg.org/hc/terms/habitatScope</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Targeted habitat(s) sampled during the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>dunes</code>, <code>pine forest</code>, <code>riparian</code>, <code>scrub | grassland</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="hc:totalAreaSampledInSquareKilometers"></a><a id="totalAreaSampledInSquareKilometers"></a></p>
+    <a id="hc:excludedHabitatScope"></a><a id="excludedHabitatScope"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">totalAreaSampledInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers">http://rs.tdwg.org/hc/terms/totalAreaSampledInSquareKilometers</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Total area in km2 surveyed during the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This area is always less than or equal to geospatialScopeAreaInSquareKilometers.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>0.8</code></td></tr>
+        <tr class="table-secondary"><th colspan="2">excludedHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/excludedHabitatScope">http://rs.tdwg.org/hc/terms/excludedHabitatScope</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Explicitly excluded habitat(s) sampled during the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>wet flatwoods</code>, <code>swamp | estuary</code></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="hc:reportedWeather"></a><a id="reportedWeather"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">reportedWeather <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/reportedWeather">http://rs.tdwg.org/hc/terms/reportedWeather</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list of weather or climatic conditions present at the time of the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>{'minimumTemperatureInDegreesFarenheit':18, 'maximumTemperatureInDegreesFarenheit':32, 'stillWaterCondition':'Partly Frozen'}</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="hc:reportedExtremeConditions"></a><a id="reportedExtremeConditions"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">reportedExtremeConditions <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/reportedExtremeConditions">http://rs.tdwg.org/hc/terms/reportedExtremeConditions</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A description of any extreme weather or environmental condition(s) that may have affected the Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>flooding during week 3 of surveys</code>, <code>rockslide at site 2</code></td></tr>
+    </tbody>
+</table>
+
+
+## Temporal Scope
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:eventDuration">eventDuration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:eventDurationUnit">eventDurationUnit</a>
+    </div>
+
+
 <p class="invisible">
     <a id="hc:eventDuration"></a><a id="eventDuration"></a></p>
 <table class="table table-sm table-bordered">
@@ -164,6 +209,22 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><code>minutes</code>, <code>hours</code>, <code>days</code>, <code>months</code>, <code>years</code></td></tr>
     </tbody>
 </table>
+
+
+## Taxonomic Scope
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetTaxonomicScope">targetTaxonomicScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedTaxonomicScope">excludedTaxonomicScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetLifestageScope">targetLifestageScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedLifeStageScope">excludedLifeStageScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetDegreeOfEstablishmentScope">targetDegreeOfEstablishmentScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedDegreeOfEstablishmentScope">excludedDegreeOfEstablishmentScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:targetGrowthFormScope">targetGrowthFormScope</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:excludedGrowthFormScope">excludedGrowthFormScope</a>
+    </div>
+
+
 <p class="invisible">
     <a id="hc:targetTaxonomicScope"></a><a id="targetTaxonomicScope"></a></p>
 <table class="table table-sm table-bordered">
@@ -252,50 +313,30 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><code>tree</code>, <code>shrub | sub-shrub</code></td></tr>
     </tbody>
 </table>
-<p class="invisible">
-    <a id="hc:habitatScope"></a><a id="habitatScope"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">habitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/habitatScope">http://rs.tdwg.org/hc/terms/habitatScope</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Targeted habitat(s) sampled during the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>dunes</code>, <code>pine forest</code>, <code>riparian</code>, <code>scrub | grassland</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="hc:excludedHabitatScope"></a><a id="excludedHabitatScope"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">excludedHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/excludedHabitatScope">http://rs.tdwg.org/hc/terms/excludedHabitatScope</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Explicitly excluded habitat(s) sampled during the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>wet flatwoods</code>, <code>swamp | estuary</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="hc:reportedWeather"></a><a id="reportedWeather"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">reportedWeather <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/reportedWeather">http://rs.tdwg.org/hc/terms/reportedWeather</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list of weather or climatic conditions present at the time of the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>{'minimumTemperatureInDegreesFarenheit':18, 'maximumTemperatureInDegreesFarenheit':32, 'stillWaterCondition':'Partly Frozen'}</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="hc:reportedExtremeConditions"></a><a id="reportedExtremeConditions"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">reportedExtremeConditions <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/hc/terms/reportedExtremeConditions">http://rs.tdwg.org/hc/terms/reportedExtremeConditions</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A description of any extreme weather or environmental condition(s) that may have affected the Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>flooding during week 3 of surveys</code>, <code>rockslide at site 2</code></td></tr>
-    </tbody>
-</table>
+
+
+## Methodology Description
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:inventoryTypes">inventoryTypes</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:compilationType">compilationType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:compilationSourceTypes">compilationSourceTypes</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolNames">protocolNames</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolDescription">protocolDescription</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:protocolReferences">protocolReferences</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbundanceReported">isAbundanceReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbundanceCapReported">isAbundanceCapReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:abundanceCap">abundanceCap</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isVegetationCoverReported">isVegetationCoverReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isAbsenceReported">isAbsenceReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:absentTaxa">absentTaxa</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:hasVouchers">hasVouchers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:voucherInstitutions">voucherInstitutions</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:hasMaterialSamples">hasMaterialSamples</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:materialSampleTypes">materialSampleTypes</a>
+    </div>
+
+
 <p class="invisible">
     <a id="hc:inventoryTypes"></a><a id="inventoryTypes"></a></p>
 <table class="table table-sm table-bordered">
@@ -472,6 +513,20 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><code>whole organism</code>, <code>skeleton</code>, <code>tissue | blood | fecal | stomach content</code></td></tr>
     </tbody>
 </table>
+
+
+## Completeness & Effort
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:isSamplingEffortReported">isSamplingEffortReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortProtocol">samplingEffortProtocol</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortValue">samplingEffortValue</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:samplingEffortUnit">samplingEffortUnit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:taxonCompletenessReported">taxonCompletenessReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#hc:taxonCompletenessProtocols">taxonCompletenessProtocols</a>
+    </div>
+
+
 <p class="invisible">
     <a id="hc:isSamplingEffortReported"></a><a id="isSamplingEffortReported"></a></p>
 <table class="table table-sm table-bordered">
@@ -536,47 +591,6 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Definition</td><td>A description of or reference to (publication, URL) the method(s) used to determined hc:taxonCompletenessReported.</td></tr>
         <tr><td class="theme-label">Comments</td><td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>Census | Based on sampling effort</code>,  <code>Based on species accumulation curves</code></td></tr>
-    </tbody>
-</table>
-
-
-## Identification
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identifiedBy">identifiedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#dwc:identificationReferences">identificationReferences</a>
-    </div>
-
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-primary"><th colspan="2">Identification <span class="badge badge-primary float-right">Class</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/Identification">http://rs.tdwg.org/dwc/terms/Identification</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A taxonomic determination (e.g., the assignment to a taxon).</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td>A subspecies determination of an organism.</td></tr>
-    </tbody>
-</table>
-
-<p class="invisible">
-    <a id="dwc:identifiedBy"></a><a id="identifiedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identifiedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the Taxon to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>James L. Patton</code>, <code>Theodore Pappenfuss | Robert Macey</code></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="dwc:identificationReferences"></a><a id="identificationReferences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/dwc/terms/identificationReferences">http://rs.tdwg.org/dwc/terms/identificationReferences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code>, <code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></td></tr>
     </tbody>
 </table>
 
