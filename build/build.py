@@ -157,6 +157,7 @@ class DwcDigester(object):
 
         term_data = {}
         term_data["label"] = vs_term['term_localName'] # See https://github.com/tdwg/dwc/issues/253#issuecomment-670098202
+        term_data["human_label"] = vs_term['label'] # Hack by SJB 2022-06-02 to implement categories
         term_data["iri"] = term_iri
         term_data["class"] = vs_term['organized_in']
         term_data["definition"] = self.convert_link(vs_term['definition'])
@@ -233,6 +234,8 @@ class DwcDigester(object):
             if term_data["rdf_type"] == "http://www.w3.org/2000/01/rdf-schema#Class":
                 # store previous section in template_data
                 if class_group is not None:
+                    # For classes, replace the local name for the term with the actual human-readable label
+                    class_group["label"] = term_data["human_label"] # Hack by SJB 2022-06-02 to implement categories
                     template_data.append(class_group)
                 #start new class group
                 class_group = term_data
@@ -241,6 +244,9 @@ class DwcDigester(object):
             else:
                 class_group['terms'].append(term_data)
         # save the last class to template_data
+        
+        # For classes, replace the local name for the term with the actual human-readable label
+        class_group["label"] = term_data["human_label"] # Hack by SJB 2022-06-02 to implement categories
         template_data.append(class_group)
         return template_data
 
