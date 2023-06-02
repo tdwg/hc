@@ -12,9 +12,9 @@
 
 **Latest version:** http://rs.tdwg.org/eco/doc/inclusive/
 
-**Abstract:** The Humboldt Extension for ecological inventories mints the term isLeastSpecificTargetCategoryQuantityInclusive to describe how to treat counts of organisms when records from a single dwc:event include multiple target categories. This document describes how to use that term.
+**Abstract:** The Humboldt Extension for ecological inventories mints the term isLeastSpecificTargetCategoryQuantityInclusive to describe how to treat counts of organisms when records from a single event include multiple target categories. This document describes how to use that term.
 
-**Contributors:** Yi Ming Gan, Wesley Hochachka, John Wieczorek, Yanina Sica, Peter Brenton
+**Contributors:** Yi Ming Gan, Wesley Hochachka, John Wieczorek, Yanina Sica, Peter Brenton, Steven Baskauf
 
 **Creator:** TDWG Humboldt Core Task Group
 
@@ -46,21 +46,21 @@ In summary, the term `eco:isLeastSpecificTargetCategoryQuantityInclusive` is req
 
 ## 3 Usage guidelines (normative)
 
-The term `eco:isLeastSpecificTargetCategoryQuantityInclusive` is defined as "The total detected quantity of organisms for a `dwc:taxon` (including subsets thereof) in a `dwc:event` is given explicitly in a single record (`dwc:organismQuantity` value) for that `dwc:taxon`."
+The term `eco:isLeastSpecificTargetCategoryQuantityInclusive` is defined as "The total detected quantity of organisms for a `dwc:Taxon` (including subsets thereof) in a `dwc:Event` is given explicitly in a single record (`dwc:organismQuantity` value) for that `dwc:Taxon`."
 
-Values MUST be `true` and `false`. If `true`, the `dwc:organismQuantity` values for a dwc:taxon in a dwc:event is inclusive of all organisms of the taxon (including more specific scopes such as different life stages or lower taxonomic ranks) and the total detected quantity of organisms for that taxon in the event MUST NOT be determined by summing the dwc:organismQuantity values for all records of the axon in the event. Instead, the total detected quantity of organisms for the taxon in an event MUST be reported in a single record for the taxon in the event, with this record having no further specific scopes. In this case the sum of `dwc:organismQuantity` values for the reported subsets of the taxon MUST NOT exceed the value of `dwc:organismQuantity` for the single record for the taxon without subsets (i.e., the total).  If `false`, the `dwc:organismQuantity` values for a dwc:taxon in an dwc:event MUST be added to get the total detected quantity of organisms for that taxon in the event. 
+Values MUST be `true` and `false`. If `true`, the `dwc:organismQuantity` values for a `dwc:Taxon` in a `dwc:Event` is inclusive of all organisms of the `dwc:Taxon` (including more specific scopes such as different life stages or lower taxonomic ranks) and the total detected quantity of organisms for that `dwc:Taxon` in the `dwc:Event` MUST NOT be determined by summing the dwc:organismQuantity values for all records of the axon in the `dwc:Event`. Instead, the total detected quantity of organisms for the `dwc:Taxon` in an `dwc:Event` MUST be reported in a single record for the `dwc:Taxon` in the `dwc:Event`, with this record having no further specific scopes. In this case the sum of `dwc:organismQuantity` values for the reported subsets of the `dwc:Taxon` MUST NOT exceed the value of `dwc:organismQuantity` for the single record for the `dwc:Taxon` without subsets (i.e., the total).  If `false`, the `dwc:organismQuantity` values for a `dwc:Taxon` in an `dwc:Event` MUST be added to get the total detected quantity of organisms for that `dwc:Taxon` in the `dwc:Event`. 
 
 ## 4 Examples (non-normative)
 
-### 4.1 Single taxon example
+### 4.1 Single `dwc:Taxon` example
 
-As an example of the difference between `true` and `false` values for `eco:isLeastSpecificTargetCategoryQuantityInclusive`, suppose there are three records (see Table 1) with `dwc:organismQuantity` for a dwc:taxon (taxon_01) for an dwc:event (event_01). One record is for adults of the dwc:taxon with `dwc:organismQuantity` = `1` and `dwc:organismQuantityType` = `individuals`, one record is for juveniles of the dwc:taxon with `dwc:organismQuantity` = `2` and `dwc:organismQuantityType` = `individuals`, and one record is for the dwc:taxon without specifying the life stage and with `dwc:organismQuantity` = `4` and `dwc:organismQuantityType` = `individuals`. 
+As an example of the difference between `true` and `false` values for `eco:isLeastSpecificTargetCategoryQuantityInclusive`, suppose there are three records (see Table 1) with `dwc:organismQuantity` for a `dwc:Taxon` (taxon_01) for an `dwc:Event` (event_01). One record is for adults of the `dwc:Taxon` with `dwc:organismQuantity` = `1` and `dwc:organismQuantityType` = `individuals`, one record is for juveniles of the `dwc:Taxon` with `dwc:organismQuantity` = `2` and `dwc:organismQuantityType` = `individuals`, and one record is for the `dwc:Taxon` without specifying the life stage and with `dwc:organismQuantity` = `4` and `dwc:organismQuantityType` = `individuals`. 
 
-If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `true` for event_01, then the total number of individuals of taxon_01 for the event is 4 (the least specific taxon record — the one with no more specific scopes — includes all individuals of the taxon). This means that there was 1 adult, 2 juveniles and 1 individual of taxon_01 whose life stage was not recorded. 
+If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `true` for event_01, then the total number of individuals of taxon_01 for the `dwc:Event` is 4 (the least specific `dwc:Taxon` record — the one with no more specific scopes — includes all individuals of the `dwc:Taxon`). This means that there was 1 adult, 2 juveniles and 1 individual of taxon_01 whose life stage was not recorded. 
 
-If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01, then the total number of individuals of taxon_01 for the event is 7 (the least specific taxon record - the one with no more specific scopes - does not include all individuals of the taxon, rather, it is a separate category that must also be added to get the total). This means there was 1 adult, 2 juveniles and 4 individuals of taxon_01 whose life stage was not recorded.
+If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01, then the total number of individuals of taxon_01 for the `dwc:Event` is 7 (the least specific `dwc:Taxon` record - the one with no more specific scopes - does not include all individuals of the `dwc:Taxon`, rather, it is a separate category that must also be added to get the total). This means there was 1 adult, 2 juveniles and 4 individuals of taxon_01 whose life stage was not recorded.
 
-**Table 1. Organism quantities in occurrence records**
+**Table 1. Organism quantities in `dwc:Occurrence` records**
 
 | occurrenceID | eventID | taxonID | lifeStage | organismQuantity | organismQuantityType |
 | ------------ | ------- | ------- | --------- | ---------------- | -------------------- |
@@ -70,13 +70,13 @@ If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01,
 
 ### 4.2 Nested taxa example
 
-Suppose there are three records (see Table 2) with `dwc:organismQuantity` for three taxa (*Hirundo rustica* and two subspecies) for an event (event_01). The record for the species has `dwc:organismQuantity` = `3` and `dwc:organismQuantityType` = `individuals`. The record is for *H. r. rustica* has `dwc:organismQuantity` = `2` and `dwc:organismQuantityType` = `individuals`. The record for *H. r. gutturalis* has `dwc:organismQuantity` = `4` and `dwc:organismQuantityType` = `individuals`.
+Suppose there are three records (see Table 2) with `dwc:organismQuantity` for three taxa (*Hirundo rustica* and two subspecies) for a `dwc:Event` (event_01). The record for the species has `dwc:organismQuantity` = `3` and `dwc:organismQuantityType` = `individuals`. The record is for *H. r. rustica* has `dwc:organismQuantity` = `2` and `dwc:organismQuantityType` = `individuals`. The record for *H. r. gutturalis* has `dwc:organismQuantity` = `4` and `dwc:organismQuantityType` = `individuals`.
 
-If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `true` for event_01, then the total number of individuals of the species *H. rustica* for the dwc:event is 3 (the least specific taxon record includes all individuals of the Taxon). This means there were 2 *H. r. rustica*, 1 *H. r. gutturalis*, and no other *H. rustica* of any kind detected.
+If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `true` for event_01, then the total number of individuals of the species *H. rustica* for the `dwc:Event` is 3 (the least specific `dwc:Taxon` record includes all individuals of the `dwc:Taxon`). This means there were 2 *H. r. rustica*, 1 *H. r. gutturalis*, and no other *H. rustica* of any kind detected.
 
-If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01, then the total number of individuals of the species *H. rustica* for the dwc:event is 6 (the least specific taxon record does not include all individuals of the taxon). This means there were 2 *H. r. rustica*, 1 *H. r. gutturalis*, and 3 other *H. rustica* detected that were not identified to subspecies. 
+If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01, then the total number of individuals of the species *H. rustica* for the `dwc:Event` is 6 (the least specific `dwc:Taxon` record does not include all individuals of the `dwc:Taxon`). This means there were 2 *H. r. rustica*, 1 *H. r. gutturalis*, and 3 other *H. rustica* detected that were not identified to subspecies. 
 
-**Table 2. Organism quantities in event records**
+**Table 2. Organism quantities in `dwc:Event` records**
 
 | eventID | scientificName | organismQuantity | organismQuantityType |
 | ------- | -------------- | ---------------- | -------------------- |
