@@ -53,7 +53,7 @@ for term_list_index in range(len(term_lists)):
     else:
         # append subsequent term lists data to the DataFrame
         accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
-        
+'''
 # Special procedure for obsolete terms
 # Retrieve versions metadata
 versions_url = github_baseUri + 'dwc-obsolete-versions/dwc-obsolete-versions.csv'
@@ -66,23 +66,24 @@ join_df = pd.read_csv(join_url, na_filter=False)
 
 # Find the term IRI for each version and add it to a list
 term_iri_list = []
+
 for row_index,row in versions_df.iterrows():
     for join_index,join_row in join_df.iterrows():
         # Locate the row in the join data where the version matches the row in the versions DataFrame
         if join_row['version'] == row['version']:
             term_iri_list.append(join_row['term'])
             break
-'''    
+
     # Locate the row in the join data where the version matches the row in the versions DataFrame
     term_iri_row = join_df.loc[join_df['version'] == row['version']]
     # Add the current term IRI from the join data row to the list
     term_iri_list.append(term_iri_row['term'])
-'''
+
 # Add the curren term IRI list to the DataFrame as the term_iri column
 versions_df['term_iri'] = term_iri_list
 # Add the obsolete terms DataFrame to the accumulated DataFrame
 accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
-
+'''
 accumulated_frame.reset_index(drop=True, inplace=True) # reset the row indices to consecutive starting with zero
 accumulated_frame.fillna('', inplace=True) # replace all missing values with empty strings
 accumulated_frame.head()
@@ -143,7 +144,7 @@ normative_doc_df = pd.DataFrame(normative_doc_list, columns = column_headers)
 normative_doc_df.set_index('iri', drop=False, inplace=True)
 normative_doc_df.index.names = ['row_index']
 #normative_doc_df.to_csv('test.csv', index = False)
-string1 = normative_doc_df.iloc[571]['term_iri']
+#string1 = normative_doc_df.iloc[571]['term_iri']
 
 # -----------------------------
 # Order the rows as required for generating the Quick Reference Guide
