@@ -4,10 +4,10 @@ Title
 : Humboldt Extension Vocabulary List of Terms
 
 Namespace IRI:
-: http://rs.tdwg.org/hc/terms/
+: http://rs.tdwg.org/eco/terms/
 
 Preferred namespace abbreviation
-: hc:
+: eco:
 
 Date version issued
 : 202x-xx-xx
@@ -19,7 +19,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/hc/202x-xx-xx>
+: <http://rs.tdwg.org/dwc/doc/hc/2023-xx-xx>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/hc/>
@@ -34,7 +34,7 @@ Creator
 : TDWG Humboldt Core Task Group
 
 Bibliographic citation
-: TDWG Humboldt Core Task Group. 202x. Humboldt Extension Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hc/202x-xx-xx>
+: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hc/2023-xx-xx>
 
 
 ## 1 Introduction
