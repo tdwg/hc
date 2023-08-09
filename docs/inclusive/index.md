@@ -91,3 +91,5 @@ If `eco:isLeastSpecificTargetCategoryQuantityInclusive` is `false` for event_01,
 <a id="ref2"></a>Sica Y. V., K. Ingenloff, Y-M GAN, Z. Kachian, S. J. Baskauf, J. Wieczorek, P. F. Zermoglio, R. D. Stevenson (2022). Application of Humboldt Extension to Real-world Cases. *Biodiversity Information Science and Standards* 6: e91502. <https://doi.org/10.3897/biss.6.91502>
 
 <a id="ref3"></a>Sullivan, B. L., J. L. Aycrigg, J. H. Barry, R. E. Bonney, N. Bruns, C. B. Cooper, T. Damoulas, A. A. Dhondt, T. Dietterich, A. Farnsworth, D. Fink, et al. (2014). The eBird enterprise: an integrated approach to development and application of citizen science. *Biological Conservation* 169:31-40. <https://10.1016/j.biocon.2013.11.003>
+
+.
