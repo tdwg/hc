@@ -2,7 +2,7 @@
 layout: home
 ---
 
-# Humboldt Core Extension
+# Humboldt Extension for Ecological Inventories
 
 NOTE: This document forms part of a proposal by the [Humboldt Core Task Group](https://www.tdwg.org/community/osr/humboldt-core/) to extend Darwin Core with vocabulary for biological inventories. It is not yet ratified and may change as a result of recommendations received during the course of Open Public Commentary.
 
@@ -11,7 +11,10 @@ The Humboldt Core extension is a standard vocabulary maintained by the [Darwin C
 ## Getting started
 
 * [Quick reference guide](terms/)
-* Usage guide: how to use the Humboldt Core Extension (forthcoming)
+* Usage guide: how to use the Humboldt Core Extension (add link)
+* [Guidance for using the term eco:isLeastSpecificTargetCategoryQuantityInclusive](inclusive/)
+* Hierarchical Events in the Humboldt Extension (add link)
 * [GitHub repository](https://github.com/tdwg/hc): where the Humboldt Core Extensions is maintained
 * [Normative term list](list/): the document containing the full history of normative Darwin Core term definitions
 * [Utility files](https://github.com/tdwg/hc/tree/master/dist): CSV files of vertical and horizontal term lists plus the Darwin Core Extension schema
+* Implementation Experience Report (add link)

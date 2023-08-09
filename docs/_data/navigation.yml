@@ -1,0 +1,16 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: Home
+  href: /
+- text: Terms
+  menu:
+  - text: Humboldt Core Extension
+    href: list/
+- text: Guides
+  menu:
+  - text: Humboldt Core Quick Reference
+    href: terms/
+  - text: isLeastSpecificTargetCategoryQuantityInclusive Guidelines
+    href: inclusive/
+- text: GitHub
+  href: https://github.com/tdwg/hc
