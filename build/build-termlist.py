@@ -14,14 +14,14 @@ import pandas as pd
 # -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/humboldt/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/'
 
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
 outFileName = '../docs/list/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
-termLists = ['humboldt', 'dwc-for-humboldt']
+termLists = ['humboldt']
 
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
@@ -33,10 +33,10 @@ organized_in_categories = True
 
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
-display_order = [ 'http://rs.tdwg.org/dwc/terms/Event', 'http://rs.tdwg.org/dwc/terms/Identification']
-display_label = ['Humboldt Extension Event terms', 'Identification terms']
+display_order = [ 'http://rs.tdwg.org/dwc/terms/Event']
+display_label = ['Humboldt Extension Event terms']
 display_comments = ['','']
-display_id = ['event', 'identification']
+display_id = ['event']
 
 # ---------------
 # Function definitions
