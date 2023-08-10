@@ -12,12 +12,12 @@
   affiliation: Royal Belgian Institute of Natural Sciences
   affiliation_uri: http://www.wikidata.org/entity/Q16665660
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0000-0001-5942-9053
   contributor_literal: Kate Ingenloff
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Global Biodiversity Information Facility (GBIF)
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
 
 - contributor_iri: https://orcid.org/0000-0002-0500-0339
   contributor_literal: Zachary R. Kachian
@@ -54,19 +54,19 @@
   affiliation: 
   affiliation_uri: 
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0000-0003-2475-132X
   contributor_literal: Anahita J. N. Kazem
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena
+  affiliation_uri: http://www.wikidata.org/entity/Q1206134
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0000-0002-2919-1168
   contributor_literal: Dmitry Schigel
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Global Biodiversity Information Facility (GBIF)
+  affiliation_uri: http://www.wikidata.org/entity/Q1531570
 
 - contributor_iri: https://orcid.org/0000-0003-4365-3135
   contributor_literal: Steve Baskauf
