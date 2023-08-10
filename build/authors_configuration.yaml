@@ -5,12 +5,12 @@
   affiliation: 
   affiliation_uri: 
 
-- contributor_iri: 
-  contributor_literal: Yi Ming Gan
+- contributor_iri: https://orcid.org/0000-0001-7087-2646
+  contributor_literal: Yi-Ming Gan
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Royal Belgian Institute of Natural Sciences
+  affiliation_uri: http://www.wikidata.org/entity/Q16665660
 
 - contributor_iri: 
   contributor_literal: Kate Ingenloff
@@ -19,26 +19,26 @@
   affiliation: 
   affiliation_uri: 
 
-- contributor_iri: 
-  contributor_literal: Zachary Kachian
+- contributor_iri: https://orcid.org/0000-0002-0500-0339
+  contributor_literal: Zachary R. Kachian
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Keller Science Action Center, Field Museum of Natural History
+  affiliation_uri: http://www.wikidata.org/entity/Q1122595
 
-- contributor_iri: 
-  contributor_literal: Peter Benton
+- contributor_iri: https://orcid.org/0000-0001-9730-8340
+  contributor_literal: Peter Brenton
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Atlas of Living Australia, CSIRO
+  affiliation_uri: http://www.wikidata.org/entity/Q16335177
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0000-0002-0595-7827
   contributor_literal: Wesley M. Hochachka
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Cornell Lab of Ornithology
+  affiliation_uri: http://www.wikidata.org/entity/Q2997535
 
 - contributor_iri: https://orcid.org/0000-0003-1144-0290
   contributor_literal: John Wieczorek
