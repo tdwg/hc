@@ -83,7 +83,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 [eco:isAbsenceReported](#eco_isAbsenceReported) |
 [eco:isAbundanceCapReported](#eco_isAbundanceCapReported) |
 [eco:isAbundanceReported](#eco_isAbundanceReported) |
-[eco:isDegreeOfEstablishmenScopetFullyReported](#eco_isDegreeOfEstablishmenScopetFullyReported) |
+[eco:isDegreeOfEstablishmentScopeFullyReported](#eco_isDegreeOfEstablishmentScopeFullyReported) |
 [eco:isGrowthFormScopeFullyReported](#eco_isGrowthFormScopeFullyReported) |
 [eco:isLeastSpecificTargetCategoryQuantityInclusive](#eco_isLeastSpecificTargetCategoryQuantityInclusive) |
 [eco:isLifeStageScopeFullyReported](#eco_isLifeStageScopeFullyReported) |
@@ -142,7 +142,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 [Is Absence Reported](#eco_isAbsenceReported) |
 [Is Abundance Cap Reported](#eco_isAbundanceCapReported) |
 [Is Abundance Reported](#eco_isAbundanceReported) |
-[Is Degree of Establishment Scope Fully Reported](#eco_isDegreeOfEstablishmenScopetFullyReported) |
+[Is Degree of Establishment Scope Fully Reported](#eco_isDegreeOfEstablishmentScopeFullyReported) |
 [Is Growth Form Scope Fully Reported](#eco_isGrowthFormScopeFullyReported) |
 [Is Least Specific Target Category Quantity Inclusive](#eco_isLeastSpecificTargetCategoryQuantityInclusive) |
 [Is Life Stage Scope Fully Reported](#eco_isLifeStageScopeFullyReported) |
@@ -1013,13 +1013,13 @@ The terms in this standard are meant to provide stable definitions that can be u
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_isDegreeOfEstablishmenScopetFullyReported"></a>Term Name  eco:isDegreeOfEstablishmenScopetFullyReported</th>
+			<th colspan="2"><a id="eco_isDegreeOfEstablishmentScopeFullyReported"></a>Term Name  eco:isDegreeOfEstablishmentScopeFullyReported</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmenScopetFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmenScopetFullyReported</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1027,7 +1027,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmenScopetFullyReported-2023-08-08">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmenScopetFullyReported-2023-08-08</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2023-08-08">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2023-08-08</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
