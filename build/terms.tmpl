@@ -8,7 +8,7 @@ container: fluid
 
 # Humboldt Extension quick reference guide
 
-This document is intended to be an easy-to-read reference the currently recommended terms that extend the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) with vocabulary to describe biological inventories. This document is not part of the standard. It draws on the [term names and definitions](../list/) from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). CSV files with the [full history](https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv) of the terms, with [horizontal and vertical lists](https://github.com/tdwg/hc/tree/master/dist) of these terms and the schema for the [Darwin Core Archive extension](https://github.com/tdwg/hc/tree/master/dist) can be found in the [Humboldt Extension repository](https://github.com/tdwg/hc).
+This document is intended to be an easy-to-read reference the currently recommended terms that extend the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) with vocabulary to describe biological inventories. This document is not part of the standard. It draws on the [term names and definitions](../list/) from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. The category to which all of the terms in this extension correspond is the Darwin Core Event (dwc:Event) class. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). CSV files with the [full history](https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv) of the terms, with [horizontal and vertical lists](https://github.com/tdwg/hc/tree/master/dist) of these terms and the schema for the [Darwin Core Archive extension](https://github.com/tdwg/hc/tree/master/dist) can be found in the [Humboldt Extension repository](https://github.com/tdwg/hc).
 
 {% for class_group in class_groups %}
 
@@ -23,7 +23,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
     {% endfor %}
 </div>
 
-{% if class_group.label != 'General Dataset & Identification' and class_group.label != 'Geospatial Scope & Habitat' and class_group.label != 'Temporal Scope' and class_group.label != 'Taxonomic Scope' and class_group.label != 'Methodology Description' and class_group.label != 'Completeness & Effort' and class_group.label != 'UseWithIRI' %}
+{% if class_group.label != 'Site' and class_group.label != 'Habitat Scope' and class_group.label != 'Temporal Scope' and class_group.label != 'Taxonomic Scope' and class_group.label != 'Organismal Scope' and class_group.label != 'Identification' and class_group.label != 'Methodology Description' and class_group.label != 'Material Collected' and class_group.label != 'Sampling Effort' and class_group.label != 'UseWithIRI' %}
 {# Class #}
 <table class="table table-sm table-bordered">
     <tbody>
