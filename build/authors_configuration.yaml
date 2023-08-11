@@ -47,12 +47,12 @@
   affiliation: VertNet
   affiliation_uri: http://www.wikidata.org/entity/Q98382028
 
-- contributor_iri: 
+- contributor_iri: https://orcid.org/0000-0003-1617-5895
   contributor_literal: Robert D. Stevenson
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: 
-  affiliation_uri: 
+  affiliation: Department of Biology, University of Massachusetts Boston
+  affiliation_uri: http://www.wikidata.org/entity/Q15144
 
 - contributor_iri: https://orcid.org/0000-0003-2475-132X
   contributor_literal: Anahita J. N. Kazem
