@@ -12,10 +12,10 @@ The Humboldt Extension is a standard vocabulary maintained by the [Darwin Core M
 
 ## Getting started
 
-* [Quick reference guide](terms/)
+* [Quick reference guide](terms/index.md)
 * [Usage guide](https://docs.google.com/document/d/1rX4m94rtZDR_8iIe3RvRnNYKDJcmSX3ii4S5hCznEA0/edit?usp=sharing): how to use the Humboldt Extension
 * [GitHub repository](https://github.com/tdwg/hc): where the Humboldt Extensions is maintained
-* [Guidelines for using isLeastSpecificTargetCategoryQuantityInclusive](inclusive/)
+* [Guidelines for using isLeastSpecificTargetCategoryQuantityInclusive](inclusive/index.md)
 * [Properties of hierarchical events in the Humboldt Extension for Ecological Inventories](https://docs.google.com/document/d/1r_XMEgB7p7OI7a5Ouq6G9oa7LmQFPcFhZZCLD9gWOIE/edit?usp=sharing) (Google Doc; to be converted to Markdown)
-* [Normative term list](list/): the document containing the full history of normative Humboldt Extension term definitions
+* [Normative term list](list/index.md): the document containing the full history of normative Humboldt Extension term definitions
 * [Utility files](https://github.com/tdwg/hc/tree/master/dist): CSV files of vertical and horizontal term lists plus the Humboldt Extension schema
