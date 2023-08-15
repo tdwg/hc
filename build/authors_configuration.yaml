@@ -2,8 +2,8 @@
   contributor_literal: Yanina Sica
   contributor_role: contributor
   role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: Senckenberg – Leibniz Institution for Biodiversity and Earth System Research
-  affiliation_uri: http://www.wikidata.org/entity/Q121435694
+  affiliation: Yale University
+  affiliation_uri: http://www.wikidata.org/entity/Q49112
 
 - contributor_iri: https://orcid.org/0000-0001-5942-9053
   contributor_literal: Kate Ingenloff
@@ -95,20 +95,6 @@
   role_uri: http://www.wikidata.org/entity/Q20204892
   affiliation: Keller Science Action Center, Field Museum of Natural History
   affiliation_uri: http://www.wikidata.org/entity/Q1122595
-
-- contributor_iri: https://orcid.org/0000-0002-6155-9444
-  contributor_literal: Niel S. Cobb
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: Merriam-Powell Center for Environmental Research, Northern Arizona University
-  affiliation_uri: http://www.wikidata.org/entity/Q139901
-
-- contributor_iri: https://orcid.org/0000-0003-4177-1322
-  contributor_literal: Debora Drucker
-  contributor_role: contributor
-  role_uri: http://www.wikidata.org/entity/Q20204892
-  affiliation: Empresa Brasileira de Pesquisa Agropecuária (Embrapa)
-  affiliation_uri: http://www.wikidata.org/entity/Q1339456
 
 - contributor_iri: https://orcid.org/0000-0001-6682-1504
   contributor_literal: Robert Guralnick
