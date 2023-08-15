@@ -41,13 +41,14 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
 <p class="invisible">
     <a id="{{ term.namespace }}:{{ term.label }}"></a>{% if term.namespace != "dwciri" %}<a id="{{ term.label }}"></a>{% endif %}
 </p>
+{% set examples = term.examples.split("; ") %}
 <table class="table table-sm table-bordered">
     <tbody>
         <tr class="table-secondary"><th colspan="2">{{ term.label }} <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="{{ term.iri }}">{{ term.iri }}</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>{{ term.definition }}</td></tr>
         <tr><td class="theme-label">Comments</td><td>{{ term.comments }}</td></tr>
-        <tr><td class="theme-label">Examples</td><td>{{ term.examples }}</td></tr>
+        <tr><td class="theme-label">Examples</td><td>{% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}</td></tr>
     </tbody>
 </table>
 {% endfor %}
