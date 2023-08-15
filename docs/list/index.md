@@ -207,7 +207,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Parabuteo unicinctus | Geranoaetus melanoleucus`; `Cetoniinae | Aclopinae | Cyclocephala modesta`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li>
+  <li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -245,7 +248,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`300`;`700`</td>
+			<td><code>300</code>;<code>700</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -287,7 +290,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`museum specimens`; `literature`; `expert knowledge | local knowledge`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>museum specimens</code></li>
+  <li class="list-group-item"><code>literature</code></li>
+  <li class="list-group-item"><code>expert knowledge | local knowledge</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -329,7 +336,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`survey only`; `compilation including surveys`; `compilation not including surveys`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>survey only</code></li>
+  <li class="list-group-item"><code>compilation including surveys</code></li>
+  <li class="list-group-item"><code>compilation not including surveys</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -371,7 +382,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1`; `30`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>30</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -413,7 +427,13 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`minutes`; `hours`; `days`; `months`; `years`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>minutes</code></li>
+  <li class="list-group-item"><code>hours</code></li>
+  <li class="list-group-item"><code>days</code></li>
+  <li class="list-group-item"><code>months</code></li>
+  <li class="list-group-item"><code>years</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -455,7 +475,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`native (category A)`; `invasive (category D2) | widespread invasive (category E)`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>native (category A)</code></li>
+  <li class="list-group-item"><code>invasive (category D2) | widespread invasive (category E)</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -497,7 +520,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tree`; `shrub | sub-shrub`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>tree</code></li>
+  <li class="list-group-item"><code>shrub | sub-shrub</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -539,7 +565,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`wet flatwoods`; `swamp | estuary`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>wet flatwoods</code></li>
+  <li class="list-group-item"><code>swamp | estuary</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -581,7 +610,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`seedling`; `nestling | fledgling`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>seedling</code></li>
+  <li class="list-group-item"><code>nestling | fledgling</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -623,7 +655,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Aves`; `Quercus`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Aves</code></li>
+  <li class="list-group-item"><code>Quercus</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -665,7 +700,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`25`</td>
+			<td><code>25</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -703,7 +738,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -741,7 +779,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -779,11 +820,14 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (` | `).</td>
+			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Aves del Noroeste Patagonico. Christie et al. 2004.`; `Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li>
+  <li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -829,7 +873,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`James L. Patton`; `Theodore Pappenfuss | Robert Macey`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>James L. Patton</code></li>
+  <li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -875,7 +922,14 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`restricted search`; `open search`; `opportunistic search`; `adventitious`; `compilation`; `open search | opportunistic search`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>restricted search</code></li>
+  <li class="list-group-item"><code>open search</code></li>
+  <li class="list-group-item"><code>opportunistic search</code></li>
+  <li class="list-group-item"><code>adventitious</code></li>
+  <li class="list-group-item"><code>compilation</code></li>
+  <li class="list-group-item"><code>open search | opportunistic search</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -917,7 +971,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -959,7 +1016,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1001,7 +1061,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1043,7 +1106,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1085,7 +1151,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1127,7 +1196,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1169,7 +1241,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1211,7 +1286,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1253,7 +1331,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1295,7 +1376,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`true`; `false`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1337,7 +1421,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`whole organism`; `skeleton`; `tissue | blood | fecal | stomach content`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>whole organism</code></li>
+  <li class="list-group-item"><code>skeleton</code></li>
+  <li class="list-group-item"><code>tissue | blood | fecal | stomach content</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1421,7 +1509,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`box trapping`; `flora inventory`; `box trapping | funnel trapping`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>box trapping</code></li>
+  <li class="list-group-item"><code>flora inventory</code></li>
+  <li class="list-group-item"><code>box trapping | funnel trapping</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1463,7 +1555,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x`">https://doi.org/10.1111/j.1466-8238.2009.00467.x`</a></td>
+			<td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1501,7 +1593,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`flooding during week 3 of surveys`; `rockslide at site 2`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>flooding during week 3 of surveys</code></li>
+  <li class="list-group-item"><code>rockslide at site 2</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1543,7 +1638,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`{'minimumTemperatureInDegreesFahrenheit': 18, 'maximumTemperatureInDegreesFahrenheit': 32}`</td>
+			<td><code>{'minimumTemperatureInDegreesFahrenheit': 18, 'maximumTemperatureInDegreesFahrenheit': 32}</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1585,7 +1680,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period`; `2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours`; `A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period</code></li>
+  <li class="list-group-item"><code>2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours</code></li>
+  <li class="list-group-item"><code>A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1627,7 +1726,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`trap hours`; `person hours`; `trap days`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>trap hours</code></li>
+  <li class="list-group-item"><code>person hours</code></li>
+  <li class="list-group-item"><code>trap days</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1669,7 +1772,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1900`; `40`; `5.5`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1900</code></li>
+  <li class="list-group-item"><code>40</code></li>
+  <li class="list-group-item"><code>5.5</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1711,7 +1818,12 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`North American Butterlfy Association`; `KK Wall`; `JJ Green`; `LL Pink and FF Grey | Aspen Center for Environmental Studies`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>North American Butterlfy Association</code></li>
+  <li class="list-group-item"><code>KK Wall</code></li>
+  <li class="list-group-item"><code>JJ Green</code></li>
+  <li class="list-group-item"><code>LL Pink and FF Grey | Aspen Center for Environmental Studies</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1753,7 +1865,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`1`; `15`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>15</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1795,7 +1910,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`5 sampling sites of 3-5 plots each`</td>
+			<td><code>5 sampling sites of 3-5 plots each</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1837,7 +1952,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`native (category A)`; `invasive (category D2) | widespread invasive (category E)`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>native (category A)</code></li>
+  <li class="list-group-item"><code>invasive (category D2) | widespread invasive (category E)</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1879,7 +1997,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`tree`; `shrub | sub-shrub`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>tree</code></li>
+  <li class="list-group-item"><code>shrub | sub-shrub</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1921,7 +2042,12 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`dunes`; `pine forest`; `riparian`; `scrub | grassland`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>dunes</code></li>
+  <li class="list-group-item"><code>pine forest</code></li>
+  <li class="list-group-item"><code>riparian</code></li>
+  <li class="list-group-item"><code>scrub | grassland</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -1963,7 +2089,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`larva`; `adult | juvenile`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>larva</code></li>
+  <li class="list-group-item"><code>adult | juvenile</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2005,7 +2134,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Aves`; `Aves | Mammalia`; `Procellariformes`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Aves</code></li>
+  <li class="list-group-item"><code>Aves | Mammalia</code></li>
+  <li class="list-group-item"><code>Procellariformes</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2047,7 +2180,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`census | based on sampling effort`;  `based on species accumulation curves`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>census | based on sampling effort</code></li>
+  <li class="list-group-item"> <code>based on species accumulation curves</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2089,7 +2225,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`not reported`; `reported complete`; `reported incomplete`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>not reported</code></li>
+  <li class="list-group-item"><code>reported complete</code></li>
+  <li class="list-group-item"><code>reported incomplete</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2131,7 +2271,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`0.8`</td>
+			<td><code>0.8</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2173,7 +2313,7 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`Wet flatwoods | Wet depression surrounded by mesic longleaf pine flatwoods | Ground cover of thick Andropogon spp., Sporobolus floridanus, Vaccinium spp, Rhynchospora spp., Centella erecta, Panicum rigidulum.`</td>
+			<td><code>Wet flatwoods | Wet depression surrounded by mesic longleaf pine flatwoods | Ground cover of thick Andropogon spp., Sporobolus floridanus, Vaccinium spp, Rhynchospora spp., Centella erecta, Panicum rigidulum.</code></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2215,7 +2355,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`East Coastal Fringe | St. Marks Wildlife Management Area`; `S1 | S2 | C1 | C2 | R14 | R22 | W1`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>East Coastal Fringe | St. Marks Wildlife Management Area</code></li>
+  <li class="list-group-item"><code>S1 | S2 | C1 | C2 | R14 | R22 | W1</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
@@ -2257,7 +2400,11 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td>`FMNH`; `AMNH | MVZ`; `Nairobi National Museum`</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>FMNH</code></li>
+  <li class="list-group-item"><code>AMNH | MVZ</code></li>
+  <li class="list-group-item"><code>Nairobi National Museum</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
