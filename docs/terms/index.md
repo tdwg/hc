@@ -528,7 +528,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/abundanceCap">http://rs.tdwg.org/eco/terms/abundanceCap</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The reported maximum number of dwc:Organisms.</td></tr>
         <tr><td class="theme-label">Comments</td><td></td></tr>
-        <tr><td class="theme-label">Examples</td><td><code>300</code>;<code>700</code></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>300</code></li><li class="list-group-item"><code>700</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">

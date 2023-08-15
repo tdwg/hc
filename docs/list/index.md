@@ -248,7 +248,10 @@ The terms in this standard are meant to provide stable definitions that can be u
 		</tr>
 		<tr>
 			<td>Examples</td>
-			<td><code>300</code>;<code>700</code></td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>300</code></li>
+  <li class="list-group-item"><code>700</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>Type</td>
