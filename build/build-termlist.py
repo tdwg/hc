@@ -54,6 +54,40 @@ def createLinks(text):
     result = re.sub(pattern, repl, text)
     return result
 
+# 2021-08-06 Replace the createLinks() function with functions copied from the QRG build script written by S. Van Hoey
+def convert_code(text_with_backticks):
+    """Takes all back-quoted sections in a text field and converts it to
+    the html tagged version of code blocks <code>...</code>
+    """
+    return re.sub(r'`([^`]*)`', r'<code>\1</code>', text_with_backticks)
+
+def convert_link(text_with_urls):
+    """Takes all links in a text field and converts it to the html tagged
+    version of the link
+    """
+    def _handle_matched(inputstring):
+        """quick hack version of url handling on the current prime versions data"""
+        url = inputstring.group()
+        return "<a href=\"{}\">{}</a>".format(url, url)
+
+    regx = "(http[s]?://[\w\d:#@%/;$()~_?\+-;=\\\.&]*)(?<![\)\.,])"
+    return re.sub(regx, _handle_matched, text_with_urls)
+
+# Hack the code taken from the terms.tmpl template to insert the HTML necessary to make the semicolon-separated
+# lists of examples into an HTML list.
+# {% set examples = term.examples.split("; ") %}
+# {% if examples | length == 1 %}{{ examples | first }}{% else %}<ul class="list-group list-group-flush">{% for example in examples %}<li class="list-group-item">{{ example }}</li>{% endfor %}</ul>{% endif %}
+def convert_examples(text_with_list_of_examples: str) -> str:
+    examples_list = text_with_list_of_examples.split('; ')
+    if len(examples_list) == 1:
+        return examples_list[0]
+    else:
+        output = '<ul class="list-group list-group-flush">\n'
+        for example in examples_list:
+            output += '  <li class="list-group-item">' + example + '</li>\n'
+        output += '</ul>'
+        return output
+
 print('Retrieving term list metadata from GitHub')
 term_lists_info = []
 
@@ -285,7 +319,7 @@ if True:
         #if row['notes'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Notes</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['dcterms_description']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_link(convert_code(row['dcterms_description'])) + '</td>\n'
             #text += '\t\t\t<td>' + createLinks(row['notes']) + '</td>\n'
             text += '\t\t</tr>\n'
 
@@ -293,7 +327,7 @@ if True:
         #if row['usage'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>Examples</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['examples']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_examples(convert_link(convert_code(row['examples']))) + '</td>\n'
             #text += '\t\t\t<td>' + createLinks(row['usage']) + '</td>\n'
             text += '\t\t</tr>\n'
 
@@ -301,7 +335,7 @@ if True:
         #if row['usage'] != '':
             text += '\t\t<tr>\n'
             text += '\t\t\t<td>ABCD equivalence</td>\n'
-            text += '\t\t\t<td>' + createLinks(row['tdwgutility_abcdEquivalence']) + '</td>\n'
+            text += '\t\t\t<td>' + convert_link(convert_code(row['tdwgutility_abcdEquivalence'])) + '</td>\n'
             text += '\t\t</tr>\n'
 
         if vocab_type == 2 or vocab_type ==3: # controlled vocabulary
