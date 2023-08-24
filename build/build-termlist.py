@@ -8,6 +8,7 @@ import requests   # best library to manage HTTP transactions
 import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
 import pandas as pd
+import yaml
 
 # -----------------
 # Configuration section
@@ -23,6 +24,10 @@ outFileName = '../docs/list/index.md'
 # This is a Python list of the database names of the term lists to be included in the document.
 termLists = ['humboldt']
 
+# If this list of terms is for terms in a single namespace, set the value of has_namespace to True. The value
+# of has_namespace should be False for a list of terms that contains multiple namespaces.
+has_namespace = True
+
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.
 vocab_type = 1 # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is c.v. with broader hierarchy
@@ -37,6 +42,35 @@ display_order = [ 'http://rs.tdwg.org/dwc/terms/Event']
 display_label = ['Humboldt Extension Event terms']
 display_comments = ['','']
 display_id = ['event']
+
+# ---------------
+# Load header data
+# ---------------
+
+config_file_path = 'process/document_metadata_processing/eco_doc_list/'
+contributors_yaml_file = 'authors_configuration.yaml'
+document_configuration_yaml_file = 'document_configuration.yaml'
+
+if has_namespace:
+    # Load the configuration file used in the metadata creation process.
+    metadata_config_text = requests.get(githubBaseUri + 'process/config.json').text
+    metadata_config = json.loads(metadata_config_text)
+    namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
+    pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
+
+headerObject = open(headerFileName, 'rt', encoding='utf-8')
+header = headerObject.read()
+headerObject.close()
+
+# Load the contributors YAML file from its GitHub URL
+contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
+contributors_yaml = requests.get(contributors_yaml_url).text
+contributors_yaml = yaml.load(contributors_yaml, Loader=yaml.FullLoader)
+
+# Load the document configuration YAML file from its GitHub URL
+document_configuration_yaml_url = githubBaseUri + config_file_path + document_configuration_yaml_file
+document_configuration_yaml = requests.get(document_configuration_yaml_url).text
+document_configuration_yaml = yaml.load(document_configuration_yaml, Loader=yaml.FullLoader)
 
 # ---------------
 # Function definitions
@@ -394,6 +428,29 @@ text = index_by_name + index_by_label + term_table
 headerObject = open(headerFileName, 'rt', encoding='utf-8')
 header = headerObject.read()
 headerObject.close()
+
+# Builde the Markdown for the contributors list
+contributors = ''
+for contributor in contributors_yaml:
+    contributors += '[' + contributor['contributor_literal'] + '](' + contributor['contributor_iri'] + ') '
+    contributors += '[' + contributor['affiliation'] + '](' + contributor['affiliation_uri'] + '), '
+contributors = contributors[:-2] # Remove the last comma and space
+
+# Substitute values of ratification_date and contributors into the header template
+header = header.replace('{document_title}', document_configuration_yaml['documentTitle'])
+header = header.replace('{ratification_date}', document_configuration_yaml['doc_modified'])
+header = header.replace('{created_date}', document_configuration_yaml['doc_created'])
+header = header.replace('{contributors}', contributors)
+header = header.replace('{standard_iri}', document_configuration_yaml['dcterms_isPartOf'])
+header = header.replace('{current_iri}', document_configuration_yaml['current_iri'])
+header = header.replace('{abstract}', document_configuration_yaml['abstract'])
+header = header.replace('{creator}', document_configuration_yaml['creator'])
+header = header.replace('{publisher}', document_configuration_yaml['publisher'])
+year = document_configuration_yaml['doc_modified'].split('-')[0]
+header = header.replace('{year}', year)
+if has_namespace:
+    header = header.replace('{namespace_uri}', namespace_uri)
+    header = header.replace('{pref_namespace_prefix}', pref_namespace_prefix)
 
 footerObject = open(footerFileName, 'rt', encoding='utf-8')
 footer = footerObject.read()

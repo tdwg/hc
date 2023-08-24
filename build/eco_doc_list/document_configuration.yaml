@@ -5,8 +5,8 @@ doc_modified: '2023-08-23'
 publisher: Biodiversity Information Standards (TDWG)
 license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
 license_uri: http://creativecommons.org/licenses/by/4.0/
-citation: "Humboldt Core Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/eco/doc/terms/2023-04-26"
-creator: TDWG Humboldt Core Task Group
+citation: "Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/eco/doc/terms/2023-04-26"
+creator: TDWG Humboldt Extension Task Group
 comment: ''
 accessUrl: https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
 browserRedirectUri: https://tdwg.github.io/hc/list/

@@ -1,44 +1,44 @@
-# {document_title}
+# Humboldt Extension Vocabulary List of Terms
 
 Title
-: {document_title}
+: Humboldt Extension Vocabulary List of Terms
 
 Namespace IRI:
-: {namespace_uri}
+: http://rs.tdwg.org/eco/terms/
 
 Preferred namespace abbreviation
-: {pref_namespace_prefix}:
+: eco:
 
 Date version issued
-: {ratification_date}
+: 2023-xx-xx
 
 Date created
-: {created_date}
+: 2023-xx-xx
 
 Part of TDWG Standard
-: <{standard_iri}>
+: <http://www.tdwg.org/standards/450>
 
 This version
-: <{current_iri}{ratification_date}>
+: <http://rs.tdwg.org/dwc/doc/eco/2023-xx-xx>
 
 Latest version
-: <{current_iri}>
+: <http://rs.tdwg.org/dwc/doc/eco/>
 
 Abstract
-: {abstract}
+: The Humboldt Extension for Ecological Inventories is a vocabulary for transmitting information about biological inventories. It is used along with Darwin Core terms to extend descriptions of events. This document lists all terms currently used in the vocabulary.
 
 Contributors
-: {contributors}
+: fill in
 
 Creator
-: {creator}
+: TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
+: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-xx-xx>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the {ratification_date} version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/{ratification_date}>). The vocabulary uses the namespace abbreviation `{pref_namespace_prefix}:`. 
+This document contains all versions of terms in the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-xx-xx>). The vocabulary uses the namespace abbreviation `eco:`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://tdwg.github.io/eco/terms/>).
 
