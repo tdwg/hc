@@ -433,7 +433,7 @@ headerObject.close()
 contributors = ''
 for contributor in contributors_yaml:
     contributors += '[' + contributor['contributor_literal'] + '](' + contributor['contributor_iri'] + ') '
-    contributors += '[' + contributor['affiliation'] + '](' + contributor['affiliation_uri'] + '), '
+    contributors += '([' + contributor['affiliation'] + '](' + contributor['affiliation_uri'] + ')), '
 contributors = contributors[:-2] # Remove the last comma and space
 
 # Substitute values of ratification_date and contributors into the header template
