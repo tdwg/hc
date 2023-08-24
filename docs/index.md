@@ -1,10 +1,8 @@
 ---
 layout: home
+title: Humboldt Extension for Ecological Inventories
+description: The Humboldt Extension for Ecological Inventories is a vocabulary for transmitting information about biological inventories with hierarchical event data. It is used along with Darwin Core terms to extend descriptions of Events.
 ---
-
-# Humboldt Extension for Ecological Inventories
-
-Abstract : The Humboldt Extension for Ecological Inventories is a vocabulary for transmitting information about biological inventories with hierarchical event data. It is used along with Darwin Core terms to extend descriptions of Events. 
 
 NOTE: This document forms part of a proposal by the [Humboldt Core Task Group](https://www.tdwg.org/community/osr/humboldt-core/) to extend Darwin Core with vocabulary for ecological inventories. It is not yet ratified and may change as a result of recommendations received during the course of open public commentary. To help reviewers understand how the extension was tested and what was learned from that testing, an [Implementation Experience Report](https://docs.google.com/document/d/1RFdSHoyzWCQk9qO6uup4xQjWOMzPyBb-A0mcjj98hbk/edit?usp=sharing) is available.
 
