@@ -10,16 +10,16 @@ Preferred namespace abbreviation
 : eco:
 
 Date version issued
-: 2023-xx-xx
+: 2023-08-23
 
 Date created
-: 2023-xx-xx
+: 2023-08-23
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2023-xx-xx>
+: <http://rs.tdwg.org/dwc/doc/eco/2023-08-23>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
@@ -28,17 +28,17 @@ Abstract
 : The Humboldt Extension for Ecological Inventories is a vocabulary for transmitting information about biological inventories. It is used along with Darwin Core terms to extend descriptions of events. This document lists all terms currently used in the vocabulary.
 
 Contributors
-: fill in
+: [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) [Yale University](http://www.wikidata.org/entity/Q49112), [Kate Ingenloff](https://orcid.org/0000-0001-5942-9053) [Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570), [Paula Zermoglio](https://orcid.org/0000-0002-6056-5084) [Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD), UNRN-CONICET](http://www.wikidata.org/entity/Q6156591), [Yi-Ming Gan](https://orcid.org/0000-0001-7087-2646) [Royal Belgian Institute of Natural Sciences](http://www.wikidata.org/entity/Q16665660), [Peter Brenton](https://orcid.org/0000-0001-9730-8340) [Atlas of Living Australia, CSIRO](http://www.wikidata.org/entity/Q16335177), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) [VertNet](http://www.wikidata.org/entity/Q98382028), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) [Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535), [Zachary R. Kachian](https://orcid.org/0000-0002-0500-0339) [Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595), [Robert D. Stevenson](https://orcid.org/0000-0003-1617-5895) [Department of Biology, University of Massachusetts Boston](http://www.wikidata.org/entity/Q15144), [Anahita J. N. Kazem](https://orcid.org/0000-0003-2475-132X) [German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena](http://www.wikidata.org/entity/Q1206134), [Dmitry Schigel](https://orcid.org/0000-0002-2919-1168) [Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570), [Steve Baskauf](https://orcid.org/0000-0003-4365-3135) [Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893), [Tomomi Suwa](https://orcid.org/0000-0001-5010-3452) [Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) [Florida Museum of Natural History](http://www.wikidata.org/entity/Q3074272), [Ramona L. Walls](https://orcid.org/0000-0001-8815-0078) [University of Arizona](http://www.wikidata.org/entity/Q503419), [Walter Jetz](https://orcid.org/0000-0002-1971-7277) [Yale University](http://www.wikidata.org/entity/Q49112)
 
 Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-xx-xx>
+: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-08-23>
 
 ## 1 Introduction
 
-This document contains all versions of terms in the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-xx-xx>). The vocabulary uses the namespace abbreviation `eco:`. 
+This document contains all former and current terms in the 2023-08-23 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-08-23>). The vocabulary uses the namespace abbreviation `eco:`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://tdwg.github.io/eco/terms/>).
 
