@@ -24,6 +24,8 @@ This version
 Latest version
 : <{current_iri}>
 
+{previous_version_slot}
+
 Abstract
 : {abstract}
 

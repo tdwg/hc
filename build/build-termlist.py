@@ -473,8 +473,11 @@ if document_configuration_yaml['doc_created'] != document_configuration_yaml['do
 : <''' + most_recent_version_iri + '''>
 
 '''
-    # Insert the previous version information into the header above the Abstract section.
-    header = header.replace('Abstract\n:', previous_version_metadata_string + 'Abstract\n:')
+    # Insert the previous version information into the designated slot.
+    header = header.replace('{previous_version_slot}\n\n', previous_version_metadata_string)
+else:
+    # If there was no previous version, remove the slot from the header.
+    header = header.replace('{previous_version_slot}\n\n', '')
 
 footerObject = open(footerFileName, 'rt', encoding='utf-8')
 footer = footerObject.read()
