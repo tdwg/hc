@@ -463,8 +463,9 @@ if document_configuration_yaml['doc_created'] != document_configuration_yaml['do
     matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
     # Sort the matching versions by version IRI in descending order so that the most recent version is first.
     matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
-    # The most recent version is the second row in the dataframe (row 1).
-    most_recent_version_iri = matching_versions.iat[0, 1]
+    # The previous version is the second row in the dataframe (row 1).
+    # The version IRI is in the second column (column 1).
+    most_recent_version_iri = matching_versions.iat[1, 1]
     #print(most_recent_version_iri)
 
     # Insert the previous version information into the header
