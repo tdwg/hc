@@ -429,7 +429,7 @@ headerObject = open(headerFileName, 'rt', encoding='utf-8')
 header = headerObject.read()
 headerObject.close()
 
-# Builde the Markdown for the contributors list
+# Build the Markdown for the contributors list
 contributors = ''
 for contributor in contributors_yaml:
     contributors += '[' + contributor['contributor_literal'] + '](' + contributor['contributor_iri'] + ') '
@@ -451,6 +451,29 @@ header = header.replace('{year}', year)
 if has_namespace:
     header = header.replace('{namespace_uri}', namespace_uri)
     header = header.replace('{pref_namespace_prefix}', pref_namespace_prefix)
+
+# *** NOTE! *** The following code has not yet been tested. It needs to be tested on a document that has a previous version.
+
+# Determine whether there was a previous version of the document.
+if document_configuration_yaml['doc_created'] != document_configuration_yaml['doc_modified']:
+    # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
+    versions_data_url = githubBaseUri + 'docs/docs-versions.csv'
+    versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
+    # Slice all rows for versions of this document.
+    matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
+    # Sort the matching versions by version IRI in descending order so that the most recent version is first.
+    matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
+    # The most recent version is the second row in the dataframe (row 1).
+    most_recent_version_iri = matching_versions.iat[0, 1]
+    #print(most_recent_version_iri)
+
+    # Insert the previous version information into the header
+    previous_version_metadata_string = '''Previous version
+: <''' + most_recent_version_iri + '''>
+
+'''
+    # Insert the previous version information into the header above the Abstract section.
+    header = header.replace('Abstract\n:', previous_version_metadata_string + 'Abstract\n:')
 
 footerObject = open(footerFileName, 'rt', encoding='utf-8')
 footer = footerObject.read()
