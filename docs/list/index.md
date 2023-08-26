@@ -10,16 +10,16 @@ Preferred namespace abbreviation
 : eco:
 
 Date version issued
-: 2023-08-23
+: 2023-08-08
 
 Date created
-: 2023-08-23
+: 2023-08-08
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2023-08-23>
+: <http://rs.tdwg.org/dwc/doc/eco/2023-08-08>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
@@ -34,11 +34,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-08-23>
+: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-08-08>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2023-08-23 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-08-23>). The vocabulary uses the namespace abbreviation `eco:`. 
+This document contains all former and current terms in the 2023-08-08 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-08-08>). The vocabulary uses the namespace abbreviation `eco:`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://tdwg.github.io/eco/terms/>).
 

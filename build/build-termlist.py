@@ -47,7 +47,7 @@ display_id = ['event']
 # Load header data
 # ---------------
 
-config_file_path = 'process/document_metadata_processing/eco_doc_list/'
+config_file_path = 'process/document_metadata_processing/dwc_doc_eco/'
 contributors_yaml_file = 'authors_configuration.yaml'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
@@ -65,6 +65,10 @@ headerObject.close()
 # Load the contributors YAML file from its GitHub URL
 contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
 contributors_yaml = requests.get(contributors_yaml_url).text
+if contributors_yaml == '404: Not Found':
+    print('Contributors YAML file not found. Check the URL.')
+    print(contributors_yaml_url)
+    exit()
 contributors_yaml = yaml.load(contributors_yaml, Loader=yaml.FullLoader)
 
 # Load the document configuration YAML file from its GitHub URL
