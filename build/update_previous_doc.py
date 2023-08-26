@@ -29,6 +29,12 @@ versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
 matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
 # Sort the matching versions by version IRI in descending order so that the most recent version is first.
 matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
+
+# If there is only one version, then the rest of the script should not be run.
+if len(matching_versions) == 1:
+    print('There is only one version of this document. No previous document will be created.')
+    exit()
+
 # The most recent version is the first row in the dataframe (row 0). 
 # The version IRI is in the second column (column 1).
 most_recent_version_iri = matching_versions.iat[0, 1]
