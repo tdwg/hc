@@ -23,16 +23,22 @@ document_configuration_yaml = yaml.load(document_configuration_yaml, Loader=yaml
 # of the most recent version of that document.
 
 # Load versions list from document versions data in the rs.tdwg.org repo and find most recent version.
-versions_data_url = githubBaseUri + 'docs/docs-versions.csv'
+versions_data_url = githubBaseUri + 'docs-versions/docs-versions.csv'
 versions_list_df = pd.read_csv(versions_data_url, na_filter=False)
+
 # Slice all rows for versions of this document.
 matching_versions = versions_list_df[versions_list_df['current_iri']==document_configuration_yaml['current_iri']]
 # Sort the matching versions by version IRI in descending order so that the most recent version is first.
 matching_versions = matching_versions.sort_values(by=['version_iri'], ascending=[False])
 
-# If there is only one version, then the rest of the script should not be run.
-if len(matching_versions) == 1:
-    print('There is only one version of this document. No previous document will be created.')
+# Check for the error condition of there being no matching versions.
+if len(matching_versions.index) == 0:
+    print('There are no versions of this document. Did you run the script to update the document metadata?')
+    exit()
+
+# If there is only one row in the matching_versions dataframe (only one version), then the rest of the script should not be run.
+if len(matching_versions.index) == 1:
+    print('There is only one version of this document. No changes are being made to the documents.')
     exit()
 
 # The most recent version is the first row in the dataframe (row 0). 
