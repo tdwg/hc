@@ -7,9 +7,9 @@ import pandas as pd
 import yaml
 import os
 
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/materialentity/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/'
 
-config_file_path = 'process/document_metadata_processing/dwc_doc_list/'
+config_file_path = 'process/document_metadata_processing/dwc_doc_eco/'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
 path_of_doc_relative_to_build_dir = '../docs/list/'
@@ -37,7 +37,6 @@ print(most_recent_version_iri)
 previous_version_date = matching_versions.iat[1, 1].split('/')[-1]
 print(previous_version_date)
 
-""" Don't do this until it's for real.
 # The document to be converted is named "index.md". Its name must be changed to the date of the previous version.
 os.rename(path_of_doc_relative_to_build_dir + 'index.md', path_of_doc_relative_to_build_dir + previous_version_date + '.md')
 
@@ -57,4 +56,3 @@ header = file_text.replace('Abstract\n:', replacement_version_metadata_string + 
 # Write the updated file text to the file.
 with open(path_of_doc_relative_to_build_dir + previous_version_date + '.md', 'wt') as file_object:
     file_object.write(header)
-"""
