@@ -1,14 +1,56 @@
+# Official title of the document assigned by authors.
 documentTitle: "Humboldt Extension Vocabulary List of Terms"
+
+# Abstract of document writtein by authors.
+abstract: The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to 
+  report key information about biodiversity inventories, checklists and surveys, maximizing the 
+  usability and interoperability 
+  of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively 
+  broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. 
+  Terms included in the extension are defined such that they can accommodate hierarchical data 
+  structures allowing the representation of complex, highly nested survey designs, permitting the 
+  computation of relative abundances of species. This document 
+  lists all terms currently used in the vocabulary providing comments and examples of their usage 
+  along with ancillary documents that provide guidance on the use and interpretation of terms and 
+  the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological 
+  inventories.
+
+# This value is generally the name of the task group that created the document.
+creator: TDWG Humboldt Extension Task Group
+
+# Date of first ratification of the document. Will match the date modified for the first
+# version of the document. For lists of terms, this will also match the date that the
+# first version of the vocabulary was issued (date_issued).
+doc_created: '2023-08-08'
+
+# Permanent IRI of the standard with which the document is associated. See the landing page
+# for the standard on the TDWG website for the correct value.
+dcterms_isPartOf: http://www.tdwg.org/standards/450
+
+# Media type of source document used to generate the HTML version of the document.
+mediaType: text/markdown
+
+# Value determined by the location of the raw markdown file in the GitHub repository.
+accessUrl: https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
+
+# Actual URL of the document to which the permanent IRI is redirected.
+browserRedirectUri: https://tdwg.github.io/hc/list/
+
+# This value will automatically get updated from the date_issued value in config.yaml if the document
+# is a list of terms document. For other types of documents, it is set from the general_configuration.yaml
+# file.
+doc_modified: '2023-08-25'
+
+# IRI value assigned as a permanent identifier for the document based on standard TDWG IRI patterns.
+# This value will automatically get updated from the general_configuration.yaml file. It should not be
+# set manually.
 current_iri: http://rs.tdwg.org/dwc/doc/eco/
-doc_created: '2023-08-23'
-doc_modified: '2023-08-23'
+
+# Standard metadata determined by TDWG policy -- do not edit.
 publisher: Biodiversity Information Standards (TDWG)
 license_statement: Licensed under a Creative Commons Attribution 4.0 International (CC BY) License.
 license_uri: http://creativecommons.org/licenses/by/4.0/
-citation: "Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/eco/doc/terms/2023-04-26"
-creator: TDWG Humboldt Extension Task Group
+
+# Typically left blank. May be used to provide additional information about the document
+# in the machine-readable metadata.
 comment: ''
-accessUrl: https://raw.githubusercontent.com/tdwg/hc/main/docs/list/index.md
-browserRedirectUri: https://tdwg.github.io/hc/list/
-dcterms_isPartOf: http://www.tdwg.org/standards/450
-abstract: "The Humboldt Extension for Ecological Inventories is a vocabulary for transmitting information about biological inventories. It is used along with Darwin Core terms to extend descriptions of events. This document lists all terms currently used in the vocabulary."
