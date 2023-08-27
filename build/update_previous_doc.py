@@ -42,11 +42,16 @@ if len(matching_versions.index) == 1:
     exit()
 
 # The most recent version is the first row in the dataframe (row 0). 
-# The version IRI is in the second column (column 1).
-most_recent_version_iri = matching_versions.iat[0, 1]
+
+# Find the column index of the column named "version_iri".
+version_iri_column_index = matching_versions.columns.get_loc('version_iri')
+most_recent_version_iri = matching_versions.iat[0, version_iri_column_index]
 print(most_recent_version_iri)
-# Find the date of the previous version.
-previous_version_date = matching_versions.iat[1, 1].split('/')[-1]
+
+# Find the date of the previous version, which is in the second row of the dataframe (row 1). 
+# Find the column index of the column named "version_issued".
+version_iri_column_index = matching_versions.columns.get_loc('version_issued')
+previous_version_date = matching_versions.iat[1, version_iri_column_index]
 print(previous_version_date)
 
 # The document to be converted is named "index.md". Its name must be changed to the date of the previous version.
