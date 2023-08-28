@@ -1123,31 +1123,9 @@ for namespace in namespaces:
     print('completed', namespaceUri, 'namespace')
 
 # -----------------------
-# Once the namespace loop is complete, values in the document_configuration.yaml and general_configuration
+# Once the namespace loop is complete, values in the general_configuration
 # files must be updated using values from the config.yaml file.
 # -----------------------
-
-# Determine the name of the directory containing the document configuration files based on the
-# list_of_terms_iri value in the config.yaml file. The directory name has underscores instead of
-# slashes for the parts of the IRI after the subdomain (rs.tdwg.org).
-pieces = config['list_of_terms_iri'].split('/')
-# Remove final empty string caused by trailing slash from the list
-pieces = pieces[:-1]
-for piece in pieces[3:]:
-    directory_name = '_'.join(pieces[3:])
-
-directory_path = 'document_metadata_processing/' + directory_name + '/'
-
-# Read the text of the document_configuration.yaml file.
-with open(directory_path + 'document_configuration.yaml', 'rt') as file_object:
-    doc_config_text = file_object.read()
-
-# Replace all the text between the key and the newline with the new date_issued value.
-doc_config_text = re.sub('doc_modified:.*\n', "doc_modified: '" + date_issued + "'\n", doc_config_text)
-
-# Write the updated text to the file.
-with open(directory_path + 'document_configuration.yaml', 'wt') as file_object:
-    file_object.write(doc_config_text)
 
 # Read the text of the general_configuration.yaml file.
 with open('document_metadata_processing/general_configuration.yaml', 'rt') as file_object:
