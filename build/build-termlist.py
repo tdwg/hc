@@ -14,8 +14,10 @@ import yaml
 # Configuration section
 # -----------------
 
+github_branch = 'eco' # "main" for production, something else for development
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/'
+githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
 
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
@@ -57,10 +59,6 @@ if has_namespace:
     metadata_config = json.loads(metadata_config_text)
     namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
     pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
-
-headerObject = open(headerFileName, 'rt', encoding='utf-8')
-header = headerObject.read()
-headerObject.close()
 
 # Load the contributors YAML file from its GitHub URL
 contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
@@ -455,8 +453,6 @@ header = header.replace('{year}', year)
 if has_namespace:
     header = header.replace('{namespace_uri}', namespace_uri)
     header = header.replace('{pref_namespace_prefix}', pref_namespace_prefix)
-
-# *** NOTE! *** The following code has not yet been tested. It needs to be tested on a document that has a previous version.
 
 # Determine whether there was a previous version of the document.
 if document_configuration_yaml['doc_created'] != document_configuration_yaml['doc_modified']:
