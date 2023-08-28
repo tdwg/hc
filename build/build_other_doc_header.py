@@ -48,7 +48,7 @@ document_configuration_yaml = yaml.load(document_configuration_yaml, Loader=yaml
 
 # Because this is a hack of the build-termlist.py script, "header" is used in variable names, although in this case
 # it is the entire document template, not just the header.
-headerObject = open(documentTemplateName, 'rt', encoding='utf-8')
+headerObject = open('dwc_doc_' + document_slug + '/' + documentTemplateName, 'rt', encoding='utf-8')
 header = headerObject.read()
 headerObject.close()
 
@@ -97,13 +97,8 @@ else:
     # If there was no previous version, remove the slot from the header.
     header = header.replace('{previous_version_slot}\n\n', '')
 
-footerObject = open(footerFileName, 'rt', encoding='utf-8')
-footer = footerObject.read()
-footerObject.close()
-
-output = header + text + footer
 outputObject = open(outFileName, 'wt', encoding='utf-8')
-outputObject.write(output)
+outputObject.write(header)
 outputObject.close()
     
 print('done')
