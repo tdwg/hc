@@ -55,8 +55,8 @@ document_configuration_yaml_file = 'document_configuration.yaml'
 
 if has_namespace:
     # Load the configuration file used in the metadata creation process.
-    metadata_config_text = requests.get(githubBaseUri + 'process/config.json').text
-    metadata_config = json.loads(metadata_config_text)
+    metadata_config_text = requests.get(githubBaseUri + 'process/config.yaml').text
+    metadata_config = yaml.load(metadata_config_text, Loader=yaml.FullLoader)
     namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
     pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
 
