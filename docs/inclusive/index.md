@@ -3,9 +3,6 @@
 Title
 : isLeastSpecificTargetCategoryQuantityInclusive Guidelines
 
-Namespace IRI:
-: {namespace_uri}
-
 Date version issued
 : 2023-08-25
 
