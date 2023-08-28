@@ -3,7 +3,7 @@
 Title
 : Humboldt Extension Vocabulary List of Terms
 
-Namespace IRI:
+Namespace IRI
 : http://rs.tdwg.org/eco/terms/
 
 Preferred namespace abbreviation

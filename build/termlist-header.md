@@ -3,7 +3,7 @@
 Title
 : {document_title}
 
-Namespace IRI:
+Namespace IRI
 : {namespace_uri}
 
 Preferred namespace abbreviation
