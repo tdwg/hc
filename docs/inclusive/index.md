@@ -1,24 +1,37 @@
 # isLeastSpecificTargetCategoryQuantityInclusive Guidelines
 
-**Title:** isLeastSpecificTargetCategoryQuantityInclusive Guidelines
+Title
+: isLeastSpecificTargetCategoryQuantityInclusive Guidelines
 
-**Date version issued:** 2023-xx-xx
+Namespace IRI:
+: {namespace_uri}
 
-**Date created:** 2023-xx-xx
+Date version issued
+: 2023-08-25
 
-**Part of TDWG Standard:** http://www.tdwg.org/standards/450
+Date created
+: 2023-08-25
 
-**This version:** http://rs.tdwg.org/eco/doc/inclusive/2023-xx-xx
+Part of TDWG Standard
+: <http://www.tdwg.org/standards/450>
 
-**Latest version:** http://rs.tdwg.org/eco/doc/inclusive/
+This version
+: <http://rs.tdwg.org/dwc/doc/inclusive/2023-08-25>
 
-**Abstract:** The Humboldt Extension for ecological inventories mints the term isLeastSpecificTargetCategoryQuantityInclusive to describe how to treat counts of organisms when records from a single dwc:Event include multiple target categories. This document describes how to use that term.
+Latest version
+: <http://rs.tdwg.org/dwc/doc/inclusive/>
 
-**Contributors:** Yi Ming Gan, Wesley Hochachka, John Wieczorek, Yanina V. Sica, Peter Brenton, Steven Baskauf
+Abstract
+: The Humboldt Extension for ecological inventories mints the term eco:isLeastSpecificTargetCategoryQuantityInclusive to describe how to treat counts of organisms when records from a single dwc:Event include multiple target categories. This document describes how to use that term.
 
-**Creator:** TDWG Humboldt Core Task Group
+Contributors
+: [Yi-Ming Gan](https://orcid.org/0000-0001-7087-2646) ([Royal Belgian Institute of Natural Sciences](http://www.wikidata.org/entity/Q16665660)), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) ([Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Peter Brenton](https://orcid.org/0000-0001-9730-8340) ([Atlas of Living Australia, CSIRO](http://www.wikidata.org/entity/Q16335177)), [Steven J. Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893))
 
-**Bibliographic citation:** Humboldt Core Task Group. 2023. isLeastSpecificTargetCategoryQuantityInclusive Guidelines. Biodiversity Information Standards (TDWG). http://rs.tdwg.org/eco/doc/inclusive/2023-xx-xx
+Creator
+: TDWG Humboldt Extension Task Group
+
+Bibliographic citation
+: TDWG Humboldt Extension Task Group. 2023. isLeastSpecificTargetCategoryQuantityInclusive Guidelines. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/inclusive/2023-08-25>
 
 ## 1 Introduction (non-normative)
 
