@@ -1357,7 +1357,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/eco/docs/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td>
+			<td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="https://tdwg.github.io/hc/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
