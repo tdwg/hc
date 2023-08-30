@@ -47,6 +47,10 @@ http://rs.tdwg.org/eco/terms/isAbundanceCapReported
 http://rs.tdwg.org/eco/terms/abundanceCap
 http://rs.tdwg.org/eco/terms/isVegetationCoverReported
 http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive
+http://rs.tdwg.org/eco/terms/hasNonTargetTaxa
+http://rs.tdwg.org/eco/terms/nonTargetTaxa
+http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported
+http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms
 group:Material Collected
 http://rs.tdwg.org/eco/terms/hasVouchers
 http://rs.tdwg.org/eco/terms/voucherInstitutions
