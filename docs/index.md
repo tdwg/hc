@@ -18,5 +18,5 @@ The Humboldt Extension for Ecological Inventories is a standard vocabulary maint
 * [GitHub repository](https://github.com/tdwg/hc): where the Humboldt Extensions is maintained
 * [Guidelines for using isLeastSpecificTargetCategoryQuantityInclusive](inclusive/index.md)
 * [Properties of hierarchical events in the Humboldt Extension for Ecological Inventories](https://docs.google.com/document/d/1r_XMEgB7p7OI7a5Ouq6G9oa7LmQFPcFhZZCLD9gWOIE/edit?usp=sharing) (Google Doc; to be converted to Markdown)
-* [Normative term list](list/index.md): the document containing the full history of normative Humboldt Extension term definitions
+* [Term list](list/index.md): the document containing complete metadata and normative term definitions for all Humboldt Extension terms.
 * [Utility files](https://github.com/tdwg/hc/tree/master/dist): CSV files of vertical and horizontal term lists plus the Humboldt Extension schema
