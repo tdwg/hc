@@ -39,6 +39,10 @@ isAbundanceCapReported
 abundanceCap
 isVegetationCoverReported
 isLeastSpecificTargetCategoryQuantityInclusive
+hasNonTargetTaxa
+nonTargetTaxa
+areNonTargetTaxaFullyReported
+hasNonTargetOrganisms
 hasVouchers
 voucherInstitutions
 hasMaterialSamples
