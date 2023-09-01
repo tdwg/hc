@@ -47,8 +47,8 @@ application and interpretation of the Extension.
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
 "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to 
 be interpreted as described in [BCP 14](https://datatracker.ietf.org/doc/html/bcp14)
-\[[[RFC2119]](https://datatracker.ietf.org/doc/html/rfc2119)\]
-\[[[RFC8174]](https://datatracker.ietf.org/doc/html/rfc8174)\]
+[[RFC2119]](https://datatracker.ietf.org/doc/html/rfc2119)
+[[RFC8174]](https://datatracker.ietf.org/doc/html/rfc8174)
 when, and only when, they are written in capitals (as shown here).
 
 ## 1.3 Namespaces and terminology
@@ -173,7 +173,7 @@ in the dwc:Event hierarchy to which they *directly* apply.** The value
 of a term for a dwc:Event SHOULD be populated for the Event itself
 rather than merely summarized in a higher-level dwc:Event. For example,
 a child dwc:Event (**C**) with multiple dwc:Occurrences, some of which
-resulted in voucher specimens, SHOULD possess a value of `true`` for
+resulted in voucher specimens, SHOULD possess a value of `true` for
 the term eco:hasVouchers. The data user SHOULD NOT be expected to look
 at the eco:hasVouchers term for the parent dwc:Event (**P**) of **C** in
 order to find the value.
@@ -203,7 +203,7 @@ child dwc:Events.
 In some cases, including the example above, it would not be valid to
 derive or summarize information from child dwc:Events to populate a
 parent dwc:Event. Suppose parent dwc:Event **P** has two child
-dwc:Events, one with eco:hasVouchers `true`` and one with
+dwc:Events, one with eco:hasVouchers `true` and one with
 eco:hasVouchers `false`. The value of eco:hasVouchers for **P** cannot
 be derived or summarized from its children, as it is neither `true`
 nor `false` for all of them (the only two values consistent with the
@@ -261,7 +261,7 @@ were fully reported. Instead, those zero counts can be reconstituted by
 data users based on the data contained in other terms. When the target
 taxonomic scope (the combination of eco:targetTaxonomicScope and
 eco:excludedTaxonomicScope) is determined in advance of inventory data
-collection, and eco:isTaxonomicScopeFullyReported = `true``, then all
+collection, and eco:isTaxonomicScopeFullyReported = `true`, then all
 dwc:Taxa that fall within the taxonomic scope but are not reported in
 the dwc:Occurrences of any child dwc:Events **can be inferred to be
 dwc:Occurrences with a dwc:organismQuantity of zero** (i.e., undetected
