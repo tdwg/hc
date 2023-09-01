@@ -40,7 +40,12 @@ Sections 3 of this document is normative. The other sections are non-normative.
 
 
 ### 1.2 RFC 2119 key words
-The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://tools.ietf.org/html/rfc2119).
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", 
+"SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to 
+be interpreted as described in [BCP 14](https://datatracker.ietf.org/doc/html/bcp14)
+\[[[RFC2119]](https://datatracker.ietf.org/doc/html/rfc2119)\]
+\[[[RFC8174]](https://datatracker.ietf.org/doc/html/rfc8174)\]
+when, and only when, they are written in capitals (as shown here).
 
 ### 1.3 Namespaces and terminology
 
