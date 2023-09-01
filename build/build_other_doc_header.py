@@ -15,7 +15,7 @@ import yaml
 # -----------------
 
 # Name of the last part of the URL of the doc and also used in the directory name
-document_slug = 'inclusive'
+document_slug = 'hierarchy'
 github_branch = 'eco' # "main" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
