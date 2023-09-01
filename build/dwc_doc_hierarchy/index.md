@@ -32,6 +32,7 @@ Creator
 Bibliographic citation
 : {creator}. {year}. {document_title}. {publisher}. <{current_iri}{ratification_date}>
 
+<a id="introduction">
 ## 1 Introduction (non-normative)
 
 ### 1.1 Status of the content of this document
@@ -53,13 +54,13 @@ when, and only when, they are written in capitals (as shown here).
 
 ## 1.3 Namespaces and terminology
 
-The namespace 'eco:' abbreviates terms minted for the Humboldt Extension
+The namespace `eco:` abbreviates terms minted for the Humboldt Extension
 for ecological inventories
 ([http://rs.tdwg.org/eco/terms/](http://rs.tdwg.org/eco/terms/)).
-'dwc:' abbreviates terms from the main Darwin Core vocabulary namespace
+`dwc:` abbreviates terms from the main Darwin Core vocabulary namespace
 ([http://rs.tdwg.org/dwc/terms/](http://rs.tdwg.org/dwc/terms/)).
 
-Words in code markup are term IRIs or literal values. The word
+Words in `code markup` are term IRIs or literal values. The word
 "organism" is used colloquially and is not used in the technical sense
 of the dwc:Organism class, unless specifically presented as
 "dwc:Organism." The word "Event" is used in the technical sense of the
@@ -80,24 +81,25 @@ shared by data providers, specifically with respect to the
 or is not appropriate to make inferences** about attributes such as
 abundance or absence of detection.
 
+<a id="rationale">
 ## 2 Rationale (non-normative)
 
 Ecological inventories in the context of Darwin Core can be considered
-as types of [dwc:Events](https://dwc.tdwg.org/list/#dwc_Event)
+as types of [dwc:Events](http://rs.tdwg.org/dwc/terms/Event)
 --- they are actions that occur at specific locations over defined
 periods of time. The terms in the Humboldt Extension are all properties
 of a dwc:Event.
 
 There are many types of ecological inventory, ranging from singular
 observations of individual taxa (1 event:1 observation; Example 1 in
-Figure 1) to highly structured and deeply nested observations within
+<a href="#fig1">Figure 1</a>) to highly structured and deeply nested observations within
 other observations (e.g., 1 event:2 sub-events, each sub-event:2
-sub-sub-events; Example 4 in Figure 1). The need for guidance on **how
+sub-sub-events; Example 4 in <a href="#fig1">Figure 1</a>). The need for guidance on **how
 to capture the details of nested observations** (dwc:Event hierarchies)
 is the rationale for this document. Nested sampling designs can be
 translated into a relational database schema of parent-child dwc:Event
-relationships (a parent event with one or more child sub-events; Figure
-1). This document describes the circumstances under which specific
+relationships (a parent event with one or more child sub-events; <a href="#fig1">Figure
+1</a>). This document describes the circumstances under which specific
 properties of parent and child dwc:Events SHOULD be populated based on
 the parent-child relationship.
 
@@ -110,9 +112,9 @@ share inventory data such that no information is lost and no information
 is incorrectly inferred, one SHOULD **report all information at all
 applicable levels**. The rules for applicability and how to populate
 terms at parent and child levels in the dwc:Event hierarchy are captured
-in section *3.2 Guiding principles* and in section *3.3 Implementation
-principles*.
+in section *<a href="#guiding">3.2 Guiding principles</a>* and in section *<a href="#implemenation">3.3 Implementation principles</a>*.
 
+<a id="fig1">
 ![Illustration of four examples of nested dwc:Events](fig1.png)
 
 **Figure 1.** Visual representation of an ecological inventory
@@ -120,6 +122,7 @@ illustrating four examples of occurrence data associated with dwc:Events
 nested within parent dwc:Events, at varying levels of complexity ranging
 from low (Example 1) to high (Example 4).
 
+<a id="usage">
 ## 3 Usage guidelines (normative)
 
 ### 3.1 Definitions
@@ -151,8 +154,10 @@ dwc:Event, EVENT_01, may include general information about the inventory
 design. Species occurrences are captured for two child dwc:Events
 (EVENT_02 and EVENT_03).
 
+<a id="guiding">
 ## 3.2 Guiding principles
 
+<a id="coverage">
 ### 3.2.1 Principle of spatiotemporal coverage
 
 **A parent dwc:Event MUST encompass its child dwc:Events spatially
@@ -166,6 +171,7 @@ throughout the year 2019, the temporal interval of the parent dwc:Event
 would begin when the earliest child dwc:Event began and end when the
 latest child dwc:Event ended.
 
+<a id="applicability">
 ### 3.2.2 Principle of applicability
 
 **Humboldt Extension terms SHOULD contain data explicitly at every level
@@ -186,6 +192,7 @@ specific values. This principle allows child dwc:Events to be
 "autonomous" to the greatest degree possible, and avoids uncertainty
 about where to look for the values of properties of any given dwc:Event.
 
+<a id="non-derivation">
 ### 3.2.3 Principle of non-derivation
 
 As a complement to the *Principle of applicability*, **Humboldt
@@ -194,7 +201,7 @@ information from child dwc:Events to their common parent dwc:Event**. If
 a term does not directly apply to a given level of dwc:Event (i.e., it
 is not an actual property of that dwc:Event), it SHOULD NOT be populated
 with a value. For example, if the parent dwc:Event **P** from the
-example in section *3.2.2* above is not directly linked to
+example in section *<a href="#applicability">3.2.2</a>* above is not directly linked to
 dwc:Occurrences, then the term eco:hasVouchers does not apply at that
 dwc:Event level and SHOULD be left unpopulated. Data providers SHOULD
 NOT construct a value for a parent dwc:Event from values at the level of
@@ -230,6 +237,7 @@ susceptible to errors (ambiguities, inconsistencies, incompleteness)
 when trying to construct secondary summary information for higher-level
 Events.
 
+<a id="inference">
 ### 3.2.4 Principle of inference
 
 **Certain terms in the Humboldt Extension support inferences.** Examples
@@ -294,6 +302,7 @@ a known variable in the inventory protocol, then a presumed scope may be
 too broad or too narrow, leading to errors when inferring counts of
 zero.
 
+<a id="implementation">
 ## 3.3 Implementation principles
 
 1.  A Darwin Core-based inventory dataset MUST consist of at least one
@@ -317,19 +326,19 @@ dwc:Event's dwc:parentEventID.
 4](https://dwc.tdwg.org/simple/#5-are-there-any-rules-normative),
 which is to fill the values of as many terms as possible, subject
 to the *Principle of applicability* and the *Principle of
-non-derivation* (sections *3.2.2* and *3.2.3*, respectively).
+non-derivation* (sections *<a href="#applicability">3.2.2</a>* and *<a href="#non-derivation">3.2.3</a>*, respectively).
 
 6.  A child dwc:Event MUST NOT be assumed to implicitly "inherit" the
 value of any property of any of its parent dwc:Events; rather, the
-value SHOULD be provided explicitly as discussed in section *3.2.2
-Principle of applicability*.
+value SHOULD be provided explicitly as discussed in section *<a href="#applicability">3.2.2
+Principle of applicability</a>*.
 
 7.  A parent dwc:Event term SHOULD NOT be populated by deriving or
 summarizing information from child dwc:Events; rather, the value
 SHOULD be provided explicitly if appropriate to the nature and
-level of the dwc:Event, as discussed in section *3.2.3 Principle
-of non-derivation*.
+level of the dwc:Event, as discussed in section *<a href="#non-derivation">3.2.3 Principle of non-derivation</a>*.
 
+<a id="examples">
 ## 4 Examples (non-normative)
 
 ![Tables illustrating implementation principles](fig3.png)
