@@ -112,7 +112,7 @@ share inventory data such that no information is lost and no information
 is incorrectly inferred, one SHOULD **report all information at all
 applicable levels**. The rules for applicability and how to populate
 terms at parent and child levels in the dwc:Event hierarchy are captured
-in section *<a href="#guiding">3.2 Guiding principles</a>* and in section *<a href="#implemenation">3.3 Implementation principles</a>*.
+in section *<a href="#guiding">3.2 Guiding principles</a>* and in section *<a href="#implementation">3.3 Implementation principles</a>*.
 
 <a id="fig1">
 ![Illustration of four examples of nested dwc:Events](fig1.png)
@@ -287,7 +287,7 @@ about absences.
 Data providers **MUST NOT retrospectively infer and populate
 eco:targetTaxonomicScope, or other *scope* terms**, for inclusion in a
 dataset shared with the Humboldt Extension. This is a further example of
-the *Principle of non-derivation* (*3.2.3*). Likewise, data users SHOULD
+the *<a href="#non-derivation">Principle of non-derivation</a>* (*3.2.3*). Likewise, data users SHOULD
 NOT assume or reconstruct a scope that was not explicitly given by the
 data provider. There are at least two reasons for this: (1) Artificial
 construction of scope: retrospective inference of target scope by a data
@@ -344,7 +344,7 @@ level of the dwc:Event, as discussed in section *<a href="#non-derivation">3.2.3
 ![Tables illustrating implementation principles](fig3.png)
 
 **Figure 3.** Example illustrating the [Implementation
-principles](#implementation-principles). Numbering of colored
+principles](#implementation). Numbering of colored
 rectangles indicates the relevant principle; lines, arrows or rectangles
 in the same color indicate that the cells, columns or records are
 affected by the principle. *Notolepis coatsi* and *Cranchiidae* are not
@@ -356,8 +356,8 @@ the core dwc:Events via shared dwc:eventIDs. Principle 4 - every child
 dwc:Event must be related to its parent dwc:Event through a
 dwc:parentEventID. Principle 5 - term values for dwc:Events should be
 populated whenever possible; in the figure all records follow Darwin
-Core principle 4, subject to the *Principle of applicability* and the
-*Principle of non-derivation*. Principle 6 - terms for child dwc:Events
+Core principle 4, subject to the *<a href="#applicability">Principle of applicability</a>* and the
+*<a href="#non-derivation">Principle of non-derivation</a>*. Principle 6 - terms for child dwc:Events
 must be explicitly populated rather than "inheriting" values from
 their parent dwc:Events. Principle 7 - terms for parent dwc:Events
 should be populated whenever relevant, but not be derived or summarized
