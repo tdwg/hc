@@ -22,6 +22,9 @@ http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols
 http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported
 http://rs.tdwg.org/eco/terms/isAbsenceReported
 http://rs.tdwg.org/eco/terms/absentTaxa
+http://rs.tdwg.org/eco/terms/hasNonTargetTaxa
+http://rs.tdwg.org/eco/terms/nonTargetTaxa
+http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported
 group:Organismal Scope
 http://rs.tdwg.org/eco/terms/targetLifeStageScope
 http://rs.tdwg.org/eco/terms/excludedLifeStageScope
@@ -32,6 +35,7 @@ http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported
 http://rs.tdwg.org/eco/terms/targetGrowthFormScope
 http://rs.tdwg.org/eco/terms/excludedGrowthFormScope
 http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported
+http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms
 group:Identification
 http://rs.tdwg.org/eco/terms/identifiedBy
 http://rs.tdwg.org/eco/terms/identificationReferences
@@ -47,10 +51,6 @@ http://rs.tdwg.org/eco/terms/isAbundanceCapReported
 http://rs.tdwg.org/eco/terms/abundanceCap
 http://rs.tdwg.org/eco/terms/isVegetationCoverReported
 http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive
-http://rs.tdwg.org/eco/terms/hasNonTargetTaxa
-http://rs.tdwg.org/eco/terms/nonTargetTaxa
-http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported
-http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms
 group:Material Collected
 http://rs.tdwg.org/eco/terms/hasVouchers
 http://rs.tdwg.org/eco/terms/voucherInstitutions
