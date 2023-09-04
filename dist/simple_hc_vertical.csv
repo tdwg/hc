@@ -17,6 +17,9 @@ taxonCompletenessProtocols
 isTaxonomicScopeFullyReported
 isAbsenceReported
 absentTaxa
+hasNonTargetTaxa
+nonTargetTaxa
+areNonTargetTaxaFullyReported
 targetLifeStageScope
 excludedLifeStageScope
 isLifeStageScopeFullyReported
@@ -26,6 +29,7 @@ isDegreeOfEstablishmentScopeFullyReported
 targetGrowthFormScope
 excludedGrowthFormScope
 isGrowthFormScopeFullyReported
+hasNonTargetOrganisms
 identifiedBy
 identificationReferences
 compilationType
@@ -39,10 +43,6 @@ isAbundanceCapReported
 abundanceCap
 isVegetationCoverReported
 isLeastSpecificTargetCategoryQuantityInclusive
-hasNonTargetTaxa
-nonTargetTaxa
-areNonTargetTaxaFullyReported
-hasNonTargetOrganisms
 hasVouchers
 voucherInstitutions
 hasMaterialSamples

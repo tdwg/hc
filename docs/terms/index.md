@@ -185,6 +185,9 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isTaxonomicScopeFullyReported">isTaxonomicScopeFullyReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isAbsenceReported">isAbsenceReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:absentTaxa">absentTaxa</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:hasNonTargetTaxa">hasNonTargetTaxa</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:nonTargetTaxa">nonTargetTaxa</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:areNonTargetTaxaFullyReported">areNonTargetTaxaFullyReported</a>
     </div>
 
 
@@ -265,6 +268,39 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="eco:hasNonTargetTaxa"></a><a id="hasNonTargetTaxa"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">hasNonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms of taxa outside the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) were detected and reported for this dwc:Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target taxa (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Examination of the taxonomic scope is needed in order to identify the non-target taxa. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available) or by exploring eco:nonTargetTaxa for this dwc:Event (if populated). The value of this term should be 'true' if dwc:Occurrences of taxa outside the taxonomic scope as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:nonTargetTaxa"></a><a id="nonTargetTaxa"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">nonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of taxa reported during the dwc:Event that are outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope).</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:areNonTargetTaxaFullyReported"></a><a id="areNonTargetTaxaFullyReported"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">areNonTargetTaxaFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during the dwc:Event, and that was detectable using the given protocol (given in eco:protocolDescription and dwc:samplingProtocol), was reported.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be false'.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+    </tbody>
+</table>
 
 
 ## Organismal Scope
@@ -279,6 +315,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:targetGrowthFormScope">targetGrowthFormScope</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:excludedGrowthFormScope">excludedGrowthFormScope</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isGrowthFormScopeFullyReported">isGrowthFormScopeFullyReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:hasNonTargetOrganisms">hasNonTargetOrganisms</a>
     </div>
 
 
@@ -381,6 +418,17 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="eco:hasNonTargetOrganisms"></a><a id="hasNonTargetOrganisms"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">hasNonTargetOrganisms <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms outside the target organismal scopes (eco:targetDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:targetLifeStageScope) were detected and reported for this dwc:Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target organisms (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target organismal scope is declared. Organismal scope is based on the combination of all of the following terms: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:excludedGrowthFormScope. Examination of the organismal scope is needed in order to identify the non-target dwc:Organisms. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available). The value of this term should be 'true' if dwc:Occurrences of dwc:Organisms outside the organismal scope(s) as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+    </tbody>
+</table>
 
 
 ## Identification
@@ -429,10 +477,6 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:abundanceCap">abundanceCap</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isVegetationCoverReported">isVegetationCoverReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isLeastSpecificTargetCategoryQuantityInclusive">isLeastSpecificTargetCategoryQuantityInclusive</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:hasNonTargetTaxa">hasNonTargetTaxa</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:nonTargetTaxa">nonTargetTaxa</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:areNonTargetTaxaFullyReported">areNonTargetTaxaFullyReported</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:hasNonTargetOrganisms">hasNonTargetOrganisms</a>
     </div>
 
 
@@ -488,7 +532,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolDescription">http://rs.tdwg.org/eco/terms/protocolDescription</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A detailed description of the methods used during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc.</td></tr>
-        <tr><td class="theme-label">Examples</td><td>`Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status.</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -553,51 +597,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr class="table-secondary"><th colspan="2">isLeastSpecificTargetCategoryQuantityInclusive <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive">http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The total detected quantity for a dwc:Taxon (including subcategories thereof) in a dwc:Event is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="https://tdwg.github.io/hc/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:hasNonTargetTaxa"></a><a id="hasNonTargetTaxa"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">hasNonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms of taxa outside the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) were detected and reported for this dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target taxa (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Examination of the taxonomic scope is needed in order to identify the non-target taxa. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available) or by exploring eco:nonTargetTaxa for this dwc:Event (if populated). The value of this term should be 'true' if dwc:Occurrences of taxa outside the taxonomic scope as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:nonTargetTaxa"></a><a id="nonTargetTaxa"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">nonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of taxa reported during the dwc:Event that are outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:areNonTargetTaxaFullyReported"></a><a id="areNonTargetTaxaFullyReported"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">areNonTargetTaxaFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during the dwc:Event, and that was detectable using the given protocol (given in eco:protocolDescription and dwc:samplingProtocol), was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be false'.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:hasNonTargetOrganisms"></a><a id="hasNonTargetOrganisms"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">hasNonTargetOrganisms <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms outside the target organismal scopes (eco:targetDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:targetLifeStageScope) were detected and reported for this dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target organisms (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target organismal scope is declared. Organismal scope is based on the combination of all of the following terms: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:excludedGrowthFormScope. Examination of the organismal scope is needed in order to identify the non-target dwc:Organisms. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available). The value of this term should be 'true' if dwc:Occurrences of dwc:Organisms outside the organismal scope(s) as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/eco/docs/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
