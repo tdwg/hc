@@ -6,6 +6,8 @@
   menu:
   - text: Humboldt Extension
     href: list/
+  - text: Taxon Completeness Reported Controlled Vocabulary
+    href: tcr/
 - text: Guides
   menu:
   - text: Humboldt Core Quick Reference
