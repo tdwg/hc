@@ -3,6 +3,12 @@
 Title
 : {document_title}
 
+Namespace IRI
+: {namespace_uri}
+
+Preferred namespace abbreviation
+: {pref_namespace_prefix}:
+
 Date version issued
 : {ratification_date}
 

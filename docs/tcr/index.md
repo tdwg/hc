@@ -3,6 +3,12 @@
 Title
 : Taxon Completeness Reported Controlled Vocabulary List of Terms
 
+Namespace IRI
+: http://rs.tdwg.org/ecotcr/values/
+
+Preferred namespace abbreviation
+: ecotcr:
+
 Date version issued
 : 2023-09-13
 
