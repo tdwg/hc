@@ -10,22 +10,19 @@ Preferred namespace abbreviation
 : eco:
 
 Date version issued
-: 2023-09-04
+: 2024-01-22
 
 Date created
-: 2023-08-08
+: 2024-01-22
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2023-09-04>
+: <http://rs.tdwg.org/dwc/doc/eco/2024-01-22>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
-
-Previous version
-: <http://rs.tdwg.org/dwc/doc/eco/2023-09-03>
 
 Abstract
 : The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
@@ -37,11 +34,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2023. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2023-09-04>
+: TDWG Humboldt Extension Task Group. 2024. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2024-01-22>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2023-09-04 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2023-09-04>). The vocabulary uses the namespace abbreviation `eco:`. 
+This document contains all former and current terms in the 2024-01-22 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2024-01-22>). The vocabulary uses the namespace abbreviation `eco:`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://tdwg.github.io/eco/terms/>).
 
@@ -70,21 +67,20 @@ The terms in this extension are meant to provide stable definitions that can be 
 [eco:abundanceCap](#eco_abundanceCap) |
 [eco:areNonTargetTaxaFullyReported](#eco_areNonTargetTaxaFullyReported) |
 [eco:compilationSourceTypes](#eco_compilationSourceTypes) |
-[eco:compilationType](#eco_compilationType) |
-[eco:eventDuration](#eco_eventDuration) |
+[eco:compilationTypes](#eco_compilationTypes) |
 [eco:eventDurationUnit](#eco_eventDurationUnit) |
+[eco:eventDurationValue](#eco_eventDurationValue) |
 [eco:excludedDegreeOfEstablishmentScope](#eco_excludedDegreeOfEstablishmentScope) |
 [eco:excludedGrowthFormScope](#eco_excludedGrowthFormScope) |
 [eco:excludedHabitatScope](#eco_excludedHabitatScope) |
 [eco:excludedLifeStageScope](#eco_excludedLifeStageScope) |
 [eco:excludedTaxonomicScope](#eco_excludedTaxonomicScope) |
-[eco:geospatialScopeAreaInSquareKilometers](#eco_geospatialScopeAreaInSquareKilometers) |
+[eco:geospatialScopeAreaUnit](#eco_geospatialScopeAreaUnit) |
+[eco:geospatialScopeAreaValue](#eco_geospatialScopeAreaValue) |
 [eco:hasMaterialSamples](#eco_hasMaterialSamples) |
 [eco:hasNonTargetOrganisms](#eco_hasNonTargetOrganisms) |
 [eco:hasNonTargetTaxa](#eco_hasNonTargetTaxa) |
 [eco:hasVouchers](#eco_hasVouchers) |
-[eco:identificationReferences](#eco_identificationReferences) |
-[eco:identifiedBy](#eco_identifiedBy) |
 [eco:inventoryTypes](#eco_inventoryTypes) |
 [eco:isAbsenceReported](#eco_isAbsenceReported) |
 [eco:isAbundanceCapReported](#eco_isAbundanceCapReported) |
@@ -98,7 +94,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 [eco:isVegetationCoverReported](#eco_isVegetationCoverReported) |
 [eco:materialSampleTypes](#eco_materialSampleTypes) |
 [eco:nonTargetTaxa](#eco_nonTargetTaxa) |
-[eco:protocolDescription](#eco_protocolDescription) |
+[eco:protocolDescriptions](#eco_protocolDescriptions) |
 [eco:protocolNames](#eco_protocolNames) |
 [eco:protocolReferences](#eco_protocolReferences) |
 [eco:reportedExtremeConditions](#eco_reportedExtremeConditions) |
@@ -116,9 +112,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 [eco:targetTaxonomicScope](#eco_targetTaxonomicScope) |
 [eco:taxonCompletenessProtocols](#eco_taxonCompletenessProtocols) |
 [eco:taxonCompletenessReported](#eco_taxonCompletenessReported) |
-[eco:totalAreaSampledInSquareKilometers](#eco_totalAreaSampledInSquareKilometers) |
+[eco:totalAreaSampledUnit](#eco_totalAreaSampledUnit) |
+[eco:totalAreaSampledValue](#eco_totalAreaSampledValue) |
 [eco:verbatimSiteDescriptions](#eco_verbatimSiteDescriptions) |
 [eco:verbatimSiteNames](#eco_verbatimSiteNames) |
+[eco:verbatimTargetScope](#eco_verbatimTargetScope) |
 [eco:voucherInstitutions](#eco_voucherInstitutions) 
 
 ### 3.2 Index By Label
@@ -133,21 +131,20 @@ The terms in this extension are meant to provide stable definitions that can be 
 [Abundance Cap](#eco_abundanceCap) |
 [Are Non-target Taxa Fully Reported](#eco_areNonTargetTaxaFullyReported) |
 [Compilation Source Types](#eco_compilationSourceTypes) |
-[Compilation Type](#eco_compilationType) |
-[Event Duration](#eco_eventDuration) |
+[Compilation Types](#eco_compilationTypes) |
 [Event Duration Unit](#eco_eventDurationUnit) |
+[Event Duration Value](#eco_eventDurationValue) |
 [Excluded Degree of Establishment Scope](#eco_excludedDegreeOfEstablishmentScope) |
 [Excluded Growth Form Scope](#eco_excludedGrowthFormScope) |
 [Excluded Habitat Scope](#eco_excludedHabitatScope) |
 [Excluded Life Stage Scope](#eco_excludedLifeStageScope) |
 [Excluded Taxonomic Scope](#eco_excludedTaxonomicScope) |
-[Geospatial Scope Area In Square Kilometers](#eco_geospatialScopeAreaInSquareKilometers) |
+[Geospatial Scope Area Unit](#eco_geospatialScopeAreaUnit) |
+[Geospatial Scope Area Value](#eco_geospatialScopeAreaValue) |
 [Has Material Samples](#eco_hasMaterialSamples) |
 [Has Non-target Organisms](#eco_hasNonTargetOrganisms) |
 [Has Non-target Taxa](#eco_hasNonTargetTaxa) |
 [Has Vouchers](#eco_hasVouchers) |
-[Identification References](#eco_identificationReferences) |
-[Identified By](#eco_identifiedBy) |
 [Inventory Types](#eco_inventoryTypes) |
 [Is Absence Reported](#eco_isAbsenceReported) |
 [Is Abundance Cap Reported](#eco_isAbundanceCapReported) |
@@ -161,7 +158,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 [Is Vegetation Cover Reported](#eco_isVegetationCoverReported) |
 [Material Sample Types](#eco_materialSampleTypes) |
 [Non-target Taxa](#eco_nonTargetTaxa) |
-[Protocol Description](#eco_protocolDescription) |
+[Protocol Descriptions](#eco_protocolDescriptions) |
 [Protocol Names](#eco_protocolNames) |
 [Protocol References](#eco_protocolReferences) |
 [Reported Extreme Conditions](#eco_reportedExtremeConditions) |
@@ -179,9 +176,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 [Target Taxonomic Scope](#eco_targetTaxonomicScope) |
 [Taxon Completeness Protocols](#eco_taxonCompletenessProtocols) |
 [Taxon Completeness Reported](#eco_taxonCompletenessReported) |
-[Total Area Sampled In Square Kilometers](#eco_totalAreaSampledInSquareKilometers) |
+[Total Area Sampled Unit](#eco_totalAreaSampledUnit) |
+[Total Area Sampled Value](#eco_totalAreaSampledValue) |
 [Verbatim Site Descriptions](#eco_verbatimSiteDescriptions) |
 [Verbatim Site Names](#eco_verbatimSiteNames) |
+[Verbatim Target Scope](#eco_verbatimTargetScope) |
 [Voucher Institutions](#eco_voucherInstitutions) 
 
 ## 4 Vocabulary
@@ -198,11 +197,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2023-09-03">http://rs.tdwg.org/eco/terms/version/absentTaxa-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-01-22">http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -247,11 +246,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/abundanceCap-2023-08-25">http://rs.tdwg.org/eco/terms/version/abundanceCap-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-01-22">http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -292,11 +291,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2023-08-25">http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -341,11 +340,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2023-09-03">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-01-22">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -381,25 +380,25 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_compilationType"></a>Term Name  eco:compilationType</th>
+			<th colspan="2"><a id="eco_compilationTypes"></a>Term Name  eco:compilationTypes</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/compilationType">http://rs.tdwg.org/eco/terms/compilationType</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationType-2023-09-03">http://rs.tdwg.org/eco/terms/version/compilationType-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-01-22">http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Compilation Type</td>
+			<td>Compilation Types</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -407,63 +406,15 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary.</td>
+			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>survey only</code></li>
-  <li class="list-group-item"><code>compilation including surveys</code></li>
-  <li class="list-group-item"><code>compilation not including surveys</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="eco_eventDuration"></a>Term Name  eco:eventDuration</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/eventDuration">http://rs.tdwg.org/eco/terms/eventDuration</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-09-03</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDuration-2023-09-03">http://rs.tdwg.org/eco/terms/version/eventDuration-2023-09-03</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Event Duration</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The numeric value for the duration of the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>An eco:eventDuration must have a corresponding eco:eventDurationUnit.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>1</code></li>
-  <li class="list-group-item"><code>30</code></li>
+  <li class="list-group-item"><code>sampling events only</code></li>
+  <li class="list-group-item"><code>compilation of existing sources including sampling events</code></li>
+  <li class="list-group-item"><code>compilation of existing sources</code></li>
+  <li class="list-group-item">`compilation of existing sources including sampling events | compilation of existing sources'</li>
 </ul></td>
 		</tr>
 		<tr>
@@ -490,11 +441,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2023-09-03">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-01-22">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -502,7 +453,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The units associated with the eco:eventDuration.</td>
+			<td>The units associated with the eco:eventDurationValue.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
@@ -532,6 +483,55 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="eco_eventDurationValue"></a>Term Name  eco:eventDurationValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-01-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-01-22">http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-01-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Duration Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The numeric value for the duration of the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>1</code></li>
+  <li class="list-group-item"><code>30</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="eco_excludedDegreeOfEstablishmentScope"></a>Term Name  eco:excludedDegreeOfEstablishmentScope</th>
 		</tr>
 	</thead>
@@ -542,11 +542,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -591,11 +591,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -640,11 +640,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -689,11 +689,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -738,11 +738,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -777,33 +777,79 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_geospatialScopeAreaInSquareKilometers"></a>Term Name  eco:geospatialScopeAreaInSquareKilometers</th>
+			<th colspan="2"><a id="eco_geospatialScopeAreaUnit"></a>Term Name  eco:geospatialScopeAreaUnit</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaInSquareKilometers">http://rs.tdwg.org/eco/terms/geospatialScopeAreaInSquareKilometers</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaInSquareKilometers-2023-09-03">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaInSquareKilometers-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-01-22">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Geospatial Scope Area In Square Kilometers</td>
+			<td>Geospatial Scope Area Unit</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Total area of the geospatial scope of the dwc:Event in square kilometers.</td>
+			<td>The units associated with eco:geospatialScopeAreaValue</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the totalAreaSampledInSquareKilometers.</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>km²</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_geospatialScopeAreaValue"></a>Term Name  eco:geospatialScopeAreaValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-01-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-01-22">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-01-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Geospatial Scope Area Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The numeric value for the total area of the geospatial scope of the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -815,7 +861,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Property</td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
@@ -833,11 +879,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2023-09-03">http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-01-22">http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -878,11 +924,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2023-08-25">http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-01-22">http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -927,11 +973,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2023-08-25">http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-01-22">http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -976,11 +1022,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasVouchers-2023-09-03">http://rs.tdwg.org/eco/terms/version/hasVouchers-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-01-22">http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1011,104 +1057,6 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_identificationReferences"></a>Term Name  eco:identificationReferences</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/identificationReferences">http://rs.tdwg.org/eco/terms/identificationReferences</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-09-03</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/identificationReferences-2023-09-03">http://rs.tdwg.org/eco/terms/version/identificationReferences-2023-09-03</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Identification References</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li>
-  <li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Identifications/Identification/References</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="eco_identifiedBy"></a>Term Name  eco:identifiedBy</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/identifiedBy">http://rs.tdwg.org/eco/terms/identifiedBy</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2023-09-03</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/identifiedBy-2023-09-03">http://rs.tdwg.org/eco/terms/version/identifiedBy-2023-09-03</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Identified By</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>James L. Patton</code></li>
-  <li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li>
-</ul></td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>DataSets/DataSet/Units/Unit/Identifications/Identification/Identifiers/IdentifiersText</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_inventoryTypes"></a>Term Name  eco:inventoryTypes</th>
 		</tr>
 	</thead>
@@ -1119,11 +1067,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2023-09-03">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-01-22">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1135,7 +1083,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary such as the terms included under the Biological Collections Ontology superclass 'taxonomic inventory process' (<a href="http://purl.obolibrary.org/obo/BCO_0000047">http://purl.obolibrary.org/obo/BCO_0000047</a>). Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td>
+			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1172,11 +1120,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1221,11 +1169,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1270,11 +1218,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1319,11 +1267,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1368,11 +1316,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1417,11 +1365,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2023-09-03">http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-01-22">http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1433,7 +1381,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="https://tdwg.github.io/hc/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td>
+			<td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/eco/docs/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1466,11 +1414,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1515,11 +1463,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1564,11 +1512,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1613,11 +1561,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2023-09-03">http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1662,11 +1610,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2023-09-03">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-01-22">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1712,11 +1660,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2023-08-25">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-01-22">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1751,25 +1699,25 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_protocolDescription"></a>Term Name  eco:protocolDescription</th>
+			<th colspan="2"><a id="eco_protocolDescriptions"></a>Term Name  eco:protocolDescriptions</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/protocolDescription">http://rs.tdwg.org/eco/terms/protocolDescription</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-04</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolDescription-2023-09-04">http://rs.tdwg.org/eco/terms/version/protocolDescription-2023-09-04</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-01-22">http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Protocol Description</td>
+			<td>Protocol Descriptions</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
@@ -1777,7 +1725,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc.</td>
+			<td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1807,11 +1755,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2023-09-03">http://rs.tdwg.org/eco/terms/version/protocolNames-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2024-01-22">http://rs.tdwg.org/eco/terms/version/protocolNames-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1857,11 +1805,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolReferences-2023-09-03">http://rs.tdwg.org/eco/terms/version/protocolReferences-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-01-22">http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1903,11 +1851,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2023-09-03">http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-01-22">http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1948,11 +1896,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedWeather-2023-08-25">http://rs.tdwg.org/eco/terms/version/reportedWeather-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-01-22">http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1994,11 +1942,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2023-09-03">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-01-22">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2044,11 +1992,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2023-09-03">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-01-22">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2094,11 +2042,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2023-09-03">http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-01-22">http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2144,11 +2092,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2023-09-03">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-01-22">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2195,11 +2143,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/siteCount-2023-09-03">http://rs.tdwg.org/eco/terms/version/siteCount-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/siteCount-2024-01-22">http://rs.tdwg.org/eco/terms/version/siteCount-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2244,11 +2192,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2023-09-03">http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-01-22">http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2290,11 +2238,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2339,11 +2287,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2388,11 +2336,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2439,11 +2387,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2488,11 +2436,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2023-09-03">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2538,11 +2486,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2023-09-03">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-01-22">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2587,11 +2535,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-08-25</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2023-08-25">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2023-08-25</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-01-22">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2627,33 +2575,79 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_totalAreaSampledInSquareKilometers"></a>Term Name  eco:totalAreaSampledInSquareKilometers</th>
+			<th colspan="2"><a id="eco_totalAreaSampledUnit"></a>Term Name  eco:totalAreaSampledUnit</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledInSquareKilometers">http://rs.tdwg.org/eco/terms/totalAreaSampledInSquareKilometers</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledInSquareKilometers-2023-09-03">http://rs.tdwg.org/eco/terms/version/totalAreaSampledInSquareKilometers-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-01-22">http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Total Area Sampled In Square Kilometers</td>
+			<td>Total Area Sampled Unit</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>Total area surveyed during the dwc:Event in square kilometers.</td>
+			<td>The units associated with eco:totalAreaSampledValue</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This area is always less than or equal to the geospatialScopeAreaInSquareKilometers.</td>
+			<td>Recommended best practice is to use a controlled vocabulary.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><code>km²</code></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_totalAreaSampledValue"></a>Term Name  eco:totalAreaSampledValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-01-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-01-22">http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-01-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Total Area Sampled Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The numeric value for the total area surveyed during the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This area is always less than or equal to the eco:geospatialScopeAreaValue. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2665,7 +2659,7 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td>Property</td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
@@ -2683,11 +2677,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2023-09-03">http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-01-22">http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2729,11 +2723,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2023-09-03">http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-01-22">http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2768,6 +2762,56 @@ The terms in this extension are meant to provide stable definitions that can be 
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="eco_verbatimTargetScope"></a>Term Name  eco:verbatimTargetScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-01-22</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-01-22">http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-01-22</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Verbatim Target Scope</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The verbatim original description of the dwc:Event scope.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g. eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item">‘small mammals’</li>
+  <li class="list-group-item">‘freshwater macroinvertebrates’</li>
+  <li class="list-group-item">‘dead animals’, 'ground-living insects'</li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="eco_voucherInstitutions"></a>Term Name  eco:voucherInstitutions</th>
 		</tr>
 	</thead>
@@ -2778,11 +2822,11 @@ The terms in this extension are meant to provide stable definitions that can be 
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2023-09-03</td>
+			<td>2024-01-22</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2023-09-03">http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2023-09-03</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-01-22">http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-01-22</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
