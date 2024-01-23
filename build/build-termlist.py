@@ -14,7 +14,7 @@ import yaml
 # Configuration section
 # -----------------
 
-github_branch = 'eco' # "main" for production, something else for development
+github_branch = 'eco_final' # "main" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
