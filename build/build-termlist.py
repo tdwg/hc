@@ -226,13 +226,13 @@ for category in range(0,len(display_order)):
     else:
         filtered_table = terms_sorted_by_localname
         
-    #for row_index,row in filtered_table.iterrows():
-    #    if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
-    #        curie = row['pref_ns_prefix'] + ":" + row['term_localName']
-    #        curie_anchor = curie.replace(':','_')
-    #        text += '[' + curie + '](#' + curie_anchor + ') |\n'
-    #text = text[:len(text)-2] # remove final trailing vertical bar and newline
-    #text += '\n\n' # put back removed newline
+    for row_index,row in filtered_table.iterrows():
+        if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+            curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+            curie_anchor = curie.replace(':','_')
+            text += '[' + curie + '](#' + curie_anchor + ') |\n'
+    text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    text += '\n\n' # put back removed newline
 
 index_by_name = text
 
@@ -263,13 +263,13 @@ for category in range(0,len(display_order)):
     else:
         filtered_table = terms_sorted_by_label
         
-    #for row_index,row in filtered_table.iterrows():
-    #    if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
-    #        if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
-    #            curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
-    #            text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-    #text = text[:len(text)-2] # remove final trailing vertical bar and newline
-    #text += '\n\n' # put back removed newline
+    for row_index,row in filtered_table.iterrows():
+        if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
+            if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+                curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+                text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+    text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    text += '\n\n' # put back removed newline
 
 index_by_label = text
 
