@@ -14,7 +14,7 @@ import yaml
 # Configuration section
 # -----------------
 
-github_branch = 'eco_final' # "main" for production, something else for development
+github_branch = 'eco_final_revised' # "main" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
@@ -36,13 +36,14 @@ vocab_type = 1 # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is
 
 # Terms in large vocabularies like Darwin and Audubon Cores may be organized into categories using tdwgutility_organizedInClass
 # If so, those categories can be used to group terms in the generated term list document.
-organized_in_categories = True
+organized_in_categories = False
 
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
+
 display_order = [ 'http://rs.tdwg.org/dwc/terms/Event']
-display_label = ['Humboldt Extension Event terms']
-display_comments = ['','']
+display_label = ['']
+display_comments = ['']
 display_id = ['event']
 
 # ---------------
@@ -206,32 +207,32 @@ print('Generating term index by CURIE')
 text = '### 3.1 Index By Term Name\n\n'
 text += '(See also [3.2 Index By Label](#32-index-by-label))\n\n'
 
-text += '**Classes**\n'
-text += '\n'
-for row_index,row in terms_sorted_by_localname.iterrows():
-    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
-        curie = row['pref_ns_prefix'] + ":" + row['term_localName']
-        curie_anchor = curie.replace(':','_')
-        text += '[' + curie + '](#' + curie_anchor + ') |\n'
-text = text[:len(text)-2] # remove final trailing vertical bar and newline
-text += '\n\n' # put back removed newline
+#text += '**Classes**\n'
+#text += '\n'
+#for row_index,row in terms_sorted_by_localname.iterrows():
+#    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
+#        curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+#        curie_anchor = curie.replace(':','_')
+#        text += '[' + curie + '](#' + curie_anchor + ') |\n'
+#text = text[:len(text)-2] # remove final trailing vertical bar and newline
+#text += '\n\n' # put back removed newline
 
 for category in range(0,len(display_order)):
-    text += '**' + display_label[category] + '**\n'
-    text += '\n'
+    #text += '**' + display_label[category] + '**\n'
+    #text += '\n'
     if organized_in_categories:
         filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
         filtered_table.reset_index(drop=True, inplace=True)
     else:
         filtered_table = terms_sorted_by_localname
         
-    for row_index,row in filtered_table.iterrows():
-        if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
-            curie = row['pref_ns_prefix'] + ":" + row['term_localName']
-            curie_anchor = curie.replace(':','_')
-            text += '[' + curie + '](#' + curie_anchor + ') |\n'
-    text = text[:len(text)-2] # remove final trailing vertical bar and newline
-    text += '\n\n' # put back removed newline
+    #for row_index,row in filtered_table.iterrows():
+    #    if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+    #        curie = row['pref_ns_prefix'] + ":" + row['term_localName']
+    #        curie_anchor = curie.replace(':','_')
+    #        text += '[' + curie + '](#' + curie_anchor + ') |\n'
+    #text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    #text += '\n\n' # put back removed newline
 
 index_by_name = text
 
@@ -244,14 +245,14 @@ text = '\n\n'
 text = '### 3.2 Index By Label\n\n'
 text += '(See also [3.1 Index By Term Name](#31-index-by-term-name))\n\n'
 
-text += '**Classes**\n'
-text += '\n'
-for row_index,row in terms_sorted_by_label.iterrows():
-    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
-        curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
-        text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-text = text[:len(text)-2] # remove final trailing vertical bar and newline
-text += '\n\n' # put back removed newline
+#text += '**Classes**\n'
+#text += '\n'
+#for row_index,row in terms_sorted_by_label.iterrows():
+#    if row['rdf_type'] == 'http://www.w3.org/2000/01/rdf-schema#Class':
+#        curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+#        text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+#text = text[:len(text)-2] # remove final trailing vertical bar and newline
+#text += '\n\n' # put back removed newline
 
 for category in range(0,len(display_order)):
     if organized_in_categories:
@@ -262,13 +263,13 @@ for category in range(0,len(display_order)):
     else:
         filtered_table = terms_sorted_by_label
         
-    for row_index,row in filtered_table.iterrows():
-        if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
-            if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
-                curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
-                text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
-    text = text[:len(text)-2] # remove final trailing vertical bar and newline
-    text += '\n\n' # put back removed newline
+    #for row_index,row in filtered_table.iterrows():
+    #    if row_index == 0 or (row_index != 0 and row['label'] != filtered_table.iloc[row_index - 1].loc['label']): # this is a hack to prevent duplicate labels
+    #        if row['rdf_type'] != 'http://www.w3.org/2000/01/rdf-schema#Class':
+    #            curie_anchor = row['pref_ns_prefix'] + "_" + row['term_localName']
+    #            text += '[' + row['label'] + '](#' + curie_anchor + ') |\n'
+    #text = text[:len(text)-2] # remove final trailing vertical bar and newline
+    #text += '\n\n' # put back removed newline
 
 index_by_label = text
 
