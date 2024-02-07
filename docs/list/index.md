@@ -2307,7 +2307,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>tree</code></li>
-  <li class="list-group-item"><code>shrub | sub-shrub</code></li>
+  <li class="list-group-item"><code>shrub | subShrub</code></li>
 </ul></td>
 		</tr>
 		<tr>
