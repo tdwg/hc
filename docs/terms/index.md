@@ -14,8 +14,10 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:siteNestingDescription">siteNestingDescription</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:verbatimSiteDescriptions">verbatimSiteDescriptions</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:verbatimSiteNames">verbatimSiteNames</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:geospatialScopeAreaInSquareKilometers">geospatialScopeAreaInSquareKilometers</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:totalAreaSampledInSquareKilometers">totalAreaSampledInSquareKilometers</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:geospatialScopeAreaValue">geospatialScopeAreaValue</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:geospatialScopeAreaUnit">geospatialScopeAreaUnit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:totalAreaSampledValue">totalAreaSampledValue</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:totalAreaSampledUnit">totalAreaSampledUnit</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:reportedWeather">reportedWeather</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:reportedExtremeConditions">reportedExtremeConditions</a>
     </div>
@@ -66,25 +68,47 @@ This document is intended to be an easy-to-read reference the currently recommen
     </tbody>
 </table>
 <p class="invisible">
-    <a id="eco:geospatialScopeAreaInSquareKilometers"></a><a id="geospatialScopeAreaInSquareKilometers"></a></p>
+    <a id="eco:geospatialScopeAreaValue"></a><a id="geospatialScopeAreaValue"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">geospatialScopeAreaInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaInSquareKilometers">http://rs.tdwg.org/eco/terms/geospatialScopeAreaInSquareKilometers</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Total area of the geospatial scope of the dwc:Event in square kilometers.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the totalAreaSampledInSquareKilometers.</td></tr>
+        <tr class="table-secondary"><th colspan="2">geospatialScopeAreaValue <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The numeric value for the total area of the geospatial scope of the dwc:Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>25</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="eco:totalAreaSampledInSquareKilometers"></a><a id="totalAreaSampledInSquareKilometers"></a></p>
+    <a id="eco:geospatialScopeAreaUnit"></a><a id="geospatialScopeAreaUnit"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">totalAreaSampledInSquareKilometers <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledInSquareKilometers">http://rs.tdwg.org/eco/terms/totalAreaSampledInSquareKilometers</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>Total area surveyed during the dwc:Event in square kilometers.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This area is always less than or equal to the geospatialScopeAreaInSquareKilometers.</td></tr>
+        <tr class="table-secondary"><th colspan="2">geospatialScopeAreaUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The units associated with eco:geospatialScopeAreaValue</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>km²</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:totalAreaSampledValue"></a><a id="totalAreaSampledValue"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">totalAreaSampledValue <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The numeric value for the total area surveyed during the dwc:Event.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This area is always less than or equal to the eco:geospatialScopeAreaValue. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>0.8</code></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:totalAreaSampledUnit"></a><a id="totalAreaSampledUnit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>km²</code></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -127,7 +151,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetHabitatScope">http://rs.tdwg.org/eco/terms/targetHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitats targeted for sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>dunes</code></li><li class="list-group-item"><code>pine forest</code></li><li class="list-group-item"><code>riparian</code></li><li class="list-group-item"><code>scrub | grassland</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>dunes</code></li><li class="list-group-item"><code>pineForest</code></li><li class="list-group-item"><code>riparian</code></li><li class="list-group-item"><code>scrub | grassland</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -138,7 +162,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitats explicitly excluded from sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wet flatwoods</code></li><li class="list-group-item"><code>swamp | estuary</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wetFlatwoods</code></li><li class="list-group-item"><code>swamp | estuary</code></li></ul></td></tr>
     </tbody>
 </table>
 
@@ -146,19 +170,19 @@ This document is intended to be an easy-to-read reference the currently recommen
 ## Temporal Scope
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:eventDuration">eventDuration</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:eventDurationValue">eventDurationValue</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:eventDurationUnit">eventDurationUnit</a>
     </div>
 
 
 <p class="invisible">
-    <a id="eco:eventDuration"></a><a id="eventDuration"></a></p>
+    <a id="eco:eventDurationValue"></a><a id="eventDurationValue"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">eventDuration <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDuration">http://rs.tdwg.org/eco/terms/eventDuration</a></td></tr>
+        <tr class="table-secondary"><th colspan="2">eventDurationValue <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The numeric value for the duration of the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>An eco:eventDuration must have a corresponding eco:eventDurationUnit.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>30</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -168,7 +192,7 @@ This document is intended to be an easy-to-read reference the currently recommen
     <tbody>
         <tr class="table-secondary"><th colspan="2">eventDurationUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationUnit">http://rs.tdwg.org/eco/terms/eventDurationUnit</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The units associated with the eco:eventDuration.</td></tr>
+        <tr><td class="theme-label">Definition</td><td>The units associated with the eco:eventDurationValue.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minutes</code></li><li class="list-group-item"><code>hours</code></li><li class="list-group-item"><code>days</code></li><li class="list-group-item"><code>months</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
     </tbody>
@@ -210,7 +234,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedTaxonomicScope">http://rs.tdwg.org/eco/terms/excludedTaxonomicScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The taxonomic group(s) explicitly excluded from sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>The dwc:Event to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Quercus</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Quercus | Acer</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -220,8 +244,8 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr class="table-secondary"><th colspan="2">taxonCompletenessReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessReported">http://rs.tdwg.org/eco/terms/taxonCompletenessReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Statement about whether the taxonomic completeness of the dwc:Event was assessed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco: taxonCompletenessProtocols. Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>not reported</code></li><li class="list-group-item"><code>reported complete</code></li><li class="list-group-item"><code>reported incomplete</code></li></ul></td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco: taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>notReported</code></li><li class="list-group-item"><code>reportedComplete</code></li><li class="list-group-item"><code>reportedIncomplete</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -297,7 +321,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr class="table-secondary"><th colspan="2">areNonTargetTaxaFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during the dwc:Event, and that was detectable using the given protocol (given in eco:protocolDescription and dwc:samplingProtocol), was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be false'.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be ‘false'.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -360,7 +384,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degrees of establishment of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native (category A)</code></li><li class="list-group-item"><code>invasive (category D2) | widespread invasive (category E)</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -371,7 +395,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degrees of establishment of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native (category A)</code></li><li class="list-group-item"><code>invasive (category D2) | widespread invasive (category E)</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -393,7 +417,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetGrowthFormScope">http://rs.tdwg.org/eco/terms/targetGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth forms or habits of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | sub-shrub</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -404,7 +428,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedGrowthFormScope">http://rs.tdwg.org/eco/terms/excludedGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth forms or habits of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | sub-shrub</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -431,64 +455,33 @@ This document is intended to be an easy-to-read reference the currently recommen
 </table>
 
 
-## Identification
-
-<div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:identifiedBy">identifiedBy</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:identificationReferences">identificationReferences</a>
-    </div>
-
-
-<p class="invisible">
-    <a id="eco:identifiedBy"></a><a id="identifiedBy"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identifiedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/identifiedBy">http://rs.tdwg.org/eco/terms/identifiedBy</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of names of people, groups, or organizations who assigned the dwc:Taxon to the subject.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>James L. Patton</code></li><li class="list-group-item"><code>Theodore Pappenfuss | Robert Macey</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:identificationReferences"></a><a id="identificationReferences"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">identificationReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/identificationReferences">http://rs.tdwg.org/eco/terms/identificationReferences</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of references (publication, global unique identifier, URI) used in the Identification.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves del Noroeste Patagonico. Christie et al. 2004.</code></li><li class="list-group-item"><code>Stebbins, R. Field Guide to Western Reptiles and Amphibians. 3rd Edition. 2003. | Irschick, D.J. and Shaffer, H.B. (1997). The polytypic species revisited: Morphological differentiation among tiger salamanders (Ambystoma tigrinum) (Amphibia: Caudata). Herpetologica, 53(1), 30-49.</code></li></ul></td></tr>
-    </tbody>
-</table>
-
-
 ## Methodology Description
 
 <div class="my-4">
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:compilationType">compilationType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:compilationTypes">compilationTypes</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:compilationSourceTypes">compilationSourceTypes</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:inventoryTypes">inventoryTypes</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:protocolNames">protocolNames</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:protocolDescription">protocolDescription</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:protocolDescriptions">protocolDescriptions</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:protocolReferences">protocolReferences</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isAbundanceReported">isAbundanceReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isAbundanceCapReported">isAbundanceCapReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:abundanceCap">abundanceCap</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isVegetationCoverReported">isVegetationCoverReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isLeastSpecificTargetCategoryQuantityInclusive">isLeastSpecificTargetCategoryQuantityInclusive</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:verbatimTargetScope">verbatimTargetScope</a>
     </div>
 
 
 <p class="invisible">
-    <a id="eco:compilationType"></a><a id="compilationType"></a></p>
+    <a id="eco:compilationTypes"></a><a id="compilationTypes"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">compilationType <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationType">http://rs.tdwg.org/eco/terms/compilationType</a></td></tr>
+        <tr class="table-secondary"><th colspan="2">compilationTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>survey only</code></li><li class="list-group-item"><code>compilation including surveys</code></li><li class="list-group-item"><code>compilation not including surveys</code></li></ul></td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>samplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSources</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents | compilationOfExistingSources</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -499,7 +492,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The types of data sources contributing to the compilation reported.</td></tr>
         <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>museum specimens</code></li><li class="list-group-item"><code>literature</code></li><li class="list-group-item"><code>expert knowledge | local knowledge</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>museumSpecimens</code></li><li class="list-group-item"><code>literature</code></li><li class="list-group-item"><code>expertKnowledge | localKnowledge</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -509,8 +502,8 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr class="table-secondary"><th colspan="2">inventoryTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/inventoryTypes">http://rs.tdwg.org/eco/terms/inventoryTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The types of search processes used to conduct the inventory.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary such as the terms included under the Biological Collections Ontology superclass 'taxonomic inventory process' (<a href="http://purl.obolibrary.org/obo/BCO_0000047">http://purl.obolibrary.org/obo/BCO_0000047</a>). Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>restricted search</code></li><li class="list-group-item"><code>open search</code></li><li class="list-group-item"><code>opportunistic search</code></li><li class="list-group-item"><code>adventitious</code></li><li class="list-group-item"><code>compilation</code></li><li class="list-group-item"><code>open search | opportunistic search</code></li></ul></td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>restrictedSearch</code></li><li class="list-group-item"><code>openSearch</code></li><li class="list-group-item"><code>opportunisticSearch</code></li><li class="list-group-item"><code>adventitious</code></li><li class="list-group-item"><code>compilation</code></li><li class="list-group-item"><code>openSearch | opportunisticSearch</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
@@ -521,17 +514,17 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolNames">http://rs.tdwg.org/eco/terms/protocolNames</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Categorical descriptive names for the methods used during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>box trapping</code></li><li class="list-group-item"><code>flora inventory</code></li><li class="list-group-item"><code>box trapping | funnel trapping</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>boxTrapping</code></li><li class="list-group-item"><code>floraInventory</code></li><li class="list-group-item"><code>boxTrapping | funnelTrapping</code></li></ul></td></tr>
     </tbody>
 </table>
 <p class="invisible">
-    <a id="eco:protocolDescription"></a><a id="protocolDescription"></a></p>
+    <a id="eco:protocolDescriptions"></a><a id="protocolDescriptions"></a></p>
 <table class="table table-sm table-bordered">
     <tbody>
-        <tr class="table-secondary"><th colspan="2">protocolDescription <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolDescription">http://rs.tdwg.org/eco/terms/protocolDescription</a></td></tr>
+        <tr class="table-secondary"><th colspan="2">protocolDescriptions <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A detailed description of the methods used during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status.</code></td></tr>
     </tbody>
 </table>
@@ -601,6 +594,17 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="eco:verbatimTargetScope"></a><a id="verbatimTargetScope"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimTargetScope <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The verbatim original description of the dwc:Event scope.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>small mammals</code></li><li class="list-group-item"><code>freshwater macroinvertebrates</code></li><li class="list-group-item"><code>dead animals</code>, <code>ground-living insects</code></li></ul></td></tr>
+    </tbody>
+</table>
 
 
 ## Material Collected
@@ -654,7 +658,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/materialSampleTypes">http://rs.tdwg.org/eco/terms/materialSampleTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of material sample types collected during the dwc:Event.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ).</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>whole organism</code></li><li class="list-group-item"><code>skeleton</code></li><li class="list-group-item"><code>tissue | blood | fecal | stomach content</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wholeOrganism</code></li><li class="list-group-item"><code>skeleton</code></li><li class="list-group-item"><code>tissue | blood | fecal | stomachContent</code></li></ul></td></tr>
     </tbody>
 </table>
 
@@ -722,7 +726,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortUnit">http://rs.tdwg.org/eco/terms/samplingEffortUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with the eco:samplingEffortValue.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trap hours</code></li><li class="list-group-item"><code>person hours</code></li><li class="list-group-item"><code>trap days</code></li></ul></td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trapHours</code></li><li class="list-group-item"><code>personHours</code></li><li class="list-group-item"><code>trapDays</code></li></ul></td></tr>
     </tbody>
 </table>
 
