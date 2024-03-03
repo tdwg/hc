@@ -10,16 +10,16 @@ Preferred namespace abbreviation
 : eco:
 
 Date version issued
-: 2024-01-22
+: 2024-02-28
 
 Date created
-: 2024-01-22
+: 2024-02-28
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2024-01-22>
+: <http://rs.tdwg.org/dwc/doc/eco/2024-02-28>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
@@ -34,11 +34,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2024. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2024-01-22>
+: TDWG Humboldt Extension Task Group. 2024. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2024-02-28>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2024-01-22 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2024-01-22>). The vocabulary uses the namespace abbreviation `eco:`. 
+This document contains all former and current terms in the 2024-02-28 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2024-02-28>). The vocabulary uses the namespace abbreviation `eco:`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://eco.tdwg.org/terms/>).
 
@@ -195,11 +195,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-02-06">http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-02-28">http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -228,6 +228,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -244,11 +248,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-06">http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-28">http://rs.tdwg.org/eco/terms/version/abundanceCap-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -273,6 +277,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -289,11 +297,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/areNonTargetTaxaFullyReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -322,6 +330,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -338,11 +350,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-02-06">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-02-28">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -372,6 +384,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -388,11 +404,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-02-06">http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-02-28">http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -423,6 +439,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -439,11 +459,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-02-06">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-02-28">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -475,6 +495,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -491,11 +515,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-06">http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-28">http://rs.tdwg.org/eco/terms/version/eventDurationValue-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -524,6 +548,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -540,11 +568,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -573,6 +601,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -589,11 +621,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -622,6 +654,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -638,11 +674,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -671,6 +707,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -687,11 +727,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -720,6 +760,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -736,11 +780,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -769,6 +813,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -785,11 +833,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-02-06">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-02-28">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -815,6 +863,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -831,11 +883,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-06">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-28">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaValue-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -861,6 +913,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -877,11 +933,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-06">http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-28">http://rs.tdwg.org/eco/terms/version/hasMaterialSamples-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -906,6 +962,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -922,11 +982,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-06">http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-28">http://rs.tdwg.org/eco/terms/version/hasNonTargetOrganisms-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -955,6 +1015,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -971,11 +1035,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-06">http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-28">http://rs.tdwg.org/eco/terms/version/hasNonTargetTaxa-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1004,6 +1068,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1020,11 +1088,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-06">http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-28">http://rs.tdwg.org/eco/terms/version/hasVouchers-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1049,6 +1117,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1065,11 +1137,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-02-06">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-02-28">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1102,6 +1174,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1118,11 +1194,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isAbsenceReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1151,6 +1227,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1167,11 +1247,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isAbundanceCapReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1200,6 +1280,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1216,11 +1300,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isAbundanceReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1249,6 +1333,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1265,11 +1353,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isDegreeOfEstablishmentScopeFullyReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1298,6 +1386,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1314,11 +1406,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isGrowthFormScopeFullyReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1347,6 +1439,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1363,11 +1459,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-02-06">http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-02-28">http://rs.tdwg.org/eco/terms/version/isLeastSpecificTargetCategoryQuantityInclusive-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1396,6 +1492,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1412,11 +1512,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isLifeStageScopeFullyReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1445,6 +1545,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1461,11 +1565,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isSamplingEffortReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1494,6 +1598,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1510,11 +1618,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isTaxonomicScopeFullyReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1543,6 +1651,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1559,11 +1671,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/isVegetationCoverReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1592,6 +1704,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1608,11 +1724,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-02-06">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-02-28">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1642,6 +1758,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1658,11 +1778,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-02-06">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-02-28">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1691,6 +1811,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1707,11 +1831,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-06">http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-28">http://rs.tdwg.org/eco/terms/version/protocolDescriptions-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1737,6 +1861,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1753,11 +1881,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2024-02-06">http://rs.tdwg.org/eco/terms/version/protocolNames-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2024-02-28">http://rs.tdwg.org/eco/terms/version/protocolNames-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1787,6 +1915,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1803,11 +1935,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-06">http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28">http://rs.tdwg.org/eco/terms/version/protocolReferences-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1833,6 +1965,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1849,11 +1985,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-06">http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-28">http://rs.tdwg.org/eco/terms/version/reportedExtremeConditions-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1878,6 +2014,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1894,11 +2034,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-06">http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-28">http://rs.tdwg.org/eco/terms/version/reportedWeather-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1924,6 +2064,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1940,11 +2084,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-02-06">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-02-28">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1974,6 +2118,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1990,11 +2138,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-02-06">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-02-28">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2024,6 +2172,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2040,11 +2192,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-06">http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-28">http://rs.tdwg.org/eco/terms/version/samplingEffortValue-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2074,6 +2226,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2090,11 +2246,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-02-06">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-02-28">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2125,6 +2281,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2141,11 +2301,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-06">http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-28">http://rs.tdwg.org/eco/terms/version/siteCount-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2174,6 +2334,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2190,11 +2354,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-06">http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-28">http://rs.tdwg.org/eco/terms/version/siteNestingDescription-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2220,6 +2384,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2236,11 +2404,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2269,6 +2437,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2285,11 +2457,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2318,6 +2490,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2334,11 +2510,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2369,6 +2545,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2385,11 +2565,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2418,6 +2598,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2434,11 +2618,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2468,6 +2652,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2484,11 +2672,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-02-06">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-02-28">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2517,6 +2705,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2533,11 +2725,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-02-06">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-02-28">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2567,6 +2759,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2583,11 +2779,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-02-06">http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-02-28">http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2613,6 +2809,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2629,11 +2829,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-06">http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-28">http://rs.tdwg.org/eco/terms/version/totalAreaSampledValue-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2659,6 +2859,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2675,11 +2879,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-06">http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-28">http://rs.tdwg.org/eco/terms/version/verbatimSiteDescriptions-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2705,6 +2909,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2721,11 +2929,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-06">http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-28">http://rs.tdwg.org/eco/terms/version/verbatimSiteNames-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2754,6 +2962,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td>Property</td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2770,11 +2982,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-06">http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-28">http://rs.tdwg.org/eco/terms/version/verbatimTargetScope-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2804,6 +3016,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Type</td>
 			<td></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2820,11 +3036,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-02-06</td>
+			<td>2024-02-28</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-06">http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-06</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-28">http://rs.tdwg.org/eco/terms/version/voucherInstitutions-2024-02-28</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2853,6 +3069,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
 		</tr>
 	</tbody>
 </table>
