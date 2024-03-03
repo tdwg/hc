@@ -9,12 +9,26 @@ import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
 import pandas as pd
 import yaml
+import sys
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# "master" for production, something else for development
+# Example: First part of branch URL is "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/", branch is "eco".
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
 
 # -----------------
 # Configuration section
 # -----------------
-
-github_branch = 'eco_final_revised' # "main" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
