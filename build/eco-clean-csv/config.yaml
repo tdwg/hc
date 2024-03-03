@@ -2,10 +2,10 @@
 # process.py script is run. Typically, a copy is stored with the modifications CSV file.
 
 # Date assigned to all versions, usually the date of approval by the Executive Committee
-date_issued: 'fill in date'
+date_issued: '2024-02-28'
 
 # UTC offset for the computer running the script
-local_offset_from_utc: -05:00
+local_offset_from_utc: -06:00
 
 # Only relevant when new term lists or vocabularies are created. It does nothing when
 # existing terms are changed. Categories:
@@ -46,7 +46,7 @@ namespaces:
 
   # Path to hand-edited changes CSV file. Relative to process directory from which the
   # process.py script is run.
-  modifications_file_path: dwc-revisions/fill_in/eco.csv
+  modifications_file_path: dwc-revisions/eco-2024-02-28/eco.csv
 
   # For TDWG-minted terms, SHOULD be set to empty string (Termlist IRI will be set to be
   # the same as the namespace IRI). For borrowed terms, mint an IRI that conforms to the 
