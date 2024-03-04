@@ -4,16 +4,16 @@ Title
 : Properties of hierarchical events in the Humboldt Extension for Ecological Inventories
 
 Date version issued
-: 2023-08-25
+: 2024-02-28
 
 Date created
-: 2023-08-25
+: 2024-02-28
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/hierarchy/2023-08-25>
+: <http://rs.tdwg.org/dwc/doc/hierarchy/2024-02-28>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/hierarchy/>
@@ -28,7 +28,7 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2023. Properties of hierarchical events in the Humboldt Extension for Ecological Inventories. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hierarchy/2023-08-25>
+: TDWG Humboldt Extension Task Group. 2024. Properties of hierarchical events in the Humboldt Extension for Ecological Inventories. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/hierarchy/2024-02-28>
 
 <a id="introduction">
 ## 1 Introduction (non-normative)

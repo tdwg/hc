@@ -4,16 +4,16 @@ Title
 : isLeastSpecificTargetCategoryQuantityInclusive Guidelines
 
 Date version issued
-: 2023-08-25
+: 2024-02-28
 
 Date created
-: 2023-08-25
+: 2024-02-28
 
 Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/inclusive/2023-08-25>
+: <http://rs.tdwg.org/dwc/doc/inclusive/2024-02-28>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/inclusive/>
@@ -28,7 +28,7 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2023. isLeastSpecificTargetCategoryQuantityInclusive Guidelines. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/inclusive/2023-08-25>
+: TDWG Humboldt Extension Task Group. 2024. isLeastSpecificTargetCategoryQuantityInclusive Guidelines. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/inclusive/2024-02-28>
 
 ## 1 Introduction (non-normative)
 
