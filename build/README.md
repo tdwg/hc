@@ -36,6 +36,8 @@ The script `generate_term_versions.py` pulls source data from the [rs.tdwg.org](
 
 It generates the file `term_versions.csv`, which is used as the input for the `build.py` script below.
 
+NOTE: the branch of rs.tdwg.org is hard-coded as `master`. If updates are made using a different branch, this will need to be changed. It would probably be a good idea to make this a command line option by copying the code from `build_other_doc_header.py`.
+
 ## Build script for the eco Quick Reference Guide
 
 The build script `build.py` uses as input:
