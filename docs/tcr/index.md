@@ -1,5 +1,7 @@
 # Taxon Completeness Reported Controlled Vocabulary List of Terms
 
+**NOTE: not yet updated to final version**
+
 Title
 : Taxon Completeness Reported Controlled Vocabulary List of Terms
 
