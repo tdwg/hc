@@ -1,22 +1,40 @@
-# Script to build Markdown pages that provide term metadata for complex vocabularies
-# Steve Baskauf 2020-06-28 CC0
-# Modified for use with Humboldt Extension 2022-05-29
-# This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
+# Script to build Markdown pages that are not List of Terms documents from their templates and data in the rs.tdwg.org repo
+# Modified for use with Humboldt Extension 2024-03-04
+# Author: Steve Baskauf
+# This script merges static Markdown header and footer documents with term information tables (in Markdown) generated 
+# from data in the subdirectories of the process/document_metadata_processing/ directory rs.tdwg.org repo from the TDWG Github site.
 
-import re
 import requests   # best library to manage HTTP transactions
-import csv        # library to read/write/parse CSV files
-import json       # library to convert JSON to Python data structures
 import pandas as pd
 import yaml
+import sys
+
+# -----------------
+# Command line arguments
+# -----------------
+
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
+
+# Name of the last part of the URL of the doc
+if '--slug' in opts:
+    document_slug = args[opts.index('--slug')]
+else:
+    print('Must specify URL slug for document using --slug option')
+    print('For example, if the permanent URL is "http://rs.tdwg.org/dwc/doc/eco/", the slug is "eco".')
+    exit()
+
+# "master" for production, something else for development
+# Example: First part of branch URL is "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/", branch is "eco".
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
 
 # -----------------
 # Configuration section
 # -----------------
-
-# Name of the last part of the URL of the doc and also used in the directory name
-document_slug = 'hierarchy'
-github_branch = 'eco' # "main" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
