@@ -164,7 +164,8 @@ for qrg_index,qrg_row in qrg_df.iterrows():
     for row_index,row in normative_doc_df.iterrows():
         if (qrg_row['recommended_term_iri'] == row['term_iri']) and (row['status'] == 'recommended'):
             found = True
-            built_rows_df = built_rows_df.append(row)
+#            built_rows_df = built_rows_df.append(row)
+            built_rows_df = pd.concat([built_rows_df, row])
             remaining_rows_df.drop(row['iri'], axis=0, inplace=True)
             break
     if not found:
@@ -176,7 +177,8 @@ sorted_output = remaining_rows_df.iloc[remaining_rows_df.iri.str.lower().argsort
 
 # Concatenate ordered terms and remaining versions
 #normative_doc_df = built_rows_df.append(remaining_rows_df)
-normative_doc_df = built_rows_df.append(sorted_output)
+#normative_doc_df = built_rows_df.append(sorted_output)
+normative_doc_df = pd.concat([normative_doc_df, sorted_output])
 
 # Save the normative document DataFrame as a CSV
 normative_doc_df.to_csv('../vocabulary/term_versions.csv', index = False)

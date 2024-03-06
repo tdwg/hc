@@ -340,6 +340,7 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:excludedGrowthFormScope">excludedGrowthFormScope</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isGrowthFormScopeFullyReported">isGrowthFormScopeFullyReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:hasNonTargetOrganisms">hasNonTargetOrganisms</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:verbatimTargetScope">verbatimTargetScope</a>
     </div>
 
 
@@ -453,6 +454,17 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
+<p class="invisible">
+    <a id="eco:verbatimTargetScope"></a><a id="verbatimTargetScope"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">verbatimTargetScope <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The verbatim original description of the dwc:Event scope.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>small mammals</code></li><li class="list-group-item"><code>freshwater macroinvertebrates</code></li><li class="list-group-item"><code>dead animals</code>, <code>ground-living insects</code></li></ul></td></tr>
+    </tbody>
+</table>
 
 
 ## Methodology Description
@@ -469,7 +481,6 @@ This document is intended to be an easy-to-read reference the currently recommen
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:abundanceCap">abundanceCap</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isVegetationCoverReported">isVegetationCoverReported</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isLeastSpecificTargetCategoryQuantityInclusive">isLeastSpecificTargetCategoryQuantityInclusive</a>
-        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:verbatimTargetScope">verbatimTargetScope</a>
     </div>
 
 
@@ -592,17 +603,6 @@ This document is intended to be an easy-to-read reference the currently recommen
         <tr><td class="theme-label">Definition</td><td>The total detected quantity for a dwc:Taxon (including subcategories thereof) in a dwc:Event is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon.</td></tr>
         <tr><td class="theme-label">Comments</td><td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/eco/docs/inclusive/">http://rs.tdwg.org/eco/docs/inclusive/</a>.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
-    </tbody>
-</table>
-<p class="invisible">
-    <a id="eco:verbatimTargetScope"></a><a id="verbatimTargetScope"></a></p>
-<table class="table table-sm table-bordered">
-    <tbody>
-        <tr class="table-secondary"><th colspan="2">verbatimTargetScope <span class="badge badge-secondary float-right">Property</span></th></tr>
-        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td></tr>
-        <tr><td class="theme-label">Definition</td><td>The verbatim original description of the dwc:Event scope.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
-        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>small mammals</code></li><li class="list-group-item"><code>freshwater macroinvertebrates</code></li><li class="list-group-item"><code>dead animals</code>, <code>ground-living insects</code></li></ul></td></tr>
     </tbody>
 </table>
 
