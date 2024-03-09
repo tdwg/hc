@@ -9,6 +9,7 @@ import csv        # library to read/write/parse CSV files
 import json       # library to convert JSON to Python data structures
 import pandas as pd
 import yaml
+import sys
 
 # -----------------
 # Command line arguments
@@ -67,11 +68,21 @@ contributors_yaml_file = 'authors_configuration.yaml'
 document_configuration_yaml_file = 'document_configuration.yaml'
 
 if has_namespace:
+    # Load the data about the namespace from term lists metadata at rs.tdwg.org
+    term_lists_df = pd.read_csv(githubBaseUri +  'term-lists/term-lists.csv')
+    # Find the row in the term-lists.csv file that corresponds to the database.
+    term_list_row = term_lists_df.loc[term_lists_df['database'] == termLists[0]]
+    # Extract the namespace IRI and preferred namespace prefix from the row.
+    namespace_uri = term_list_row['vann_preferredNamespaceUri'].values[0]
+    pref_namespace_prefix = term_list_row['vann_preferredNamespacePrefix'].values[0]
+
+    '''
     # Load the configuration file used in the metadata creation process.
     metadata_config_text = requests.get(githubBaseUri + 'process/config.yaml').text
     metadata_config = yaml.load(metadata_config_text, Loader=yaml.FullLoader)
     namespace_uri = metadata_config['namespaces'][0]['namespace_uri']
     pref_namespace_prefix = metadata_config['namespaces'][0]['pref_namespace_prefix']
+    '''
 
 # Load the contributors YAML file from its GitHub URL
 contributors_yaml_url = githubBaseUri + config_file_path + contributors_yaml_file
