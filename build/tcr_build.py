@@ -18,7 +18,7 @@ import yaml
 # This is an example of a simple vocabulary without categories. For a complex example
 # with multiple namespaces and several categories, see build-page-categories.ipynb
 
-github_branch = 'eco' # "main" for production, something else for development
+github_branch = 'master' # "master" for production, something else for development
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
