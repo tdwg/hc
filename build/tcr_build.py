@@ -11,14 +11,23 @@ import pandas as pd
 import yaml
 
 # -----------------
-# Configuration section
+# Command line arguments
 # -----------------
 
-# !!!! Note !!!!
-# This is an example of a simple vocabulary without categories. For a complex example
-# with multiple namespaces and several categories, see build-page-categories.ipynb
+arg_vals = sys.argv[1:]
+opts = [opt for opt in arg_vals if opt.startswith('-')]
+args = [arg for arg in arg_vals if not arg.startswith('-')]
 
-github_branch = 'master' # "master" for production, something else for development
+# "master" for production, something else for development
+# Example: First part of branch URL is "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/", branch is "eco".
+if '--branch' in opts:
+    github_branch = args[opts.index('--branch')]
+else:
+    github_branch = 'master'
+
+# -----------------
+# Configuration section
+# -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
 githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
