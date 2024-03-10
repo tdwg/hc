@@ -12,11 +12,30 @@ Prior to building the production List of Terms document, the Python script "upda
 
 If you are creating a List of Terms document for proofreading prior to ratification, then you should first create a branch of the repo so that the previous version of the document in master is not overwritten and so that the preliminary draft does not appear in the GitHub pages site. You can then run the build-termlist.py script to generate a new index.md file and commit it to the branch. You can then look at the document in the GitHub repository (not the eco.tdwg.org GitHub pages site) to see how it is rendered. It will not have the styling that is provided by the TDWG Jekyll theme.
 
-The Python script `build-termlist.py` inputs the header information from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. After the header, term list, and footer are concatenated, the script will then insert author and document metadata from the `author_metadata.yaml` and `document_metadata.yaml` files from the rs.tdwg.org GitHub repository. Therefore, those files must be in place and updated prior to running the script. The constructed Markdown document is saved as `/docs/list/index.md`. 
+The Python script `build-termlist.py` inputs the header template from `termlist-header.md`, then builds the list of terms and their metadata from data in the [rs.tdwg.org](http://github.com/tdwg/rs.tdwg.org) repository. The script also inputs `termlist-footer.md` and appends it to the end of the generated document, but currently it has no content. After the header, term list, and footer are concatenated, the script will then insert author and document metadata from the `author_metadata.yaml` and `document_metadata.yaml` files from the rs.tdwg.org GitHub repository. Therefore, those files must be in place and updated prior to running the script. The constructed Markdown document is saved as `/docs/list/index.md`. 
 
 Command line arguments are:
 
 `--branch` (optional): the branch of the rs.tdwg.org repository where the metadata are located. The default is `master`.
+
+## Generating the taxonCompletenessReported CV document
+
+As with the List of Terms document, the "update_previous_doc.py" script must be run prior to generating a production version of the document in order to update headers and preserve the previous version of the document. In this case the command line arguments are:
+
+`--slug` (required): `tcr`.
+
+`--dir` (required): `dwc_doc_tcr`.
+
+`--branch` (optional): default is `master`.
+
+The vocabulary and document metadata in the rs.tdwg.org repository must also have been updated before running the `tcr_build.py` script.
+
+Command line arguments for `tcr_build.py` are:
+
+`--branch` (optional): the branch of the rs.tdwg.org repository where the metadata are located. The default is `master`.
+
+The header template is in the file `dwc_doc_tcr/termlist_header.md`. The header metadata is inserted from metadata in the rs.tdwg.org repository. The term list itself is generated from CSV metadata uploaded to the rs.tdwg.org repository. The output file will be written to `docs/tcr/index.md`.
+
 
 ## Generating the additional standards documents from their templates
 
