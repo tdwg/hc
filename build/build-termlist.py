@@ -38,11 +38,11 @@ footerFileName = 'termlist-footer.md'
 outFileName = '../docs/list/index.md'
 
 # This is a Python list of the database names of the term lists to be included in the document.
-termLists = ['humboldt']
+termLists = ['humboldt', 'humboldt_iri']
 
 # If this list of terms is for terms in a single namespace, set the value of has_namespace to True. The value
 # of has_namespace should be False for a list of terms that contains multiple namespaces.
-has_namespace = True
+has_namespace = False
 
 # NOTE! There may be problems unless every term list is of the same vocabulary type since the number of columns will differ
 # However, there probably aren't any circumstances where mixed types will be used to generate the same page.

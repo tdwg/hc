@@ -3,12 +3,6 @@
 Title
 : {document_title}
 
-Namespace IRI
-: {namespace_uri}
-
-Preferred namespace abbreviation
-: {pref_namespace_prefix}:
-
 Date version issued
 : {ratification_date}
 
@@ -40,7 +34,7 @@ Bibliographic citation
 
 ## 1 Introduction
 
-This document contains all former and current terms in the {ratification_date} version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/{ratification_date}>). The vocabulary uses the namespace abbreviation `{pref_namespace_prefix}:`. 
+This document contains all former and current terms in the {ratification_date} version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/{ratification_date}>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://eco.tdwg.org/terms/>).
 
