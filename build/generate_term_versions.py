@@ -8,7 +8,7 @@ import pandas as pd
 github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
-term_lists = ['humboldt']
+term_lists = ['humboldt', 'humboldt_iri']
 
 column_mappings = [
     {'norm': 'iri', 'accum': 'version'},
