@@ -50,15 +50,15 @@ vocab_type = 1 # 1 is simple vocabulary, 2 is simple controlled vocabulary, 3 is
 
 # Terms in large vocabularies like Darwin and Audubon Cores may be organized into categories using tdwgutility_organizedInClass
 # If so, those categories can be used to group terms in the generated term list document.
-organized_in_categories = False
+organized_in_categories = True
 
 # If organized in categories, the display_order list must contain the IRIs that are values of tdwgutility_organizedInClass
 # If not organized into categories, the value is irrelevant. There just needs to be one item in the list.
 
-display_order = [ 'http://rs.tdwg.org/dwc/terms/Event']
-display_label = ['']
-display_comments = ['']
-display_id = ['event']
+display_order = [ 'http://rs.tdwg.org/dwc/terms/Event', 'http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI']
+display_label = ['Literal-value terms', 'IRI-value terms']
+display_comments = ['','']
+display_id = ['event', 'use_with_iri']
 
 # ---------------
 # Load header data
@@ -196,7 +196,12 @@ for term_list in term_lists_info:
             else:
                 row_list += [row['controlled_value_string'], term_list['pref_ns_prefix'] + ':' + row['skos_broader']]
         if organized_in_categories:
-            row_list.append(row['tdwgutility_organizedInClass'])
+            # Hack on 2024-03-27 to make the ecoiri: terms be in separate sections
+            if term_list['list_iri'] == 'http://rs.tdwg.org/eco/iri/':
+                row_list.append('http://rs.tdwg.org/dwc/terms/attributes/UseWithIRI')
+            else:
+                row_list.append('http://rs.tdwg.org/dwc/terms/Event')
+            #row_list.append(row['tdwgutility_organizedInClass'])
 
         # Borrowed terms really don't have implemented versions. They may be lacking values for version_status.
         # In their case, their version IRI will be omitted.
@@ -242,8 +247,8 @@ text += '(See also [3.2 Index By Label](#32-index-by-label))\n\n'
 #text += '\n\n' # put back removed newline
 
 for category in range(0,len(display_order)):
-    #text += '**' + display_label[category] + '**\n'
-    #text += '\n'
+    text += '**' + display_label[category] + '**\n'
+    text += '\n'
     if organized_in_categories:
         filtered_table = terms_sorted_by_localname[terms_sorted_by_localname['tdwgutility_organizedInClass']==display_order[category]]
         filtered_table.reset_index(drop=True, inplace=True)

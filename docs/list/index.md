@@ -62,35 +62,26 @@ Terms that are expected to have Booleans as values should use controlled value s
 
 (See also [3.2 Index By Label](#32-index-by-label))
 
+**Literal-value terms**
+
 [eco:absentTaxa](#eco_absentTaxa) |
-[ecoiri:absentTaxa](#ecoiri_absentTaxa) |
 [eco:abundanceCap](#eco_abundanceCap) |
 [eco:areNonTargetTaxaFullyReported](#eco_areNonTargetTaxaFullyReported) |
-[ecoiri:compilationSourceTypes](#ecoiri_compilationSourceTypes) |
 [eco:compilationSourceTypes](#eco_compilationSourceTypes) |
 [eco:compilationTypes](#eco_compilationTypes) |
-[ecoiri:compilationTypes](#ecoiri_compilationTypes) |
-[ecoiri:eventDurationUnit](#ecoiri_eventDurationUnit) |
 [eco:eventDurationUnit](#eco_eventDurationUnit) |
 [eco:eventDurationValue](#eco_eventDurationValue) |
 [eco:excludedDegreeOfEstablishmentScope](#eco_excludedDegreeOfEstablishmentScope) |
-[ecoiri:excludedDegreeOfEstablishmentScope](#ecoiri_excludedDegreeOfEstablishmentScope) |
-[ecoiri:excludedGrowthFormScope](#ecoiri_excludedGrowthFormScope) |
 [eco:excludedGrowthFormScope](#eco_excludedGrowthFormScope) |
-[ecoiri:excludedHabitatScope](#ecoiri_excludedHabitatScope) |
 [eco:excludedHabitatScope](#eco_excludedHabitatScope) |
 [eco:excludedLifeStageScope](#eco_excludedLifeStageScope) |
-[ecoiri:excludedLifeStageScope](#ecoiri_excludedLifeStageScope) |
 [eco:excludedTaxonomicScope](#eco_excludedTaxonomicScope) |
-[ecoiri:excludedTaxonomicScope](#ecoiri_excludedTaxonomicScope) |
 [eco:geospatialScopeAreaUnit](#eco_geospatialScopeAreaUnit) |
-[ecoiri:geospatialScopeAreaUnit](#ecoiri_geospatialScopeAreaUnit) |
 [eco:geospatialScopeAreaValue](#eco_geospatialScopeAreaValue) |
 [eco:hasMaterialSamples](#eco_hasMaterialSamples) |
 [eco:hasNonTargetOrganisms](#eco_hasNonTargetOrganisms) |
 [eco:hasNonTargetTaxa](#eco_hasNonTargetTaxa) |
 [eco:hasVouchers](#eco_hasVouchers) |
-[ecoiri:inventoryTypes](#ecoiri_inventoryTypes) |
 [eco:inventoryTypes](#eco_inventoryTypes) |
 [eco:isAbsenceReported](#eco_isAbsenceReported) |
 [eco:isAbundanceCapReported](#eco_isAbundanceCapReported) |
@@ -103,39 +94,25 @@ Terms that are expected to have Booleans as values should use controlled value s
 [eco:isTaxonomicScopeFullyReported](#eco_isTaxonomicScopeFullyReported) |
 [eco:isVegetationCoverReported](#eco_isVegetationCoverReported) |
 [eco:materialSampleTypes](#eco_materialSampleTypes) |
-[ecoiri:materialSampleTypes](#ecoiri_materialSampleTypes) |
 [eco:nonTargetTaxa](#eco_nonTargetTaxa) |
-[ecoiri:nonTargetTaxa](#ecoiri_nonTargetTaxa) |
 [eco:protocolDescriptions](#eco_protocolDescriptions) |
-[ecoiri:protocolNames](#ecoiri_protocolNames) |
 [eco:protocolNames](#eco_protocolNames) |
 [eco:protocolReferences](#eco_protocolReferences) |
 [eco:reportedExtremeConditions](#eco_reportedExtremeConditions) |
 [eco:reportedWeather](#eco_reportedWeather) |
 [eco:samplingEffortProtocol](#eco_samplingEffortProtocol) |
-[ecoiri:samplingEffortProtocol](#ecoiri_samplingEffortProtocol) |
 [eco:samplingEffortUnit](#eco_samplingEffortUnit) |
-[ecoiri:samplingEffortUnit](#ecoiri_samplingEffortUnit) |
 [eco:samplingEffortValue](#eco_samplingEffortValue) |
-[ecoiri:samplingPerformedBy](#ecoiri_samplingPerformedBy) |
 [eco:samplingPerformedBy](#eco_samplingPerformedBy) |
 [eco:siteCount](#eco_siteCount) |
 [eco:siteNestingDescription](#eco_siteNestingDescription) |
 [eco:targetDegreeOfEstablishmentScope](#eco_targetDegreeOfEstablishmentScope) |
-[ecoiri:targetDegreeOfEstablishmentScope](#ecoiri_targetDegreeOfEstablishmentScope) |
 [eco:targetGrowthFormScope](#eco_targetGrowthFormScope) |
-[ecoiri:targetGrowthFormScope](#ecoiri_targetGrowthFormScope) |
-[ecoiri:targetHabitatScope](#ecoiri_targetHabitatScope) |
 [eco:targetHabitatScope](#eco_targetHabitatScope) |
-[ecoiri:targetLifeStageScope](#ecoiri_targetLifeStageScope) |
 [eco:targetLifeStageScope](#eco_targetLifeStageScope) |
-[ecoiri:targetTaxonomicScope](#ecoiri_targetTaxonomicScope) |
 [eco:targetTaxonomicScope](#eco_targetTaxonomicScope) |
-[ecoiri:taxonCompletenessProtocols](#ecoiri_taxonCompletenessProtocols) |
 [eco:taxonCompletenessProtocols](#eco_taxonCompletenessProtocols) |
 [eco:taxonCompletenessReported](#eco_taxonCompletenessReported) |
-[ecoiri:taxonCompletenessReported](#ecoiri_taxonCompletenessReported) |
-[ecoiri:totalAreaSampledUnit](#ecoiri_totalAreaSampledUnit) |
 [eco:totalAreaSampledUnit](#eco_totalAreaSampledUnit) |
 [eco:totalAreaSampledValue](#eco_totalAreaSampledValue) |
 [eco:verbatimSiteDescriptions](#eco_verbatimSiteDescriptions) |
@@ -143,40 +120,59 @@ Terms that are expected to have Booleans as values should use controlled value s
 [eco:verbatimTargetScope](#eco_verbatimTargetScope) |
 [eco:voucherInstitutions](#eco_voucherInstitutions) 
 
+**IRI-value terms**
+
+[ecoiri:absentTaxa](#ecoiri_absentTaxa) |
+[ecoiri:compilationSourceTypes](#ecoiri_compilationSourceTypes) |
+[ecoiri:compilationTypes](#ecoiri_compilationTypes) |
+[ecoiri:eventDurationUnit](#ecoiri_eventDurationUnit) |
+[ecoiri:excludedDegreeOfEstablishmentScope](#ecoiri_excludedDegreeOfEstablishmentScope) |
+[ecoiri:excludedGrowthFormScope](#ecoiri_excludedGrowthFormScope) |
+[ecoiri:excludedHabitatScope](#ecoiri_excludedHabitatScope) |
+[ecoiri:excludedLifeStageScope](#ecoiri_excludedLifeStageScope) |
+[ecoiri:excludedTaxonomicScope](#ecoiri_excludedTaxonomicScope) |
+[ecoiri:geospatialScopeAreaUnit](#ecoiri_geospatialScopeAreaUnit) |
+[ecoiri:inventoryTypes](#ecoiri_inventoryTypes) |
+[ecoiri:materialSampleTypes](#ecoiri_materialSampleTypes) |
+[ecoiri:nonTargetTaxa](#ecoiri_nonTargetTaxa) |
+[ecoiri:protocolNames](#ecoiri_protocolNames) |
+[ecoiri:samplingEffortProtocol](#ecoiri_samplingEffortProtocol) |
+[ecoiri:samplingEffortUnit](#ecoiri_samplingEffortUnit) |
+[ecoiri:samplingPerformedBy](#ecoiri_samplingPerformedBy) |
+[ecoiri:targetDegreeOfEstablishmentScope](#ecoiri_targetDegreeOfEstablishmentScope) |
+[ecoiri:targetGrowthFormScope](#ecoiri_targetGrowthFormScope) |
+[ecoiri:targetHabitatScope](#ecoiri_targetHabitatScope) |
+[ecoiri:targetLifeStageScope](#ecoiri_targetLifeStageScope) |
+[ecoiri:targetTaxonomicScope](#ecoiri_targetTaxonomicScope) |
+[ecoiri:taxonCompletenessProtocols](#ecoiri_taxonCompletenessProtocols) |
+[ecoiri:taxonCompletenessReported](#ecoiri_taxonCompletenessReported) |
+[ecoiri:totalAreaSampledUnit](#ecoiri_totalAreaSampledUnit) 
+
 ### 3.2 Index By Label
 
 (See also [3.1 Index By Term Name](#31-index-by-term-name))
 
+**Literal-value terms**
+
 [Absent Taxa](#eco_absentTaxa) |
-[Absent Taxa (IRI)](#ecoiri_absentTaxa) |
 [Abundance Cap](#eco_abundanceCap) |
 [Are Non-target Taxa Fully Reported](#eco_areNonTargetTaxaFullyReported) |
 [Compilation Source Types](#eco_compilationSourceTypes) |
-[Compilation Source Types (IRI)](#ecoiri_compilationSourceTypes) |
 [Compilation Types](#eco_compilationTypes) |
-[Compilation Types (IRI)](#ecoiri_compilationTypes) |
 [Event Duration Unit](#eco_eventDurationUnit) |
-[Event Duration Unit (IRI)](#ecoiri_eventDurationUnit) |
 [Event Duration Value](#eco_eventDurationValue) |
 [Excluded Degree of Establishment Scope](#eco_excludedDegreeOfEstablishmentScope) |
-[Excluded Degree of Establishment Scope (IRI)](#ecoiri_excludedDegreeOfEstablishmentScope) |
 [Excluded Growth Form Scope](#eco_excludedGrowthFormScope) |
-[Excluded Growth Form Scope (IRI)](#ecoiri_excludedGrowthFormScope) |
 [Excluded Habitat Scope](#eco_excludedHabitatScope) |
-[Excluded Habitat Scope (IRI)](#ecoiri_excludedHabitatScope) |
 [Excluded Life Stage Scope](#eco_excludedLifeStageScope) |
-[Excluded Life Stage Scope (IRI)](#ecoiri_excludedLifeStageScope) |
 [Excluded Taxonomic Scope](#eco_excludedTaxonomicScope) |
-[Excluded Taxonomic Scope (IRI)](#ecoiri_excludedTaxonomicScope) |
 [Geospatial Scope Area Unit](#eco_geospatialScopeAreaUnit) |
-[Geospatial Scope Area Unit (IRI)](#ecoiri_geospatialScopeAreaUnit) |
 [Geospatial Scope Area Value](#eco_geospatialScopeAreaValue) |
 [Has Material Samples](#eco_hasMaterialSamples) |
 [Has Non-target Organisms](#eco_hasNonTargetOrganisms) |
 [Has Non-target Taxa](#eco_hasNonTargetTaxa) |
 [Has Vouchers](#eco_hasVouchers) |
 [Inventory Types](#eco_inventoryTypes) |
-[Inventory Types (IRI)](#ecoiri_inventoryTypes) |
 [Is Absence Reported](#eco_isAbsenceReported) |
 [Is Abundance Cap Reported](#eco_isAbundanceCapReported) |
 [Is Abundance Reported](#eco_isAbundanceReported) |
@@ -188,45 +184,59 @@ Terms that are expected to have Booleans as values should use controlled value s
 [Is Taxonomic Scope Fully Reported](#eco_isTaxonomicScopeFullyReported) |
 [Is Vegetation Cover Reported](#eco_isVegetationCoverReported) |
 [Material Sample Types](#eco_materialSampleTypes) |
-[Material Sample Types (IRI)](#ecoiri_materialSampleTypes) |
 [Non-target Taxa](#eco_nonTargetTaxa) |
-[Non-target Taxa (IRI)](#ecoiri_nonTargetTaxa) |
 [Protocol Descriptions](#eco_protocolDescriptions) |
 [Protocol Names](#eco_protocolNames) |
-[Protocol Names (IRI)](#ecoiri_protocolNames) |
 [Protocol References](#eco_protocolReferences) |
 [Reported Extreme Conditions](#eco_reportedExtremeConditions) |
 [Reported Weather](#eco_reportedWeather) |
 [Sampling Effort Protocol](#eco_samplingEffortProtocol) |
-[Sampling Effort Protocol (IRI)](#ecoiri_samplingEffortProtocol) |
 [Sampling Effort Unit](#eco_samplingEffortUnit) |
-[Sampling Effort Unit (IRI)](#ecoiri_samplingEffortUnit) |
 [Sampling Effort Value](#eco_samplingEffortValue) |
 [Sampling Performed By](#eco_samplingPerformedBy) |
-[Sampling Performed By (IRI)](#ecoiri_samplingPerformedBy) |
 [Site Count](#eco_siteCount) |
 [Site Nesting Description](#eco_siteNestingDescription) |
 [Target Degree of Establishment Scope](#eco_targetDegreeOfEstablishmentScope) |
-[Target Degree of Establishment Scope (IRI)](#ecoiri_targetDegreeOfEstablishmentScope) |
 [Target Growth Form Scope](#eco_targetGrowthFormScope) |
-[Target Growth Form Scope (IRI)](#ecoiri_targetGrowthFormScope) |
 [Target Habitat Scope](#eco_targetHabitatScope) |
-[Target Habitat Scope (IRI)](#ecoiri_targetHabitatScope) |
 [Target Life Stage Scope](#eco_targetLifeStageScope) |
-[Target Life Stage Scope (IRI)](#ecoiri_targetLifeStageScope) |
 [Target Taxonomic Scope](#eco_targetTaxonomicScope) |
-[Target Taxonomic Scope (IRI)](#ecoiri_targetTaxonomicScope) |
 [Taxon Completeness Protocols](#eco_taxonCompletenessProtocols) |
-[Taxon Completeness Protocols (IRI)](#ecoiri_taxonCompletenessProtocols) |
 [Taxon Completeness Reported](#eco_taxonCompletenessReported) |
-[Taxon Completeness Reported (IRI)](#ecoiri_taxonCompletenessReported) |
 [Total Area Sampled Unit](#eco_totalAreaSampledUnit) |
-[Total Area Sampled Unit (IRI)](#ecoiri_totalAreaSampledUnit) |
 [Total Area Sampled Value](#eco_totalAreaSampledValue) |
 [Verbatim Site Descriptions](#eco_verbatimSiteDescriptions) |
 [Verbatim Site Names](#eco_verbatimSiteNames) |
 [Verbatim Target Scope](#eco_verbatimTargetScope) |
 [Voucher Institutions](#eco_voucherInstitutions) 
+
+**IRI-value terms**
+
+[Absent Taxa (IRI)](#ecoiri_absentTaxa) |
+[Compilation Source Types (IRI)](#ecoiri_compilationSourceTypes) |
+[Compilation Types (IRI)](#ecoiri_compilationTypes) |
+[Event Duration Unit (IRI)](#ecoiri_eventDurationUnit) |
+[Excluded Degree of Establishment Scope (IRI)](#ecoiri_excludedDegreeOfEstablishmentScope) |
+[Excluded Growth Form Scope (IRI)](#ecoiri_excludedGrowthFormScope) |
+[Excluded Habitat Scope (IRI)](#ecoiri_excludedHabitatScope) |
+[Excluded Life Stage Scope (IRI)](#ecoiri_excludedLifeStageScope) |
+[Excluded Taxonomic Scope (IRI)](#ecoiri_excludedTaxonomicScope) |
+[Geospatial Scope Area Unit (IRI)](#ecoiri_geospatialScopeAreaUnit) |
+[Inventory Types (IRI)](#ecoiri_inventoryTypes) |
+[Material Sample Types (IRI)](#ecoiri_materialSampleTypes) |
+[Non-target Taxa (IRI)](#ecoiri_nonTargetTaxa) |
+[Protocol Names (IRI)](#ecoiri_protocolNames) |
+[Sampling Effort Protocol (IRI)](#ecoiri_samplingEffortProtocol) |
+[Sampling Effort Unit (IRI)](#ecoiri_samplingEffortUnit) |
+[Sampling Performed By (IRI)](#ecoiri_samplingPerformedBy) |
+[Target Degree of Establishment Scope (IRI)](#ecoiri_targetDegreeOfEstablishmentScope) |
+[Target Growth Form Scope (IRI)](#ecoiri_targetGrowthFormScope) |
+[Target Habitat Scope (IRI)](#ecoiri_targetHabitatScope) |
+[Target Life Stage Scope (IRI)](#ecoiri_targetLifeStageScope) |
+[Target Taxonomic Scope (IRI)](#ecoiri_targetTaxonomicScope) |
+[Taxon Completeness Protocols (IRI)](#ecoiri_taxonCompletenessProtocols) |
+[Taxon Completeness Reported (IRI)](#ecoiri_taxonCompletenessReported) |
+[Total Area Sampled Unit (IRI)](#ecoiri_totalAreaSampledUnit) 
 
 ## 4 Vocabulary
 <table>
