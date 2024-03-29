@@ -52,7 +52,8 @@ for term_list_index in range(len(term_lists)):
         accumulated_frame = versions_df.copy()
     else:
         # append subsequent term lists data to the DataFrame
-        accumulated_frame = accumulated_frame._append(versions_df.copy(), sort=True)
+        #accumulated_frame = accumulated_frame._append(versions_df.copy(), sort=True)
+        accumulated_frame = pd.concat([accumulated_frame, versions_df], sort=True)
 '''
 # Special procedure for obsolete terms
 # Retrieve versions metadata
@@ -170,8 +171,6 @@ for qrg_index,qrg_row in qrg_df.iterrows():
             break
     if not found:
         print('row not found:', qrg_row['recommended_term_iri'])
-
-print(built_rows_df)
 
 # Alphabetize remaining term versions
 #remaining_rows_df.sort_values(by='iri', inplace=True)
