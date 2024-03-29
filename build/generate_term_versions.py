@@ -52,7 +52,7 @@ for term_list_index in range(len(term_lists)):
         accumulated_frame = versions_df.copy()
     else:
         # append subsequent term lists data to the DataFrame
-        accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
+        accumulated_frame = accumulated_frame._append(versions_df.copy(), sort=True)
 '''
 # Special procedure for obsolete terms
 # Retrieve versions metadata
@@ -82,7 +82,7 @@ for row_index,row in versions_df.iterrows():
 # Add the curren term IRI list to the DataFrame as the term_iri column
 versions_df['term_iri'] = term_iri_list
 # Add the obsolete terms DataFrame to the accumulated DataFrame
-accumulated_frame = accumulated_frame.append(versions_df.copy(), sort=True)
+accumulated_frame = accumulated_frame._append(versions_df.copy(), sort=True)
 '''
 accumulated_frame.reset_index(drop=True, inplace=True) # reset the row indices to consecutive starting with zero
 accumulated_frame.fillna('', inplace=True) # replace all missing values with empty strings

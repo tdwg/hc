@@ -256,7 +256,7 @@ class DwcDigester(object):
                 properties.append(term.get('label'))
         return properties
 
-    def create_dwc_list(self, file_output="../dist/simple_hc_vertical.csv"):
+    def create_dwc_list(self, file_output="../dist/simple_eco_vertical.csv"):
         """Build a list of simple dwc terms and write it to file
 
         Parameters
@@ -268,7 +268,7 @@ class DwcDigester(object):
             for term in self.properties:
                 dwc_list_file.write(term + "\n")
 
-    def create_dwc_header(self, file_output="../dist/simple_hc_horizontal.csv"):
+    def create_dwc_header(self, file_output="../dist/simple_eco_horizontal.csv"):
         """Build a header of simple dwc terms and write it to file
 
         Parameters
