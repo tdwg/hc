@@ -9,6 +9,7 @@
   - text: "---"
   - text: Humboldt Extension
     href: list/
+  - text: "---"
   - text: Taxon Completeness Reported Controlled Vocabulary
     href: tcr/
 - text: Guides
@@ -18,6 +19,7 @@
   - text: "---"
   - text: Humboldt Extension Quick Reference
     href: terms/
+  - text: "---"
   - text: isLeastSpecificTargetCategoryQuantityInclusive Guidelines
     href: inclusive/
   - text: Hierarchical Events Guidelines
