@@ -58,7 +58,7 @@ when, and only when, they are written in capitals (as shown here).
 
 The namespace `eco:` abbreviates `http://rs.tdwg.org/eco/terms/` and the namespace `ecoiri:` abbreviates `http://rs.tdwg.org/eco/iri/`. Both namespaces are used with terms minted for the Humboldt Extension for Ecological Inventories. `ecotcr:` abbreviates `http://rs.tdwg.org/ecotcr/values/`, and is used with terms in this vocabulary.
 
-## 2 Use of Terms (normnative)
+## 2 Use of Terms (normative)
 
 Due to the requirements of [Section 1.4.3 of the Darwin Core RDF Guide](http://rs.tdwg.org/dwc/terms/guides/rdf/#143-use-of-darwin-core-terms-in-rdf-normative), term IRIs MUST be used as values of `ecoiri:taxonCompletenessReported`. Controlled value strings MUST be used as values of `eco:taxonCompletenessReported`.
 
