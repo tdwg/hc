@@ -4,7 +4,7 @@ Title
 : Humboldt Extension Vocabulary List of Terms
 
 Date version issued
-: 2025-06-12
+: 2025-07-10
 
 Date created
 : 2024-02-28
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/eco/2024-03-26>
+: <http://rs.tdwg.org/dwc/doc/eco/2025-06-12>
 
 Abstract
 : The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
@@ -31,11 +31,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2025. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2025-06-12>
+: TDWG Humboldt Extension Task Group. 2025. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2025-06-12 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2025-06-12>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
+This document contains all former and current terms in the 2025-07-10 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2025-07-10>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://eco.tdwg.org/terms/>).
 
@@ -252,11 +252,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-03-26">http://rs.tdwg.org/eco/terms/version/absentTaxa-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/absentTaxa-2025-07-10">http://rs.tdwg.org/eco/terms/version/absentTaxa-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -268,7 +268,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Absences can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Absences can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -293,6 +293,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -309,11 +313,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/absentTaxa-2024-03-26">http://rs.tdwg.org/eco/iri/version/absentTaxa-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/absentTaxa-2025-07-10">http://rs.tdwg.org/eco/iri/version/absentTaxa-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -325,7 +329,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Absences can be reported at any taxonomic level. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -338,6 +342,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -461,11 +469,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationSourceTypes-2024-03-26">http://rs.tdwg.org/eco/iri/version/compilationSourceTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationSourceTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/compilationSourceTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -477,7 +485,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -490,6 +498,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -507,11 +519,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-03-26">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -523,7 +535,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -549,6 +561,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -565,11 +581,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-03-26">http://rs.tdwg.org/eco/terms/version/compilationTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/compilationTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -581,7 +597,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -608,6 +624,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -624,11 +644,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationTypes-2024-03-26">http://rs.tdwg.org/eco/iri/version/compilationTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -640,7 +660,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -653,6 +673,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -716,11 +740,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-03-26">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2025-07-10">http://rs.tdwg.org/eco/terms/version/eventDurationUnit-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -732,7 +756,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -759,6 +783,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -829,11 +857,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedDegreeOfEstablishmentScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -845,7 +873,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -870,6 +898,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -886,11 +918,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedDegreeOfEstablishmentScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -902,7 +934,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -923,6 +955,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -939,11 +975,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedGrowthFormScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/excludedGrowthFormScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedGrowthFormScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -955,7 +991,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -968,6 +1004,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -985,11 +1025,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedGrowthFormScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1001,7 +1041,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1026,6 +1066,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1042,11 +1086,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedHabitatScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1058,7 +1102,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1071,6 +1115,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1088,11 +1136,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1104,7 +1152,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1129,6 +1177,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1145,11 +1197,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedLifeStageScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1161,7 +1213,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1186,6 +1238,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1202,11 +1258,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1218,7 +1274,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1231,6 +1287,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1248,11 +1308,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedTaxonomicScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1264,7 +1324,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The dwc:Event to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>The dwc:Event to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1289,6 +1349,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -1305,11 +1369,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1321,7 +1385,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1334,6 +1398,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1351,11 +1419,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-03-26">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2025-07-10">http://rs.tdwg.org/eco/terms/version/geospatialScopeAreaUnit-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1367,7 +1435,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1379,7 +1447,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -1388,6 +1456,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1429,7 +1501,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -1479,7 +1551,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -1705,11 +1777,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2024-03-26">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1721,7 +1793,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1734,6 +1806,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1751,11 +1827,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-03-26">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/inventoryTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/inventoryTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -1767,7 +1843,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -1795,6 +1871,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2346,11 +2426,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-03-26">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/materialSampleTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2362,7 +2442,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2388,6 +2468,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2404,11 +2488,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2024-03-26">http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/materialSampleTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2420,7 +2504,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2433,6 +2517,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2450,11 +2538,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-03-26">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2025-07-10">http://rs.tdwg.org/eco/terms/version/nonTargetTaxa-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2466,7 +2554,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2491,6 +2579,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2507,11 +2599,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/nonTargetTaxa-2024-03-26">http://rs.tdwg.org/eco/iri/version/nonTargetTaxa-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/nonTargetTaxa-2025-07-10">http://rs.tdwg.org/eco/iri/version/nonTargetTaxa-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2523,7 +2615,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2536,6 +2628,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2603,11 +2699,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/protocolNames-2024-03-26">http://rs.tdwg.org/eco/iri/version/protocolNames-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/protocolNames-2025-07-10">http://rs.tdwg.org/eco/iri/version/protocolNames-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2619,7 +2715,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2632,6 +2728,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2649,11 +2749,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2024-03-26">http://rs.tdwg.org/eco/terms/version/protocolNames-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/protocolNames-2025-07-10">http://rs.tdwg.org/eco/terms/version/protocolNames-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2665,7 +2765,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2690,6 +2790,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -2856,11 +2960,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-06-12">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10">http://rs.tdwg.org/eco/terms/version/samplingEffortProtocol-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2872,7 +2976,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -2902,6 +3006,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2918,11 +3026,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-06-12">http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingEffortProtocol-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2934,7 +3042,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -2952,6 +3060,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -2968,11 +3080,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-03-26">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2025-07-10">http://rs.tdwg.org/eco/terms/version/samplingEffortUnit-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2984,7 +3096,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3009,6 +3121,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3126,11 +3242,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2024-03-26">http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3142,7 +3258,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3155,6 +3271,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3172,11 +3292,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-06-12</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-06-12">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-06-12</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-07-10">http://rs.tdwg.org/eco/terms/version/samplingPerformedBy-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3188,7 +3308,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3216,6 +3336,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3336,11 +3460,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/targetDegreeOfEstablishmentScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3352,7 +3476,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3377,6 +3501,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3393,11 +3521,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetDegreeOfEstablishmentScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3409,7 +3537,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3430,6 +3558,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3446,11 +3578,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/targetGrowthFormScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3462,7 +3594,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3487,6 +3619,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3503,11 +3639,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3519,7 +3655,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3532,6 +3668,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3549,11 +3689,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetHabitatScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3565,7 +3705,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3578,6 +3718,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3595,11 +3739,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/targetHabitatScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3611,7 +3755,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3638,6 +3782,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3654,11 +3802,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetLifeStageScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3670,7 +3818,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3683,6 +3831,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3700,11 +3852,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/targetLifeStageScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3716,7 +3868,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3741,6 +3893,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3757,11 +3913,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2024-03-26">http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3773,7 +3929,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3786,6 +3942,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3803,11 +3963,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-03-26">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/targetTaxonomicScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3819,7 +3979,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>The dwc:Event to which the eco:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td>
+			<td>The dwc:Event to which the eco:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -3845,6 +4005,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3861,11 +4025,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessProtocols-2024-03-26">http://rs.tdwg.org/eco/iri/version/taxonCompletenessProtocols-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessProtocols-2025-07-10">http://rs.tdwg.org/eco/iri/version/taxonCompletenessProtocols-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3877,7 +4041,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term allows users to determine how comprehensively an area has been sampled. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term allows users to determine how comprehensively an area has been sampled. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -3890,6 +4054,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -3907,11 +4075,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-03-26">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2025-07-10">http://rs.tdwg.org/eco/terms/version/taxonCompletenessProtocols-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3923,13 +4091,13 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
 			<td><ul class="list-group list-group-flush">
   <li class="list-group-item"><code>census | based on sampling effort</code></li>
-  <li class="list-group-item"> <code>based on species accumulation curves</code></li>
+  <li class="list-group-item"><code>based on species accumulation curves</code></li>
 </ul></td>
 		</tr>
 		<tr>
@@ -3948,6 +4116,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -3964,11 +4136,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-03-26">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2025-07-10">http://rs.tdwg.org/eco/terms/version/taxonCompletenessReported-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3980,7 +4152,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco:taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco:taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4006,6 +4178,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
 	</tbody>
 </table>
 
@@ -4022,11 +4198,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2024-03-26">http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2025-07-10">http://rs.tdwg.org/eco/iri/version/taxonCompletenessReported-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4038,7 +4214,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the dwciri namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4058,6 +4234,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4099,7 +4279,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -4121,11 +4301,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2024-03-26</td>
+			<td>2025-07-10</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-03-26">http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2024-03-26</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2025-07-10">http://rs.tdwg.org/eco/terms/version/totalAreaSampledUnit-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4137,7 +4317,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the dwciri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+			<td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
 		</tr>
 		<tr>
 			<td>Examples</td>
@@ -4149,7 +4329,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -4158,6 +4338,10 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -4203,7 +4387,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -4360,7 +4544,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Type</td>
-			<td></td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
