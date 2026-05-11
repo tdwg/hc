@@ -1,4 +1,6 @@
 recommended_term_iri
+http://rs.tdwg.org/eco/terms/Survey
+http://rs.tdwg.org/eco/terms/surveyID
 group:Site
 http://rs.tdwg.org/eco/terms/siteCount
 http://rs.tdwg.org/eco/terms/siteNestingDescription
@@ -62,6 +64,13 @@ http://rs.tdwg.org/eco/terms/isSamplingEffortReported
 http://rs.tdwg.org/eco/terms/samplingEffortProtocol
 http://rs.tdwg.org/eco/terms/samplingEffortValue
 http://rs.tdwg.org/eco/terms/samplingEffortUnit
+http://rs.tdwg.org/eco/terms/SurveyTarget
+http://rs.tdwg.org/eco/terms/surveyTargetID
+http://rs.tdwg.org/eco/terms/surveyTargetType
+http://rs.tdwg.org/eco/terms/surveyTargetValue
+http://rs.tdwg.org/eco/terms/surveyTargetUnit
+http://rs.tdwg.org/eco/terms/includeOrExclude
+http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported
 group:UseWithIRI
 http://rs.tdwg.org/eco/iri/absentTaxa
 http://rs.tdwg.org/eco/iri/compilationSourceTypes
@@ -86,3 +95,8 @@ http://rs.tdwg.org/eco/iri/targetHabitatScope
 http://rs.tdwg.org/eco/iri/targetLifeStageScope
 http://rs.tdwg.org/eco/iri/targetTaxonomicScope
 http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols
+http://rs.tdwg.org/eco/iri/taxonCompletenessReported
+http://rs.tdwg.org/eco/iri/totalAreaSampledUnit
+http://rs.tdwg.org/eco/iri/surveyTargetType
+http://rs.tdwg.org/eco/iri/surveyTargetValue
+http://rs.tdwg.org/eco/iri/surveyTargetUnit
