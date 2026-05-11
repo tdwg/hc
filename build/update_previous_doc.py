@@ -2,8 +2,8 @@
 # This program is released under a GNU General Public License v3.0 http://www.gnu.org/licenses/gpl-3.0
 # Author: Steve Baskauf
 
-script_version = '0.1.1'
-version_modified = '2024-03-03'
+script_version = '0.1.0'
+version_modified = '2023-09-17'
 
 # NOTE: This script should be run only after the script updating the machine-readable metadata has been run.
 # It must be run before the script that generates the new document version.
@@ -27,20 +27,22 @@ if '--slug' in opts:
     document_slug = args[opts.index('--slug')]
 else:
     print('Must specify URL slug for document using --slug option')
-    print('For example, if the permanent URL is "http://rs.tdwg.org/dwc/doc/eco/", the slug is "eco".')
     exit()
 
 # Used as the directory name
 if '--dir' in opts:
     directory_name = args[opts.index('--dir')]
 else:
-    print('Must specify name of directory containing template and configs using --dir option')
-    print('For example, if the path to the templates in the rs.tdwg.org repo')
-    print('is "process/document_metadata_processing/dwc_doc_eco/", the directory name is "dwc_doc_eco".')
+    print('Must specify name of directory containing document_configuration.yaml using --dir option')
     exit()
 
+# "tdwg" for production, some other username if using a fork
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
+
 # "master" for production, something else for development
-# Example: First part of branch URL is "https://raw.githubusercontent.com/tdwg/rs.tdwg.org/eco/", branch is "eco".
 if '--branch' in opts:
     github_branch = args[opts.index('--branch')]
 else:
@@ -51,7 +53,7 @@ else:
 # Configuration section
 # -----------------
 
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
+githubBaseUri = 'https://raw.githubusercontent.com/' + github_user + '/rs.tdwg.org/' + github_branch + '/'
 
 config_file_path = 'process/document_metadata_processing/' + directory_name + '/'
 document_configuration_yaml_file = 'document_configuration.yaml'
