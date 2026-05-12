@@ -2,10 +2,31 @@
 # file import and configuration
 # -----------------------------
 
+import argparse
 import pandas as pd
 
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='Generate ../vocabulary/term_versions.csv from namespace version CSV files.'
+    )
+    parser.add_argument(
+        '--ghuser',
+        default='tdwg',
+        help='GitHub user or organization that owns the rs.tdwg.org repository. Default: tdwg'
+    )
+    parser.add_argument(
+        '--branch',
+        default='master',
+        help='Git branch to read from. Default: master'
+    )
+    return parser.parse_args()
+
+
+args = parse_args()
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+github_baseUri = f'https://raw.githubusercontent.com/{args.ghuser}/rs.tdwg.org/{args.branch}/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 term_lists = ['humboldt', 'humboldt_iri']
@@ -32,6 +53,7 @@ column_mappings = [
 # -----------------------------
 
 print('Loading namespace CSV files from GitHub:')
+print(github_baseUri)
 for term_list_index in range(len(term_lists)):
     # retrieve configuration metadata for term list
     config_url = github_baseUri + term_lists[term_list_index] + '/constants.csv'
