@@ -1,6 +1,6 @@
 # Script to build Markdown pages that provide term metadata for complex vocabularies
 # Steve Baskauf 2020-06-28 CC0
-# Modified for use with Humboldt Extension 2022-05-29
+# John Wieczorek 2026-05-11 Modified for use with branch of fork of rs.tdwg.org
 # This script merges static Markdown header and footer documents with term information tables (in Markdown) generated from data in the rs.tdwg.org repo from the TDWG Github site
 
 import re
@@ -25,14 +25,22 @@ if '--branch' in opts:
     github_branch = args[opts.index('--branch')]
 else:
     github_branch = 'master'
-
+if '--ghuser' in opts:
+    github_user = args[opts.index('--ghuser')]
+else:
+    github_user = 'tdwg'
 # -----------------
 # Configuration section
 # -----------------
 
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-githubBaseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/' + github_branch + '/'
-
+githubBaseUri = (
+    'https://raw.githubusercontent.com/'
+    + github_user
+    + '/rs.tdwg.org/'
+    + github_branch
+    + '/'
+)
 headerFileName = 'termlist-header.md'
 footerFileName = 'termlist-footer.md'
 outFileName = '../docs/list/index.md'
