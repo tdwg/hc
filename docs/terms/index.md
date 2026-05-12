@@ -7,6 +7,35 @@ container: fluid
 This document is intended to be an easy-to-read reference to the currently recommended terms that extend the [Darwin Core standard](https://www.tdwg.org/standards/dwc/) with vocabulary to describe biological inventories. This document is not part of the standard. It draws on the [term names and definitions](../list/) from the normative part of the standard and combines them with comments and examples that are not normative, but that are meant to help people to use the terms consistently. The category to which all of the terms in this extension correspond is the Darwin Core Event (dwc:Event) class. Comprehensive metadata for current and obsolete terms in human readable form are found in a [list of terms document](../list/). CSV files with the [full history](https://github.com/tdwg/hc/blob/master/vocabulary/term_versions.csv) of the terms, with [horizontal and vertical lists](https://github.com/tdwg/hc/tree/master/dist) of these terms and the schema for the [Darwin Core Archive extension](https://github.com/tdwg/hc/tree/master/dist) can be found in the [Humboldt Extension repository](https://github.com/tdwg/hc).
 
 
+## Survey
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:surveyID">surveyID</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">Survey <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/Survey">http://rs.tdwg.org/eco/terms/Survey</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A biotic survey or inventory.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>a botanical survey of a protected area to assess native and invasive plant species</code>; <code>a wetland vegetation mapping</code>; <code>a camera trap deployment in a rainforest to monitor large mammals</code>; <code>a frog call survey in wetlands across breeding seasons</code>; <code>a coverboard survey for reptiles in forested environments</code>; <code>a pollinator survey in an agricultural landscape</code>; <code>a macroinvertebrate sampling in a freshwater stream to assess water quality</code>; <code>a habitat- or ecosystem-level survey (e.g., coral reef health assessment, forest biodiversity assessment)</code>; <code>an environmental impact assessment (e.g., pre-construction biological baseline survey for a wind farm project)</code></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="eco:surveyID"></a><a id="surveyID"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyID <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An identifier for an eco:Survey.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+
+
 ## Site
 
 <div class="my-4">
@@ -731,6 +760,95 @@ This document is intended to be an easy-to-read reference to the currently recom
 </table>
 
 
+## SurveyTarget
+
+<div class="my-4">
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:surveyTargetID">surveyTargetID</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:surveyTargetType">surveyTargetType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:surveyTargetValue">surveyTargetValue</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:surveyTargetUnit">surveyTargetUnit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:includeOrExclude">includeOrExclude</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#eco:isSurveyTargetFullyReported">isSurveyTargetFullyReported</a>
+    </div>
+
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-primary"><th colspan="2">SurveyTarget <span class="badge badge-primary float-right">Class</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.</td></tr>
+        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Examples</td><td><code>all bird species</code>; <code>all bird species except Larus gulls, fulmars and kittiwakes</code>; <code>reproductive female Ctenomys sociabilis (only)</code>; <code>Oncorhynchus mykiss and Oncorhynchus clarkii (only)</code>, <code>all total lengths except < 12 inches</code></td></tr>
+    </tbody>
+</table>
+
+<p class="invisible">
+    <a id="eco:surveyTargetID"></a><a id="surveyTargetID"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetID <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>An identifier for an eco:SurveyTarget.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:surveyTargetType"></a><a id="surveyTargetType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>taxon</code></li><li class="list-group-item"><code>habitat</code></li><li class="list-group-item"><code>establishmentMeans</code></li><li class="list-group-item"><code>growthForm</code></li><li class="list-group-item"><code>sex</code></li><li class="list-group-item"><code>lifeStage</code></li><li class="list-group-item"><code>minimum length</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:surveyTargetValue"></a><a id="surveyTargetValue"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetValue <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>oak savannah</code></li><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>female</code></li><li class="list-group-item"><code>adult</code></li><li class="list-group-item"><code>height</code></li><li class="list-group-item"><code>weight</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:surveyTargetUnit"></a><a id="surveyTargetUnit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>m</code></li><li class="list-group-item"><code>g</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:includeOrExclude"></a><a id="includeOrExclude"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">includeOrExclude <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>include</code></li><li class="list-group-item"><code>exclude</code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="eco:isSurveyTargetFullyReported"></a><a id="isSurveyTargetFullyReported"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">isSurveyTargetFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
+    </tbody>
+</table>
+
+
 ## UseWithIRI
 
 For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https://dwc.tdwg.org/rdf/#25-terms-in-the-dwciri-namespace-normative).
@@ -758,6 +876,11 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:targetLifeStageScope">targetLifeStageScope</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:targetTaxonomicScope">targetTaxonomicScope</a>
         <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:taxonCompletenessProtocols">taxonCompletenessProtocols</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:taxonCompletenessReported">taxonCompletenessReported</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:totalAreaSampledUnit">totalAreaSampledUnit</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:surveyTargetType">surveyTargetType</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:surveyTargetValue">surveyTargetValue</a>
+        <a class="btn btn-sm btn-outline-secondary m-1" href="#ecoiri:surveyTargetUnit">surveyTargetUnit</a>
     </div>
 
 
@@ -1011,6 +1134,61 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols">http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A method or protocol used to determine ecoiri:taxonCompletenessReported, denoted by an IRI.</td></tr>
         <tr><td class="theme-label">Comments</td><td>This term allows users to determine how comprehensively an area has been sampled. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ecoiri:taxonCompletenessReported"></a><a id="taxonCompletenessReported"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">taxonCompletenessReported <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Statement about whether the taxonomic completeness of the dwc:Event was assessed.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li></ul></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ecoiri:totalAreaSampledUnit"></a><a id="totalAreaSampledUnit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ecoiri:surveyTargetType"></a><a id="surveyTargetType"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetType <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ecoiri:surveyTargetValue"></a><a id="surveyTargetValue"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetValue <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Examples</td><td></td></tr>
+    </tbody>
+</table>
+<p class="invisible">
+    <a id="ecoiri:surveyTargetUnit"></a><a id="surveyTargetUnit"></a></p>
+<table class="table table-sm table-bordered">
+    <tbody>
+        <tr class="table-secondary"><th colspan="2">surveyTargetUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
+        <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td></tr>
+        <tr><td class="theme-label">Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
+        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>

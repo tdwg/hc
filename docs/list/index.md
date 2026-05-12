@@ -4,7 +4,7 @@ Title
 : Humboldt Extension Vocabulary List of Terms
 
 Date version issued
-: 2025-07-10
+: 2026-04-07
 
 Date created
 : 2024-02-28
@@ -13,13 +13,13 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
+: <http://rs.tdwg.org/dwc/doc/eco/2026-04-07>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
 
 Previous version
-: <http://rs.tdwg.org/dwc/doc/eco/2025-06-12>
+: <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
 
 Abstract
 : The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
@@ -31,11 +31,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2025. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
+: TDWG Humboldt Extension Task Group. 2026. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2026-04-07>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2025-07-10 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2025-07-10>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
+This document contains all former and current terms in the 2026-04-07 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2026-04-07>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://eco.tdwg.org/terms/>).
 
@@ -82,6 +82,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 [eco:hasNonTargetOrganisms](#eco_hasNonTargetOrganisms) |
 [eco:hasNonTargetTaxa](#eco_hasNonTargetTaxa) |
 [eco:hasVouchers](#eco_hasVouchers) |
+[eco:includeOrExclude](#eco_includeOrExclude) |
 [eco:inventoryTypes](#eco_inventoryTypes) |
 [eco:isAbsenceReported](#eco_isAbsenceReported) |
 [eco:isAbundanceCapReported](#eco_isAbundanceCapReported) |
@@ -91,6 +92,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 [eco:isLeastSpecificTargetCategoryQuantityInclusive](#eco_isLeastSpecificTargetCategoryQuantityInclusive) |
 [eco:isLifeStageScopeFullyReported](#eco_isLifeStageScopeFullyReported) |
 [eco:isSamplingEffortReported](#eco_isSamplingEffortReported) |
+[eco:isSurveyTargetFullyReported](#eco_isSurveyTargetFullyReported) |
 [eco:isTaxonomicScopeFullyReported](#eco_isTaxonomicScopeFullyReported) |
 [eco:isVegetationCoverReported](#eco_isVegetationCoverReported) |
 [eco:materialSampleTypes](#eco_materialSampleTypes) |
@@ -106,6 +108,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 [eco:samplingPerformedBy](#eco_samplingPerformedBy) |
 [eco:siteCount](#eco_siteCount) |
 [eco:siteNestingDescription](#eco_siteNestingDescription) |
+[eco:surveyID](#eco_surveyID) |
+[eco:surveyTargetID](#eco_surveyTargetID) |
+[eco:surveyTargetType](#eco_surveyTargetType) |
+[eco:surveyTargetUnit](#eco_surveyTargetUnit) |
+[eco:surveyTargetValue](#eco_surveyTargetValue) |
 [eco:targetDegreeOfEstablishmentScope](#eco_targetDegreeOfEstablishmentScope) |
 [eco:targetGrowthFormScope](#eco_targetGrowthFormScope) |
 [eco:targetHabitatScope](#eco_targetHabitatScope) |
@@ -139,6 +146,9 @@ Terms that are expected to have Booleans as values should use controlled value s
 [ecoiri:samplingEffortProtocol](#ecoiri_samplingEffortProtocol) |
 [ecoiri:samplingEffortUnit](#ecoiri_samplingEffortUnit) |
 [ecoiri:samplingPerformedBy](#ecoiri_samplingPerformedBy) |
+[ecoiri:surveyTargetType](#ecoiri_surveyTargetType) |
+[ecoiri:surveyTargetUnit](#ecoiri_surveyTargetUnit) |
+[ecoiri:surveyTargetValue](#ecoiri_surveyTargetValue) |
 [ecoiri:targetDegreeOfEstablishmentScope](#ecoiri_targetDegreeOfEstablishmentScope) |
 [ecoiri:targetGrowthFormScope](#ecoiri_targetGrowthFormScope) |
 [ecoiri:targetHabitatScope](#ecoiri_targetHabitatScope) |
@@ -172,6 +182,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 [Has Non-target Organisms](#eco_hasNonTargetOrganisms) |
 [Has Non-target Taxa](#eco_hasNonTargetTaxa) |
 [Has Vouchers](#eco_hasVouchers) |
+[Include Or Exclude](#eco_includeOrExclude) |
 [Inventory Types](#eco_inventoryTypes) |
 [Is Absence Reported](#eco_isAbsenceReported) |
 [Is Abundance Cap Reported](#eco_isAbundanceCapReported) |
@@ -181,6 +192,7 @@ Terms that are expected to have Booleans as values should use controlled value s
 [Is Least Specific Target Category Quantity Inclusive](#eco_isLeastSpecificTargetCategoryQuantityInclusive) |
 [Is Life Stage Scope Fully Reported](#eco_isLifeStageScopeFullyReported) |
 [Is Sampling Effort Reported](#eco_isSamplingEffortReported) |
+[Is Survey Target Fully Reported](#eco_isSurveyTargetFullyReported) |
 [Is Taxonomic Scope Fully Reported](#eco_isTaxonomicScopeFullyReported) |
 [Is Vegetation Cover Reported](#eco_isVegetationCoverReported) |
 [Material Sample Types](#eco_materialSampleTypes) |
@@ -196,6 +208,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 [Sampling Performed By](#eco_samplingPerformedBy) |
 [Site Count](#eco_siteCount) |
 [Site Nesting Description](#eco_siteNestingDescription) |
+[Survey ID](#eco_surveyID) |
+[Survey Target ID](#eco_surveyTargetID) |
+[Survey Target Type](#eco_surveyTargetType) |
+[Survey Target Unit](#eco_surveyTargetUnit) |
+[Survey Target Value](#eco_surveyTargetValue) |
 [Target Degree of Establishment Scope](#eco_targetDegreeOfEstablishmentScope) |
 [Target Growth Form Scope](#eco_targetGrowthFormScope) |
 [Target Habitat Scope](#eco_targetHabitatScope) |
@@ -229,6 +246,9 @@ Terms that are expected to have Booleans as values should use controlled value s
 [Sampling Effort Protocol (IRI)](#ecoiri_samplingEffortProtocol) |
 [Sampling Effort Unit (IRI)](#ecoiri_samplingEffortUnit) |
 [Sampling Performed By (IRI)](#ecoiri_samplingPerformedBy) |
+[Survey Target Type (IRI)](#ecoiri_surveyTargetType) |
+[Survey Target Unit (IRI)](#ecoiri_surveyTargetUnit) |
+[Survey Target Value (IRI)](#ecoiri_surveyTargetValue) |
 [Target Degree of Establishment Scope (IRI)](#ecoiri_targetDegreeOfEstablishmentScope) |
 [Target Growth Form Scope (IRI)](#ecoiri_targetGrowthFormScope) |
 [Target Habitat Scope (IRI)](#ecoiri_targetHabitatScope) |
@@ -459,6 +479,68 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="eco_compilationSourceTypes"></a>Term Name  eco:compilationSourceTypes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Compilation Source Types</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The types of data sources contributing to the compilation reported.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>museumSpecimens</code></li>
+  <li class="list-group-item"><code>literature</code></li>
+  <li class="list-group-item"><code>expertKnowledge | localKnowledge</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="ecoiri_compilationSourceTypes"></a>Term Name  ecoiri:compilationSourceTypes</th>
 		</tr>
 	</thead>
@@ -509,13 +591,13 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_compilationSourceTypes"></a>Term Name  eco:compilationSourceTypes</th>
+			<th colspan="2"><a id="ecoiri_compilationTypes"></a>Term Name  ecoiri:compilationTypes</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -523,27 +605,19 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10">http://rs.tdwg.org/eco/terms/version/compilationSourceTypes-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Compilation Source Types</td>
+			<td>Compilation Types (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The types of data sources contributing to the compilation reported.</td>
+			<td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>museumSpecimens</code></li>
-  <li class="list-group-item"><code>literature</code></li>
-  <li class="list-group-item"><code>expertKnowledge | localKnowledge</code></li>
-</ul></td>
+			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -552,10 +626,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -634,102 +704,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_compilationTypes"></a>Term Name  ecoiri:compilationTypes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/compilationTypes-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Compilation Types (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="ecoiri_eventDurationUnit"></a>Term Name  ecoiri:eventDurationUnit</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2024-03-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Event Duration Unit (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The units associated with the eco:eventDurationValue.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_eventDurationUnit"></a>Term Name  eco:eventDurationUnit</th>
 		</tr>
 	</thead>
@@ -787,6 +761,52 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_eventDurationUnit"></a>Term Name  ecoiri:eventDurationUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-03-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/eventDurationUnit-2024-03-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Event Duration Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The units associated with the eco:eventDurationValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1076,6 +1096,67 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="eco_excludedHabitatScope"></a>Term Name  eco:excludedHabitatScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Excluded Habitat Scope</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The habitats explicitly excluded from sampling during the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>wetFlatwoods</code></li>
+  <li class="list-group-item"><code>swamp | estuary</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="ecoiri_excludedHabitatScope"></a>Term Name  ecoiri:excludedHabitatScope</th>
 		</tr>
 	</thead>
@@ -1126,13 +1207,13 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="eco_excludedHabitatScope"></a>Term Name  eco:excludedHabitatScope</th>
+			<th colspan="2"><a id="ecoiri_excludedLifeStageScope"></a>Term Name  ecoiri:excludedLifeStageScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1140,26 +1221,19 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10">http://rs.tdwg.org/eco/terms/version/excludedHabitatScope-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Excluded Habitat Scope</td>
+			<td>Excluded Life Stage Scope (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The habitats explicitly excluded from sampling during the dwc:Event.</td>
+			<td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td>
-		</tr>
-		<tr>
-			<td>Examples</td>
-			<td><ul class="list-group list-group-flush">
-  <li class="list-group-item"><code>wetFlatwoods</code></li>
-  <li class="list-group-item"><code>swamp | estuary</code></li>
-</ul></td>
+			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1168,10 +1242,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -1248,13 +1318,13 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_excludedLifeStageScope"></a>Term Name  ecoiri:excludedLifeStageScope</th>
+			<th colspan="2"><a id="ecoiri_excludedTaxonomicScope"></a>Term Name  ecoiri:excludedTaxonomicScope</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
@@ -1262,19 +1332,19 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedLifeStageScope-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Excluded Life Stage Scope (IRI)</td>
+			<td>Excluded Taxonomic Scope (IRI)</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td>
+			<td>The taxonomic group explicitly excluded from sampling during the dwc:Event.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1344,56 +1414,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="ecoiri_excludedTaxonomicScope"></a>Term Name  ecoiri:excludedTaxonomicScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/excludedTaxonomicScope-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Excluded Taxonomic Scope (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The taxonomic group explicitly excluded from sampling during the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -1767,33 +1787,40 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_inventoryTypes"></a>Term Name  ecoiri:inventoryTypes</th>
+			<th colspan="2"><a id="eco_includeOrExclude"></a>Term Name  eco:includeOrExclude</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td>
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2025-07-10</td>
+			<td>2026-04-07</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-04-07">http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-04-07</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
-			<td>Inventory Types (IRI)</td>
+			<td>Include Or Exclude</td>
 		</tr>
 		<tr>
 			<td>Definition</td>
-			<td>The type of search process used to conduct the inventory.</td>
+			<td>Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.</td>
 		</tr>
 		<tr>
 			<td>Notes</td>
-			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+			<td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>include</code></li>
+  <li class="list-group-item"><code>exclude</code></li>
+</ul></td>
 		</tr>
 		<tr>
 			<td>ABCD equivalence</td>
@@ -1802,14 +1829,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Type</td>
 			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -1867,6 +1886,56 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_inventoryTypes"></a>Term Name  ecoiri:inventoryTypes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10">http://rs.tdwg.org/eco/iri/version/inventoryTypes-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Inventory Types (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The type of search process used to conduct the inventory.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -2303,6 +2372,55 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_isSurveyTargetFullyReported"></a>Term Name  eco:isSurveyTargetFullyReported</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-04-07">http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Is Survey Target Fully Reported</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>true</code></li>
+  <li class="list-group-item"><code>false</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -3232,56 +3350,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_samplingPerformedBy"></a>Term Name  ecoiri:samplingPerformedBy</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Sampling Performed By (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>A person, group, or organization responsible for recording the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_samplingPerformedBy"></a>Term Name  eco:samplingPerformedBy</th>
 		</tr>
 	</thead>
@@ -3336,6 +3404,56 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-06-12_46">http://rs.tdwg.org/decisions/decision-2025-06-12_46</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_samplingPerformedBy"></a>Term Name  ecoiri:samplingPerformedBy</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10">http://rs.tdwg.org/eco/iri/version/samplingPerformedBy-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Sampling Performed By (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A person, group, or organization responsible for recording the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -3443,6 +3561,478 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_Survey"></a>Term Name  eco:Survey</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/Survey">http://rs.tdwg.org/eco/terms/Survey</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/Survey-2026-04-07">http://rs.tdwg.org/eco/terms/version/Survey-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A biotic survey or inventory.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>a botanical survey of a protected area to assess native and invasive plant species</code></li>
+  <li class="list-group-item"><code>a wetland vegetation mapping</code></li>
+  <li class="list-group-item"><code>a camera trap deployment in a rainforest to monitor large mammals</code></li>
+  <li class="list-group-item"><code>a frog call survey in wetlands across breeding seasons</code></li>
+  <li class="list-group-item"><code>a coverboard survey for reptiles in forested environments</code></li>
+  <li class="list-group-item"><code>a pollinator survey in an agricultural landscape</code></li>
+  <li class="list-group-item"><code>a macroinvertebrate sampling in a freshwater stream to assess water quality</code></li>
+  <li class="list-group-item"><code>a habitat- or ecosystem-level survey (e.g., coral reef health assessment, forest biodiversity assessment)</code></li>
+  <li class="list-group-item"><code>an environmental impact assessment (e.g., pre-construction biological baseline survey for a wind farm project)</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_surveyID"></a>Term Name  eco:surveyID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyID-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_SurveyTarget"></a>Term Name  eco:SurveyTarget</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-04-07">http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>SurveyTarget</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>all bird species</code></li>
+  <li class="list-group-item"><code>all bird species except Larus gulls, fulmars and kittiwakes</code></li>
+  <li class="list-group-item"><code>reproductive female Ctenomys sociabilis (only)</code></li>
+  <li class="list-group-item"><code>Oncorhynchus mykiss and Oncorhynchus clarkii (only)</code>, <code>all total lengths except < 12 inches</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Class</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_surveyTargetID"></a>Term Name  eco:surveyTargetID</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target ID</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>An identifier for an eco:SurveyTarget.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_surveyTargetType"></a>Term Name  eco:surveyTargetType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Type</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>taxon</code></li>
+  <li class="list-group-item"><code>habitat</code></li>
+  <li class="list-group-item"><code>establishmentMeans</code></li>
+  <li class="list-group-item"><code>growthForm</code></li>
+  <li class="list-group-item"><code>sex</code></li>
+  <li class="list-group-item"><code>lifeStage</code></li>
+  <li class="list-group-item"><code>minimum length</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_surveyTargetType"></a>Term Name  ecoiri:surveyTargetType</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Type (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_surveyTargetUnit"></a>Term Name  ecoiri:surveyTargetUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Unit associated with a value in eco:surveyTargetValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_surveyTargetUnit"></a>Term Name  eco:surveyTargetUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Unit</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>Unit associated with a value in eco:surveyTargetValue.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>m</code></li>
+  <li class="list-group-item"><code>g</code></li>
+  <li class="list-group-item"><code>years</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="eco_surveyTargetValue"></a>Term Name  eco:surveyTargetValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Value</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>Examples</td>
+			<td><ul class="list-group list-group-flush">
+  <li class="list-group-item"><code>Aves</code></li>
+  <li class="list-group-item"><code>oak savannah</code></li>
+  <li class="list-group-item"><code>native</code></li>
+  <li class="list-group-item"><code>tree</code></li>
+  <li class="list-group-item"><code>female</code></li>
+  <li class="list-group-item"><code>adult</code></li>
+  <li class="list-group-item"><code>height</code></li>
+  <li class="list-group-item"><code>weight</code></li>
+</ul></td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_surveyTargetValue"></a>Term Name  ecoiri:surveyTargetValue</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2026-04-07</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-04-07</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Survey Target Value (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 	</tbody>
 </table>
@@ -3568,6 +4158,56 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
+			<th colspan="2"><a id="ecoiri_targetGrowthFormScope"></a>Term Name  ecoiri:targetGrowthFormScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Target Growth Form Scope (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The growth form or habit of the dwc:Organisms targeted for sampling during the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
 			<th colspan="2"><a id="eco_targetGrowthFormScope"></a>Term Name  eco:targetGrowthFormScope</th>
 		</tr>
 	</thead>
@@ -3614,56 +4254,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
-			<th colspan="2"><a id="ecoiri_targetGrowthFormScope"></a>Term Name  ecoiri:targetGrowthFormScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetGrowthFormScope-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Target Growth Form Scope (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The growth form or habit of the dwc:Organisms targeted for sampling during the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -3903,56 +4493,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_targetTaxonomicScope"></a>Term Name  ecoiri:targetTaxonomicScope</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2025-07-10</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Target Taxonomic Scope (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The taxonomic group targeted for sampling during the dwc:Event.</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_targetTaxonomicScope"></a>Term Name  eco:targetTaxonomicScope</th>
 		</tr>
 	</thead>
@@ -4000,6 +4540,56 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2024-02-28_42">http://rs.tdwg.org/decisions/decision-2024-02-28_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_targetTaxonomicScope"></a>Term Name  ecoiri:targetTaxonomicScope</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2025-07-10</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10">http://rs.tdwg.org/eco/iri/version/targetTaxonomicScope-2025-07-10</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Target Taxonomic Scope (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The taxonomic group targeted for sampling during the dwc:Event.</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
 		</tr>
 		<tr>
 			<td>Executive Committee decision</td>
@@ -4245,52 +4835,6 @@ Terms that are expected to have Booleans as values should use controlled value s
 <table>
 	<thead>
 		<tr>
-			<th colspan="2"><a id="ecoiri_totalAreaSampledUnit"></a>Term Name  ecoiri:totalAreaSampledUnit</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Term IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td>
-		</tr>
-		<tr>
-			<td>Modified</td>
-			<td>2024-03-26</td>
-		</tr>
-		<tr>
-			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/totalAreaSampledUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/totalAreaSampledUnit-2024-03-26</a></td>
-		</tr>
-		<tr>
-			<td>Label</td>
-			<td>Total Area Sampled Unit (IRI)</td>
-		</tr>
-		<tr>
-			<td>Definition</td>
-			<td>The units associated with eco:totalAreaSampledValue</td>
-		</tr>
-		<tr>
-			<td>Notes</td>
-			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
-		</tr>
-		<tr>
-			<td>ABCD equivalence</td>
-			<td>not in ABCD</td>
-		</tr>
-		<tr>
-			<td>Type</td>
-			<td>Property</td>
-		</tr>
-		<tr>
-			<td>Executive Committee decision</td>
-			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<table>
-	<thead>
-		<tr>
 			<th colspan="2"><a id="eco_totalAreaSampledUnit"></a>Term Name  eco:totalAreaSampledUnit</th>
 		</tr>
 	</thead>
@@ -4342,6 +4886,52 @@ Terms that are expected to have Booleans as values should use controlled value s
 		<tr>
 			<td>Executive Committee decision</td>
 			<td><a href="http://rs.tdwg.org/decisions/decision-2025-07-10_51">http://rs.tdwg.org/decisions/decision-2025-07-10_51</a></td>
+		</tr>
+	</tbody>
+</table>
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2"><a id="ecoiri_totalAreaSampledUnit"></a>Term Name  ecoiri:totalAreaSampledUnit</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Term IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td>
+		</tr>
+		<tr>
+			<td>Modified</td>
+			<td>2024-03-26</td>
+		</tr>
+		<tr>
+			<td>Term version IRI</td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/totalAreaSampledUnit-2024-03-26">http://rs.tdwg.org/eco/iri/version/totalAreaSampledUnit-2024-03-26</a></td>
+		</tr>
+		<tr>
+			<td>Label</td>
+			<td>Total Area Sampled Unit (IRI)</td>
+		</tr>
+		<tr>
+			<td>Definition</td>
+			<td>The units associated with eco:totalAreaSampledValue</td>
+		</tr>
+		<tr>
+			<td>Notes</td>
+			<td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td>
+		</tr>
+		<tr>
+			<td>ABCD equivalence</td>
+			<td>not in ABCD</td>
+		</tr>
+		<tr>
+			<td>Type</td>
+			<td>Property</td>
+		</tr>
+		<tr>
+			<td>Executive Committee decision</td>
+			<td><a href="http://rs.tdwg.org/decisions/decision-2024-03-26_42">http://rs.tdwg.org/decisions/decision-2024-03-26_42</a></td>
 		</tr>
 	</tbody>
 </table>
