@@ -18,7 +18,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-primary"><th colspan="2">Survey <span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/Survey">http://rs.tdwg.org/eco/terms/Survey</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A biotic survey or inventory.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This class includes properties found in the Humboldt Extension to Darwin Core (eco: namespace), except for the target scope terms, which can be accommodated in eco:SurveyTarget.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>a botanical survey of a protected area to assess native and invasive plant species</code>; <code>a wetland vegetation mapping</code>; <code>a camera trap deployment in a rainforest to monitor large mammals</code>; <code>a frog call survey in wetlands across breeding seasons</code>; <code>a coverboard survey for reptiles in forested environments</code>; <code>a pollinator survey in an agricultural landscape</code>; <code>a macroinvertebrate sampling in a freshwater stream to assess water quality</code>; <code>a habitat- or ecosystem-level survey (e.g., coral reef health assessment, forest biodiversity assessment)</code>; <code>an environmental impact assessment (e.g., pre-construction biological baseline survey for a wind farm project)</code></td></tr>
     </tbody>
 </table>
@@ -30,7 +30,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">surveyID <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyID">http://rs.tdwg.org/eco/terms/surveyID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for an eco:Survey.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a globally unique identifier.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -59,7 +59,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">siteCount <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/siteCount">http://rs.tdwg.org/eco/terms/siteCount</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Total number of individual sites surveyed during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>15</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -70,7 +70,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">siteNestingDescription <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/siteNestingDescription">http://rs.tdwg.org/eco/terms/siteNestingDescription</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Textual description of the hierarchical sampling design.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>5 sampling sites of 3-5 plots each</code></td></tr>
     </tbody>
 </table>
@@ -81,7 +81,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">verbatimSiteDescriptions <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions">http://rs.tdwg.org/eco/terms/verbatimSiteDescriptions</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Original textual description of the site(s).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>Wet flatwoods | Wet depression surrounded by mesic longleaf pine flatwoods | Ground cover of thick Andropogon spp., Sporobolus floridanus, Vaccinium spp, Rhynchospora spp., Centella erecta, Panicum rigidulum.</code></td></tr>
     </tbody>
 </table>
@@ -92,7 +92,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">verbatimSiteNames <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimSiteNames">http://rs.tdwg.org/eco/terms/verbatimSiteNames</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of original site names.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Site refers to the location at which observations are made or samples/measurements are taken. The site can be at any level of hierarchy. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>East Coastal Fringe | St. Marks Wildlife Management Area</code></li><li class="list-group-item"><code>S1 | S2 | C1 | C2 | R14 | R22 | W1</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -103,7 +103,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">geospatialScopeAreaValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue">http://rs.tdwg.org/eco/terms/geospatialScopeAreaValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The numeric value for the total area of the geospatial scope of the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Geospatial scope refers to the dwc:Event location reported using the terms organized in Darwin Core under dcterms:Location. This area is always greater than or equal to the eco:totalAreaSampledValue. An eco:geospatialScopeAreaValue must have a corresponding eco:geospatialScopeAreaUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>25</code></td></tr>
     </tbody>
 </table>
@@ -114,7 +114,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">geospatialScopeAreaUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/terms/geospatialScopeAreaUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with eco:geospatialScopeAreaValue</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>km²</code></td></tr>
     </tbody>
 </table>
@@ -125,7 +125,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">totalAreaSampledValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledValue">http://rs.tdwg.org/eco/terms/totalAreaSampledValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The numeric value for the total area surveyed during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This area is always less than or equal to the eco:geospatialScopeAreaValue. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This area is always less than or equal to the eco:geospatialScopeAreaValue. An eco:totalAreaSampledValue must have a corresponding eco:totalAreaSampledUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>0.8</code></td></tr>
     </tbody>
 </table>
@@ -136,7 +136,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/totalAreaSampledUnit">http://rs.tdwg.org/eco/terms/totalAreaSampledUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. For units containing exponents, use characters from the Unicode Latin-1 Supplement character set (hex 00B2 for squared and 00B3 for cubed). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>km²</code></td></tr>
     </tbody>
 </table>
@@ -147,7 +147,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">reportedWeather <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/reportedWeather">http://rs.tdwg.org/eco/terms/reportedWeather</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list of weather or climatic conditions present during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a key:value encoding schema for a data interchange format such as JSON.</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>{"minimumTemperatureInDegreesFahrenheit": 18, "maximumTemperatureInDegreesFahrenheit": 32}</code></td></tr>
     </tbody>
 </table>
@@ -158,7 +158,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">reportedExtremeConditions <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/reportedExtremeConditions">http://rs.tdwg.org/eco/terms/reportedExtremeConditions</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A description of any extreme weather or environmental conditions that may have affected the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Notes</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>flooding during week 3 of surveys</code></li><li class="list-group-item"><code>rockslide at site 2</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -179,7 +179,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">targetHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetHabitatScope">http://rs.tdwg.org/eco/terms/targetHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitats targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate the values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>dunes</code></li><li class="list-group-item"><code>pineForest</code></li><li class="list-group-item"><code>riparian</code></li><li class="list-group-item"><code>scrub | grassland</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -190,7 +190,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">excludedHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedHabitatScope">http://rs.tdwg.org/eco/terms/excludedHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitats explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wetFlatwoods</code></li><li class="list-group-item"><code>swamp | estuary</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -211,7 +211,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">eventDurationValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationValue">http://rs.tdwg.org/eco/terms/eventDurationValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The numeric value for the duration of the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>An eco:eventDurationValue must have a corresponding eco:eventDurationUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1</code></li><li class="list-group-item"><code>30</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -222,7 +222,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">eventDurationUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/eventDurationUnit">http://rs.tdwg.org/eco/terms/eventDurationUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with the eco:eventDurationValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>minutes</code></li><li class="list-group-item"><code>hours</code></li><li class="list-group-item"><code>days</code></li><li class="list-group-item"><code>months</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -251,7 +251,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">targetTaxonomicScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetTaxonomicScope">http://rs.tdwg.org/eco/terms/targetTaxonomicScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The taxonomic group(s) targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The dwc:Event to which the eco:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The dwc:Event to which the eco:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Aves | Mammalia</code></li><li class="list-group-item"><code>Procellariformes</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -262,7 +262,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">excludedTaxonomicScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedTaxonomicScope">http://rs.tdwg.org/eco/terms/excludedTaxonomicScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The taxonomic group(s) explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The dwc:Event to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The dwc:Event to which the eco:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>Quercus | Acer</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -273,7 +273,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">taxonCompletenessReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessReported">http://rs.tdwg.org/eco/terms/taxonCompletenessReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Statement about whether the taxonomic completeness of the dwc:Event was assessed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco:taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should be stated in eco:taxonCompletenessProtocols. Recommended best practice is to use controlled value strings from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>notReported</code></li><li class="list-group-item"><code>reportedComplete</code></li><li class="list-group-item"><code>reportedIncomplete</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -284,7 +284,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">taxonCompletenessProtocols <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols">http://rs.tdwg.org/eco/terms/taxonCompletenessProtocols</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A description of or reference (publication, URL) to the methods used to determine eco:taxonCompletenessReported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term allows users to determine how comprehensively an area has been sampled. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>census | based on sampling effort</code></li><li class="list-group-item"><code>based on species accumulation curves</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -295,7 +295,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isTaxonomicScopeFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported">http://rs.tdwg.org/eco/terms/isTaxonomicScopeFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was included within the taxonomic scope, and was detected during the dwc:Event, was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the taxonomic scope and detected during the dwc:Event were reported, the value should be 'true'. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the taxonomic scope and detected during the dwc:Event were reported, the value should be 'true'. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -306,7 +306,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isAbsenceReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbsenceReported">http://rs.tdwg.org/eco/terms/isAbsenceReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Taxonomic absences were reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Absences can be reported at any taxonomic level.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Absences can be reported at any taxonomic level.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -317,7 +317,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">absentTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/absentTaxa">http://rs.tdwg.org/eco/terms/absentTaxa</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of taxa reported absent during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Absences can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Absences can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -328,7 +328,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">hasNonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetTaxa">http://rs.tdwg.org/eco/terms/hasNonTargetTaxa</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms of taxa outside the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) were detected and reported for this dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target taxa (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Examination of the taxonomic scope is needed in order to identify the non-target taxa. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available) or by exploring eco:nonTargetTaxa for this dwc:Event (if populated). The value of this term should be 'true' if dwc:Occurrences of taxa outside the taxonomic scope as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to alert users to the presence of non-target taxa (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Examination of the taxonomic scope is needed in order to identify the non-target taxa. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available) or by exploring eco:nonTargetTaxa for this dwc:Event (if populated). The value of this term should be 'true' if dwc:Occurrences of taxa outside the taxonomic scope as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -339,7 +339,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">nonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/nonTargetTaxa">http://rs.tdwg.org/eco/terms/nonTargetTaxa</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of taxa reported during the dwc:Event that are outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to allow the full list of taxa that are considered outside of the taxonomic scope and yet were reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Parabuteo unicinctus | Geranoaetus melanoleucus</code></li><li class="list-group-item"><code>Cetoniinae | Aclopinae | Cyclocephala modesta</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -350,7 +350,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">areNonTargetTaxaFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported">http://rs.tdwg.org/eco/terms/areNonTargetTaxaFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was outside of the target taxonomic scope (the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope) and detected during the dwc:Event, and that was detectable using the given protocol (given in eco:protocolDescriptions and dwc:samplingProtocol), was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be ‘false'.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to inform a user of the data whether there were non-target taxa that were detected, but left unreported. This term is only relevant if the dwc:Event used restricted search or open search methods and if a target taxonomic scope is declared. Taxonomic scope is based on the combination of eco:targetTaxonomicScope and eco:excludedTaxonomicScope. Within dwc:Events that used either a restricted search or an open search method and declared a taxonomic scope, if all dwc:Organisms that are not included within the target taxonomic scope and that were detected during the dwc:Event were reported, the value of this term should be 'true', otherwise the value of this term should be ‘false'.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -380,7 +380,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">targetLifeStageScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetLifeStageScope">http://rs.tdwg.org/eco/terms/targetLifeStageScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The age classes or life stages of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>larva</code></li><li class="list-group-item"><code>adult | juvenile</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -391,7 +391,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">excludedLifeStageScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedLifeStageScope">http://rs.tdwg.org/eco/terms/excludedLifeStageScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The age classes or life stages of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is defined based on dwc:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/lifeStage">http://rs.tdwg.org/dwc/terms/lifeStage</a>). Recommended best practice is to use the same controlled vocabulary as for dwc:lifeStage and to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>seedling</code></li><li class="list-group-item"><code>nestling | fledgling</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -402,7 +402,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isLifeStageScopeFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported">http://rs.tdwg.org/eco/terms/isLifeStageScopeFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was included within the life stage scope, and was detected during the dwc:Event, was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the life stage scope and detected during the dwc:Event were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the life stage scope and detected during the dwc:Event were reported, the value should be 'true'. Life stage scope is based on the combination of eco:targetLifeStageScope and eco:excludedLifeStageScope.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -413,7 +413,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">targetDegreeOfEstablishmentScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/targetDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degrees of establishment of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -424,7 +424,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">excludedDegreeOfEstablishmentScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/terms/excludedDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degrees of establishment of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use controlled value strings from the controlled vocabulary (<a href="http://rs.tdwg.org/dwcdoe/">http://rs.tdwg.org/dwcdoe/</a>) for dwc:degreeOfEstablishment. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a>. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>invasive | widespreadInvasive</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -435,7 +435,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isDegreeOfEstablishmentScopeFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported">http://rs.tdwg.org/eco/terms/isDegreeOfEstablishmentScopeFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was included within the degree of establishment scope, and was detected during the dwc:Event, was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the degree of establishment scope and detected during the dwc:Event were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the degree of establishment scope and detected during the dwc:Event were reported, the value should be 'true'. Degree of establishment scope is based on the combination of eco:targetDegreeOfEstablishmentScope and eco:excludedDegreeOfEstablishmentScope.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -446,7 +446,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">targetGrowthFormScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/targetGrowthFormScope">http://rs.tdwg.org/eco/terms/targetGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth forms or habits of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -457,7 +457,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">excludedGrowthFormScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/excludedGrowthFormScope">http://rs.tdwg.org/eco/terms/excludedGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth forms or habits of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>shrub | subShrub</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -468,7 +468,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isGrowthFormScopeFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported">http://rs.tdwg.org/eco/terms/isGrowthFormScopeFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Every dwc:Organism that was included within the growth form scope, and was detected during the dwc:Event, was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the growth form scope and detected during the dwc:Event were reported, the value should be 'true'. Growth form scope is based on the combination of eco:targetGrowthFormScope and eco:excludedGrowthFormScope.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event used restricted search or open search methods. If all dwc:Organisms included within the growth form scope and detected during the dwc:Event were reported, the value should be 'true'. Growth form scope is based on the combination of eco:targetGrowthFormScope and eco:excludedGrowthFormScope.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -479,7 +479,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">hasNonTargetOrganisms <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms">http://rs.tdwg.org/eco/terms/hasNonTargetOrganisms</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>One or more dwc:Organisms outside the target organismal scopes (eco:targetDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:targetLifeStageScope) were detected and reported for this dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users to the presence of non-target organisms (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target organismal scope is declared. Organismal scope is based on the combination of all of the following terms: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:excludedGrowthFormScope. Examination of the organismal scope is needed in order to identify the non-target dwc:Organisms. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available). The value of this term should be 'true' if dwc:Occurrences of dwc:Organisms outside the organismal scope(s) as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to alert users to the presence of non-target organisms (in some disciplines called “bycatch”) reported in this dwc:Event. This term is relevant only if a target organismal scope is declared. Organismal scope is based on the combination of all of the following terms: eco:targetLifeStageScope, eco:excludedLifeStageScope, eco:targetDegreeOfEstablishmentScope, eco:excludedDegreeOfEstablishmentScope, eco:targetGrowthFormScope, and eco:excludedGrowthFormScope. Examination of the organismal scope is needed in order to identify the non-target dwc:Organisms. It should be possible to confirm the expectations by investigating the dwc:Occurrences in this dwc:Event and in its child dwc:Events (if available). The value of this term should be 'true' if dwc:Occurrences of dwc:Organisms outside the organismal scope(s) as defined at the time of the dwc:Event are reported, otherwise the value of this term should be 'false'.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -490,7 +490,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">verbatimTargetScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/verbatimTargetScope">http://rs.tdwg.org/eco/terms/verbatimTargetScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The verbatim original description of the dwc:Event scope.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is first to populate explicit scope terms to the fullest extent possible (e.g., eco:targetTaxonomicScope). It is not recommended to use this term in assessing absence or completeness.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>small mammals</code></li><li class="list-group-item"><code>freshwater macroinvertebrates</code></li><li class="list-group-item"><code>dead animals</code>, <code>ground-living insects</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -520,7 +520,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">compilationTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationTypes">http://rs.tdwg.org/eco/terms/compilationTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate the values in a list with space vertical bar space (<code> | </code>). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>samplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents</code></li><li class="list-group-item"><code>compilationOfExistingSources</code></li><li class="list-group-item"><code>compilationOfExistingSourcesAndSamplingEvents | compilationOfExistingSources</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -531,7 +531,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">compilationSourceTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/compilationSourceTypes">http://rs.tdwg.org/eco/terms/compilationSourceTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The types of data sources contributing to the compilation reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>museumSpecimens</code></li><li class="list-group-item"><code>literature</code></li><li class="list-group-item"><code>expertKnowledge | localKnowledge</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -542,7 +542,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">inventoryTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/inventoryTypes">http://rs.tdwg.org/eco/terms/inventoryTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The types of search processes used to conduct the inventory.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use a controlled vocabulary. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>restrictedSearch</code></li><li class="list-group-item"><code>openSearch</code></li><li class="list-group-item"><code>opportunisticSearch</code></li><li class="list-group-item"><code>adventitious</code></li><li class="list-group-item"><code>compilation</code></li><li class="list-group-item"><code>openSearch | opportunisticSearch</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -553,7 +553,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">protocolNames <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolNames">http://rs.tdwg.org/eco/terms/protocolNames</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Categorical descriptive names for the methods used during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>boxTrapping</code></li><li class="list-group-item"><code>floraInventory</code></li><li class="list-group-item"><code>boxTrapping | funnelTrapping</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -564,7 +564,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">protocolDescriptions <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolDescriptions">http://rs.tdwg.org/eco/terms/protocolDescriptions</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A detailed description of the methods used during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This description should be associated with protocols provided in eco:protocolNames. The description may include deviations from a protocol referred to in eco:protocolReferences. Recommended good practice is to provide information about instruments used, calibration, etc. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>Three conventional harp traps (3.2m ht x 2.2m w) were established in flight path zones for a period of 4 hrs at dawn and dusk for a total of 10 trap nights. Traps were visited on an hourly basis during each deployment period and the trap catch recorded for species, size, weight, sex, age and maternal status.</code></td></tr>
     </tbody>
 </table>
@@ -575,7 +575,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">protocolReferences <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/protocolReferences">http://rs.tdwg.org/eco/terms/protocolReferences</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The references to the methods used during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><code>Penguins from space: faecal stains reveal the location of emperor penguin colonies, <a href="https://doi.org/10.1111/j.1466-8238.2009.00467.x">https://doi.org/10.1111/j.1466-8238.2009.00467.x</a></code></td></tr>
     </tbody>
 </table>
@@ -586,7 +586,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isAbundanceReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbundanceReported">http://rs.tdwg.org/eco/terms/isAbundanceReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The number of dwc:Organisms collected or observed was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Typically the abundance values would be reported in the dwc:organismQuantity and dwc:organismQuantityType terms for the child dwc:Occurrence records for this dwc:Event.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Typically the abundance values would be reported in the dwc:organismQuantity and dwc:organismQuantityType terms for the child dwc:Occurrence records for this dwc:Event.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -597,7 +597,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isAbundanceCapReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isAbundanceCapReported">http://rs.tdwg.org/eco/terms/isAbundanceCapReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A maximum number of dwc:Organisms was reported, as specified or restricted by the protocol used.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Values of abundance cap should be captured under the term eco:abundanceCap.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Values of abundance cap should be captured under the term eco:abundanceCap.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -608,7 +608,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">abundanceCap <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/abundanceCap">http://rs.tdwg.org/eco/terms/abundanceCap</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The reported maximum number of dwc:Organisms.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Notes</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>300</code></li><li class="list-group-item"><code>700</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -619,7 +619,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isVegetationCoverReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isVegetationCoverReported">http://rs.tdwg.org/eco/terms/isVegetationCoverReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A vegetation cover metric was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Typically values or descriptions of vegetation cover would be captured under the term eco:verbatimSiteDescriptions.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Typically values or descriptions of vegetation cover would be captured under the term eco:verbatimSiteDescriptions.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -630,7 +630,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isLeastSpecificTargetCategoryQuantityInclusive <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive">http://rs.tdwg.org/eco/terms/isLeastSpecificTargetCategoryQuantityInclusive</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The total detected quantity for a dwc:Taxon (including subcategories thereof) in a dwc:Event is given explicitly in a single record (dwc:organismQuantity value) for that dwc:Taxon.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/dwc/doc/inclusive/">http://rs.tdwg.org/dwc/doc/inclusive/</a>.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended values are 'true' and 'false'. This term is only relevant if dwc:organismQuantity is a number. For a detailed explanation, see <a href="http://rs.tdwg.org/dwc/doc/inclusive/">http://rs.tdwg.org/dwc/doc/inclusive/</a>.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -653,7 +653,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">hasVouchers <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasVouchers">http://rs.tdwg.org/eco/terms/hasVouchers</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Specimen vouchers were collected during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Notes</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -664,7 +664,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">voucherInstitutions <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/voucherInstitutions">http://rs.tdwg.org/eco/terms/voucherInstitutions</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of the names or acronyms of the institutions where vouchers collected during the dwc:Event were deposited.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ).</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>FMNH</code></li><li class="list-group-item"><code>AMNH | MVZ</code></li><li class="list-group-item"><code>Nairobi National Museum</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -675,7 +675,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">hasMaterialSamples <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/hasMaterialSamples">http://rs.tdwg.org/eco/terms/hasMaterialSamples</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Material samples were collected during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Notes</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -686,7 +686,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">materialSampleTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/materialSampleTypes">http://rs.tdwg.org/eco/terms/materialSampleTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A list (concatenated and separated) of material sample types collected during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary and separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>wholeOrganism</code></li><li class="list-group-item"><code>skeleton</code></li><li class="list-group-item"><code>tissue | blood | fecal | stomachContent</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -710,7 +710,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">samplingPerformedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingPerformedBy">http://rs.tdwg.org/eco/terms/samplingPerformedBy</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A person, group, or organization responsible for recording the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Recommended best practice is to separate multiple values in a list with space vertical bar space ( | ). This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>North American Butterfly Association</code></li><li class="list-group-item"><code>KK Wall</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -721,7 +721,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isSamplingEffortReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isSamplingEffortReported">http://rs.tdwg.org/eco/terms/isSamplingEffortReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The sampling effort associated with the dwc:Event was reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Typically values of effort would be captured under the terms eco:samplingEffortValue and eco:samplingEffortUnit.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Typically values of effort would be captured under the terms eco:samplingEffortValue and eco:samplingEffortUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -732,7 +732,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">samplingEffortProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortProtocol">http://rs.tdwg.org/eco/terms/samplingEffortProtocol</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A description of or reference (publication or URL) to the methods used to determine the sampling effort.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This description should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>40 box traps deployed at even spacings along 4 parallel 100m transects placed 50m apart and visited at 6 hourly intervals over a 48 hour period</code></li><li class="list-group-item"><code>2 people occupying a bird hide for a period of 8 hours and undertaking a 30 minute count of species within the 150 degree field of view every 2 hours</code></li><li class="list-group-item"><code>A single baited camera trap station with motion sensor trigger, deployed for a period of 10 days and configured for detecting large fauna moving through a known traffic way</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -743,7 +743,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">samplingEffortValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortValue">http://rs.tdwg.org/eco/terms/samplingEffortValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The numeric value for the sampling effort expended during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to capture the total sampling effort value. To express details of how the effort was determined use eco:samplingEffortProtocol. For compilations it is recommend not to infer effort. An eco:samplingEffortValue must have a corresponding eco:samplingEffortUnit.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to capture the total sampling effort value. To express details of how the effort was determined use eco:samplingEffortProtocol. For compilations it is recommend not to infer effort. An eco:samplingEffortValue must have a corresponding eco:samplingEffortUnit.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>1900</code></li><li class="list-group-item"><code>40</code></li><li class="list-group-item"><code>5.5</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -754,7 +754,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">samplingEffortUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/samplingEffortUnit">http://rs.tdwg.org/eco/terms/samplingEffortUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with the eco:samplingEffortValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. This term has an equivalent in the ecoiri: namespace that allows only an IRI as a value, whereas this term allows for any string literal value.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>trapHours</code></li><li class="list-group-item"><code>personHours</code></li><li class="list-group-item"><code>trapDays</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -776,7 +776,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-primary"><th colspan="2">SurveyTarget <span class="badge badge-primary float-right">Class</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/SurveyTarget">http://rs.tdwg.org/eco/terms/SurveyTarget</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>One or more scopes that describe a target for dwc:Occurrences in an eco:Survey.</td></tr>
-        <tr><td class="theme-label">Comments</td><td></td></tr>
+        <tr><td class="theme-label">Notes</td><td></td></tr>
         <tr><td class="theme-label">Examples</td><td><code>all bird species</code>; <code>all bird species except Larus gulls, fulmars and kittiwakes</code>; <code>reproductive female Ctenomys sociabilis (only)</code>; <code>Oncorhynchus mykiss and Oncorhynchus clarkii (only)</code>, <code>all total lengths except < 12 inches</code></td></tr>
     </tbody>
 </table>
@@ -788,7 +788,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">surveyTargetID <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetID">http://rs.tdwg.org/eco/terms/surveyTargetID</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>An identifier for an eco:SurveyTarget.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a globally unique identifier. Note: values of this term are not meant to be unique within an eco:SurveyTarget. A full eco:SurveyTarget is composed of all records that share the same eco:surveyTargetID.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -799,7 +799,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">surveyTargetType <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetType">http://rs.tdwg.org/eco/terms/surveyTargetType</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>taxon</code></li><li class="list-group-item"><code>habitat</code></li><li class="list-group-item"><code>establishmentMeans</code></li><li class="list-group-item"><code>growthForm</code></li><li class="list-group-item"><code>sex</code></li><li class="list-group-item"><code>lifeStage</code></li><li class="list-group-item"><code>minimum length</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -810,7 +810,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">surveyTargetValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetValue">http://rs.tdwg.org/eco/terms/surveyTargetValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>Aves</code></li><li class="list-group-item"><code>oak savannah</code></li><li class="list-group-item"><code>native</code></li><li class="list-group-item"><code>tree</code></li><li class="list-group-item"><code>female</code></li><li class="list-group-item"><code>adult</code></li><li class="list-group-item"><code>height</code></li><li class="list-group-item"><code>weight</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -821,7 +821,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">surveyTargetUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/surveyTargetUnit">http://rs.tdwg.org/eco/terms/surveyTargetUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>m</code></li><li class="list-group-item"><code>g</code></li><li class="list-group-item"><code>years</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -832,7 +832,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">includeOrExclude <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/includeOrExclude">http://rs.tdwg.org/eco/terms/includeOrExclude</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Whether to include or exclude eco:surveyTargetValue in a scope categorized by eco:surveyTargetType.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Combinations of eco:SurveyTarget records of inclusions and exclusions can define complex scopes such as all flying adult Aves except Passeriformes. Recommended best practice is to use a controlled vocabulary consisting of 'include' and 'exclude' only.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>include</code></li><li class="list-group-item"><code>exclude</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -843,7 +843,7 @@ This document is intended to be an easy-to-read reference to the currently recom
         <tr class="table-secondary"><th colspan="2">isSurveyTargetFullyReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported">http://rs.tdwg.org/eco/terms/isSurveyTargetFullyReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Whether an eco:SurveyTarget can be used to infer absence of detection because all counts of detected dwc:Occurrences matching an eco:SurveyTarget were fully reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to follow the TDWG Boolean Controlled Vocabulary <a href="http://rs.tdwg.org/tag/doc/boolean/">http://rs.tdwg.org/tag/doc/boolean/</a>. If True (the survey target is fully reported - nothing was left unreported), then this enables inference of absence of detection for everything in that eco:SurveyTarget that is included but that does not appear in the counts (absent counts signify absence of detection).</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code>true</code></li><li class="list-group-item"><code>false</code></li></ul></td></tr>
     </tbody>
 </table>
@@ -891,7 +891,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">absentTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/absentTaxa">http://rs.tdwg.org/eco/iri/absentTaxa</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A taxon reported absent during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Absences can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -902,7 +902,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">compilationSourceTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/compilationSourceTypes">http://rs.tdwg.org/eco/iri/compilationSourceTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The type of data source contributing to the compilation reported.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event is a compilation in which one or more types of data sources were used. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -913,7 +913,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">compilationTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/compilationTypes">http://rs.tdwg.org/eco/iri/compilationTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A statement specifying whether data reported are derived from sampling events, ancillary data compiled from other sources, or a combination of both.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event is an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -924,7 +924,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">eventDurationUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/eventDurationUnit">http://rs.tdwg.org/eco/iri/eventDurationUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with the eco:eventDurationValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -935,7 +935,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">excludedDegreeOfEstablishmentScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/excludedDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degree of establishment of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
     </tbody>
 </table>
@@ -946,7 +946,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">excludedGrowthFormScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedGrowthFormScope">http://rs.tdwg.org/eco/iri/excludedGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth form or habit of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -957,7 +957,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">excludedHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedHabitatScope">http://rs.tdwg.org/eco/iri/excludedHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitat explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -968,7 +968,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">excludedLifeStageScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedLifeStageScope">http://rs.tdwg.org/eco/iri/excludedLifeStageScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The age class or life stage of the dwc:Organisms explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -979,7 +979,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">excludedTaxonomicScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/excludedTaxonomicScope">http://rs.tdwg.org/eco/iri/excludedTaxonomicScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The taxonomic group explicitly excluded from sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The dwc:Event to which the ecoiri:excludedTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the taxonomic groups explicitly excluded from the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -990,7 +990,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">geospatialScopeAreaUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit">http://rs.tdwg.org/eco/iri/geospatialScopeAreaUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with eco:geospatialScopeAreaValue</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1001,7 +1001,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">inventoryTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/inventoryTypes">http://rs.tdwg.org/eco/iri/inventoryTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The type of search process used to conduct the inventory.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is only relevant if the dwc:Event represents an inventory. Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1012,7 +1012,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">materialSampleTypes <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/materialSampleTypes">http://rs.tdwg.org/eco/iri/materialSampleTypes</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A material sample type collected during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1023,7 +1023,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">nonTargetTaxa <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/nonTargetTaxa">http://rs.tdwg.org/eco/iri/nonTargetTaxa</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A taxon reported during the dwc:Event that is outside of the target taxonomic scope (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope).</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to allow a taxon that is considered outside of the taxonomic scope and yet was reported in the dataset to be shared. This term is relevant only if a target taxonomic scope is declared and eco:hasNonTargetTaxa is ‘true’. Taxonomic scope is based on the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope. Non-target taxa (in some disciplines called “bycatch”) can be reported at any taxonomic level. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1034,7 +1034,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">protocolNames <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/protocolNames">http://rs.tdwg.org/eco/iri/protocolNames</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Categorical descriptive name for the methods used during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1045,7 +1045,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">samplingEffortProtocol <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingEffortProtocol">http://rs.tdwg.org/eco/iri/samplingEffortProtocol</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A method or protocol used to determine the sampling effort, denoted by an IRI.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This protocol should be associated with the values reported in eco:samplingEffortValue and eco:samplingEffortUnit. This is a specialization of eco:protocolDescriptions focused on effort, distinct from the survey method. The effort relates to the intensity of sampling and therefore can assist in interpreting estimates of completeness. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1056,7 +1056,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">samplingEffortUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingEffortUnit">http://rs.tdwg.org/eco/iri/samplingEffortUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with the eco:samplingEffortValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1067,7 +1067,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">samplingPerformedBy <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/samplingPerformedBy">http://rs.tdwg.org/eco/iri/samplingPerformedBy</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A person, group, or organization responsible for recording the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The sampling dwc:Event could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all the organizations or people involved in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1078,7 +1078,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">targetDegreeOfEstablishmentScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope">http://rs.tdwg.org/eco/iri/targetDegreeOfEstablishmentScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The degree of establishment of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/doe/">http://rs.tdwg.org/dwc/doc/doe/</a>. For details, refer to <a href="https://doi.org/10.3897/biss.3.38084">https://doi.org/10.3897/biss.3.38084</a> . Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e001">http://rs.tdwg.org/dwcem/values/e001</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/dwcem/values/e005">http://rs.tdwg.org/dwcem/values/e005</a></code></li></ul></td></tr>
     </tbody>
 </table>
@@ -1089,7 +1089,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">targetGrowthFormScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetGrowthFormScope">http://rs.tdwg.org/eco/iri/targetGrowthFormScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The growth form or habit of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1100,7 +1100,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">targetHabitatScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetHabitatScope">http://rs.tdwg.org/eco/iri/targetHabitatScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The habitat targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1111,7 +1111,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">targetLifeStageScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetLifeStageScope">http://rs.tdwg.org/eco/iri/targetLifeStageScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The age class or life stage of the dwc:Organisms targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is defined based on dwciri:lifeStage (<a href="http://rs.tdwg.org/dwc/terms/iri/lifeStage">http://rs.tdwg.org/dwc/terms/iri/lifeStage</a>). Recommended best practice is to use an IRI from the same controlled vocabulary as for dwciri:lifeStage. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1122,7 +1122,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">targetTaxonomicScope <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/targetTaxonomicScope">http://rs.tdwg.org/eco/iri/targetTaxonomicScope</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The taxonomic group targeted for sampling during the dwc:Event.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>The dwc:Event to which the ecoiri:targetTaxonomicScope refers could be at any level of hierarchy. In the case of a higher level (parent) dwc:Event, include all taxonomic groups surveyed in the child dwc:Events that contributed to the parent dwc:Event. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1133,7 +1133,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">taxonCompletenessProtocols <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols">http://rs.tdwg.org/eco/iri/taxonCompletenessProtocols</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A method or protocol used to determine ecoiri:taxonCompletenessReported, denoted by an IRI.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term allows users to determine how comprehensively an area has been sampled. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term allows users to determine how comprehensively an area has been sampled. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1144,7 +1144,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">taxonCompletenessReported <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/taxonCompletenessReported">http://rs.tdwg.org/eco/iri/taxonCompletenessReported</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Statement about whether the taxonomic completeness of the dwc:Event was assessed.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>This term is meant to alert users that the inventory was conducted in such a way that all of the target taxa (the combination of ecoiri:targetTaxonomicScope and ecoiri:excludedTaxonomicScope) should have been detectable if they were present during the dwc:Event. This term can provide data users with a qualitative measure of how comprehensively an area has been surveyed, which assists in interpreting species populations, areas of occupancy, inferring species absences, etc. This term is only relevant if the dwc:Event used restricted search or open search methods. If taxonomic completeness was assessed, the methods used or an explanation of the basis of the completeness should covered by ecoiri:taxonCompletenessProtocols. Recommended best practice is to use an IRI from the controlled vocabulary designated for use with this term, listed at <a href="http://rs.tdwg.org/dwc/doc/tcr/">http://rs.tdwg.org/dwc/doc/tcr/</a>. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td><ul class="list-group list-group-flush"><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li><li class="list-group-item"><code><a href="http://rs.tdwg.org/ecotcr/values/tcr01">http://rs.tdwg.org/ecotcr/values/tcr01</a></code></li></ul></td></tr>
     </tbody>
 </table>
@@ -1155,7 +1155,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">totalAreaSampledUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/totalAreaSampledUnit">http://rs.tdwg.org/eco/iri/totalAreaSampledUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>The units associated with eco:totalAreaSampledValue</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use an IRI from a controlled vocabulary of SI units, derived units, or other non-SI units accepted for use within the SI.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1166,7 +1166,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">surveyTargetType <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetType">http://rs.tdwg.org/eco/iri/surveyTargetType</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A category that best matches the nature of a scope in an eco:SurveyTarget.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1177,7 +1177,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">surveyTargetValue <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetValue">http://rs.tdwg.org/eco/iri/surveyTargetValue</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>A value to include or exclude in a scope categorized by eco:surveyTargetType.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>
@@ -1188,7 +1188,7 @@ For more information on `UseWithIRI`, see [Section 2.5 of the RDF Guide](https:/
         <tr class="table-secondary"><th colspan="2">surveyTargetUnit <span class="badge badge-secondary float-right">Property</span></th></tr>
         <tr><td class="theme-label">Identifier</td><td><a href="http://rs.tdwg.org/eco/iri/surveyTargetUnit">http://rs.tdwg.org/eco/iri/surveyTargetUnit</a></td></tr>
         <tr><td class="theme-label">Definition</td><td>Unit associated with a value in eco:surveyTargetValue.</td></tr>
-        <tr><td class="theme-label">Comments</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
+        <tr><td class="theme-label">Notes</td><td>Recommended best practice is to use a controlled vocabulary. Terms in the ecoiri: namespace are intended to be used in RDF with non-literal objects.</td></tr>
         <tr><td class="theme-label">Examples</td><td></td></tr>
     </tbody>
 </table>

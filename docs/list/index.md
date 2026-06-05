@@ -4,7 +4,7 @@ Title
 : Humboldt Extension Vocabulary List of Terms
 
 Date version issued
-: 2026-04-07
+: 2026-05-26
 
 Date created
 : 2024-02-28
@@ -13,7 +13,7 @@ Part of TDWG Standard
 : <http://www.tdwg.org/standards/450>
 
 This version
-: <http://rs.tdwg.org/dwc/doc/eco/2026-04-07>
+: <http://rs.tdwg.org/dwc/doc/eco/2026-05-26>
 
 Latest version
 : <http://rs.tdwg.org/dwc/doc/eco/>
@@ -22,7 +22,7 @@ Previous version
 : <http://rs.tdwg.org/dwc/doc/eco/2025-07-10>
 
 Abstract
-: The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
+: The Humboldt Extension for Ecological Inventories provides a standardized vocabulary to report key information about biodiversity inventories, checklists and surveys, maximizing the usability and interoperability of these data. This vocabulary is employed along with the Darwin Core (DwC) terms, effectively broadening the scope of dwc:Event records by incorporating terms absent from the main DwC vocabulary. Terms included in the extension are defined such that they can accommodate hierarchical data structures allowing the representation of complex, highly nested survey designs, permitting the computation of relative abundances of species. This document lists all terms currently used in the vocabulary, providing comments and examples of their usage along with ancillary documents that provide guidance on the use and interpretation of terms and the data structure needed to accommodate dwc:Event hierarchies frequently observed in ecological inventories.
 
 Contributors
 : [Yanina V. Sica](https://orcid.org/0000-0002-1720-0127) ([Yale University](http://www.wikidata.org/entity/Q49112)), [Kate Ingenloff](https://orcid.org/0000-0001-5942-9053) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Paula Zermoglio](https://orcid.org/0000-0002-6056-5084) ([Instituto de Investigaciones en Recursos Naturales, Agroecología y Desarrollo Rural (IRNAD), UNRN-CONICET](http://www.wikidata.org/entity/Q6156591)), [Yi-Ming Gan](https://orcid.org/0000-0001-7087-2646) ([Royal Belgian Institute of Natural Sciences](http://www.wikidata.org/entity/Q16665660)), [Peter Brenton](https://orcid.org/0000-0001-9730-8340) ([Atlas of Living Australia, CSIRO](http://www.wikidata.org/entity/Q16335177)), [John Wieczorek](https://orcid.org/0000-0003-1144-0290) ([VertNet](http://www.wikidata.org/entity/Q98382028)), [Wesley M. Hochachka](https://orcid.org/0000-0002-0595-7827) ([Cornell Lab of Ornithology](http://www.wikidata.org/entity/Q2997535)), [Zachary R. Kachian](https://orcid.org/0000-0002-0500-0339) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Robert D. Stevenson](https://orcid.org/0000-0003-1617-5895) ([Department of Biology, University of Massachusetts Boston](http://www.wikidata.org/entity/Q15144)), [Anahita J. N. Kazem](https://orcid.org/0000-0003-2475-132X) ([German Centre for Integrative Biodiversity Research, Leipzig and Friedrich Schiller University, Jena](http://www.wikidata.org/entity/Q1206134)), [Dmitry Schigel](https://orcid.org/0000-0002-2919-1168) ([Global Biodiversity Information Facility (GBIF)](http://www.wikidata.org/entity/Q1531570)), [Steven J. Baskauf](https://orcid.org/0000-0003-4365-3135) ([Vanderbilt University Libraries](http://www.wikidata.org/entity/Q16849893)), [Tomomi Suwa](https://orcid.org/0000-0001-5010-3452) ([Keller Science Action Center, Field Museum of Natural History](http://www.wikidata.org/entity/Q1122595)), [Robert Guralnick](https://orcid.org/0000-0001-6682-1504) ([Florida Museum of Natural History](http://www.wikidata.org/entity/Q3074272)), [Ramona L. Walls](https://orcid.org/0000-0001-8815-0078) ([University of Arizona](http://www.wikidata.org/entity/Q503419)), [Walter Jetz](https://orcid.org/0000-0002-1971-7277) ([Yale University](http://www.wikidata.org/entity/Q49112))
@@ -31,11 +31,11 @@ Creator
 : TDWG Humboldt Extension Task Group
 
 Bibliographic citation
-: TDWG Humboldt Extension Task Group. 2026. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2026-04-07>
+: TDWG Humboldt Extension Task Group. 2026. Humboldt Extension Vocabulary List of Terms. Biodiversity Information Standards (TDWG). <http://rs.tdwg.org/dwc/doc/eco/2026-05-26>
 
 ## 1 Introduction
 
-This document contains all former and current terms in the 2026-04-07 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2026-04-07>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
+This document contains all former and current terms in the 2026-05-26 version of the Humboldt Extension for Ecological Inventories vocabulary (<http://rs.tdwg.org/version/eco/2026-05-26>). The vocabulary uses the namespace abbreviation `eco:` for `http://rs.tdwg.org/eco/terms/` and `ecoiri:` for `http://rs.tdwg.org/eco/iri/`. 
 
 For a simplified list that contains only the currently recommended terms, see the Humboldt Extension Quick Reference Guide (<https://eco.tdwg.org/terms/>).
 
@@ -1797,11 +1797,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-04-07">http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-05-26">http://rs.tdwg.org/eco/terms/version/includeOrExclude-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -2389,11 +2389,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-04-07">http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-05-26">http://rs.tdwg.org/eco/terms/version/isSurveyTargetFullyReported-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3578,11 +3578,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/Survey-2026-04-07">http://rs.tdwg.org/eco/terms/version/Survey-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/Survey-2026-05-26">http://rs.tdwg.org/eco/terms/version/Survey-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3634,11 +3634,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyID-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyID-2026-05-26">http://rs.tdwg.org/eco/terms/version/surveyID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3676,11 +3676,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-04-07">http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-05-26">http://rs.tdwg.org/eco/terms/version/SurveyTarget-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3723,11 +3723,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-05-26">http://rs.tdwg.org/eco/terms/version/surveyTargetID-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3765,11 +3765,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-05-26">http://rs.tdwg.org/eco/terms/version/surveyTargetType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3819,11 +3819,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetType-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3861,11 +3861,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetUnit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3903,11 +3903,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-05-26">http://rs.tdwg.org/eco/terms/version/surveyTargetUnit-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -3953,11 +3953,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-04-07">http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-05-26">http://rs.tdwg.org/eco/terms/version/surveyTargetValue-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>
@@ -4008,11 +4008,11 @@ Terms that are expected to have Booleans as values should use controlled value s
 		</tr>
 		<tr>
 			<td>Modified</td>
-			<td>2026-04-07</td>
+			<td>2026-05-26</td>
 		</tr>
 		<tr>
 			<td>Term version IRI</td>
-			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-04-07">http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-04-07</a></td>
+			<td><a href="http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-05-26">http://rs.tdwg.org/eco/iri/version/surveyTargetValue-2026-05-26</a></td>
 		</tr>
 		<tr>
 			<td>Label</td>

@@ -182,18 +182,23 @@ remaining_rows_df = normative_doc_df.copy()
 # Load the ordered list of terms in the Quick Reference Guide (single column named recommended_term_iri)
 print('ordering rows for output document')
 qrg_df = pd.read_csv('qrg-list.csv', na_filter=False)
-for qrg_index,qrg_row in qrg_df.iterrows():
+
+for qrg_index, qrg_row in qrg_df.iterrows():
+
+    # Skip QRG section/group markers
+    if qrg_row['recommended_term_iri'].startswith('group:'):
+        continue
+
     found = False
-    for row_index,row in normative_doc_df.iterrows():
+    for row_index, row in normative_doc_df.iterrows():
         if (qrg_row['recommended_term_iri'] == row['term_iri']) and (row['status'] == 'recommended'):
             found = True
-            #built_rows_df = built_rows_df.append(row)
             built_rows_df.loc[len(built_rows_df.index)] = row
             remaining_rows_df.drop(row['iri'], axis=0, inplace=True)
             break
+
     if not found:
         print('row not found:', qrg_row['recommended_term_iri'])
-
 # Alphabetize remaining term versions
 #remaining_rows_df.sort_values(by='iri', inplace=True)
 sorted_output = remaining_rows_df.iloc[remaining_rows_df.iri.str.lower().argsort()]
