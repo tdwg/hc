@@ -1,3 +1,4 @@
+surveyID
 siteCount
 siteNestingDescription
 verbatimSiteDescriptions
@@ -53,6 +54,12 @@ isSamplingEffortReported
 samplingEffortProtocol
 samplingEffortValue
 samplingEffortUnit
+surveyTargetID
+surveyTargetType
+surveyTargetValue
+surveyTargetUnit
+includeOrExclude
+isSurveyTargetFullyReported
 absentTaxa
 compilationSourceTypes
 compilationTypes
@@ -76,3 +83,8 @@ targetHabitatScope
 targetLifeStageScope
 targetTaxonomicScope
 taxonCompletenessProtocols
+taxonCompletenessReported
+totalAreaSampledUnit
+surveyTargetType
+surveyTargetValue
+surveyTargetUnit

@@ -2,10 +2,31 @@
 # file import and configuration
 # -----------------------------
 
+import argparse
 import pandas as pd
 
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description='Generate ../vocabulary/term_versions.csv from namespace version CSV files.'
+    )
+    parser.add_argument(
+        '--ghuser',
+        default='tdwg',
+        help='GitHub user or organization that owns the rs.tdwg.org repository. Default: tdwg'
+    )
+    parser.add_argument(
+        '--branch',
+        default='master',
+        help='Git branch to read from. Default: master'
+    )
+    return parser.parse_args()
+
+
+args = parse_args()
+
 # This is the base URL for raw files from the branch of the repo that has been pushed to GitHub
-github_baseUri = 'https://raw.githubusercontent.com/tdwg/rs.tdwg.org/master/'
+github_baseUri = f'https://raw.githubusercontent.com/{args.ghuser}/rs.tdwg.org/{args.branch}/'
 
 # This is a Python list of the database names of the term version lists to be included in the document.
 term_lists = ['humboldt', 'humboldt_iri']
@@ -32,6 +53,7 @@ column_mappings = [
 # -----------------------------
 
 print('Loading namespace CSV files from GitHub:')
+print(github_baseUri)
 for term_list_index in range(len(term_lists)):
     # retrieve configuration metadata for term list
     config_url = github_baseUri + term_lists[term_list_index] + '/constants.csv'
@@ -160,18 +182,23 @@ remaining_rows_df = normative_doc_df.copy()
 # Load the ordered list of terms in the Quick Reference Guide (single column named recommended_term_iri)
 print('ordering rows for output document')
 qrg_df = pd.read_csv('qrg-list.csv', na_filter=False)
-for qrg_index,qrg_row in qrg_df.iterrows():
+
+for qrg_index, qrg_row in qrg_df.iterrows():
+
+    # Skip QRG section/group markers
+    if qrg_row['recommended_term_iri'].startswith('group:'):
+        continue
+
     found = False
-    for row_index,row in normative_doc_df.iterrows():
+    for row_index, row in normative_doc_df.iterrows():
         if (qrg_row['recommended_term_iri'] == row['term_iri']) and (row['status'] == 'recommended'):
             found = True
-            #built_rows_df = built_rows_df.append(row)
             built_rows_df.loc[len(built_rows_df.index)] = row
             remaining_rows_df.drop(row['iri'], axis=0, inplace=True)
             break
+
     if not found:
         print('row not found:', qrg_row['recommended_term_iri'])
-
 # Alphabetize remaining term versions
 #remaining_rows_df.sort_values(by='iri', inplace=True)
 sorted_output = remaining_rows_df.iloc[remaining_rows_df.iri.str.lower().argsort()]

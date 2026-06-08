@@ -10,7 +10,6 @@ import os
 import re
 import csv
 import sys
-import codecs
 
 from urllib import request
 from jinja2 import FileSystemLoader, Environment
@@ -212,11 +211,35 @@ class DwcDigester(object):
                     class_group["terms"] = []
                     template_data.append(class_group)
                 else:
-                    # Row is a term to be listed with the most recent class_group
-                    # Add the term, getting the details from the dictionary created from
-                    # the term_versions.csv rather than the qrg_list.csv
+                    # Row is either a class term to be used as a class group, or a
+                    # term to be listed with the most recent class_group. Get the
+                    # details from the dictionary created from term_versions.csv
+                    # rather than qrg-list.csv.
                     term_data = termdict.get(iri)
-                    class_group['terms'].append(term_data)
+
+                    if term_data is None:
+                        raise ValueError(
+                            'IRI in qrg-list.csv not found in term_versions.csv: ' + iri
+                        )
+
+                    # Treat class entries as group headers. This preserves the
+                    # explicit "group:" mechanism while allowing vocabularies
+                    # whose classes, such as Survey and SurveyTarget, should be
+                    # rendered as grouping sections.
+                    if term_data.get('rdf_type') in [
+                        'http://www.w3.org/2000/01/rdf-schema#Class',
+                        'rdfs:Class'
+                    ]:
+                        class_group = term_data.copy()
+                        class_group['terms'] = []
+                        template_data.append(class_group)
+                    else:
+                        if 'terms' not in class_group:
+                            raise ValueError(
+                                'qrg-list.csv must begin with either a "group:" row '
+                                'or a class IRI before listing property terms.'
+                            )
+                        class_group['terms'].append(term_data)
         return template_data
 
     def create_html(self, html_template="terms.tmpl",
@@ -264,7 +287,7 @@ class DwcDigester(object):
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as dwc_list_file:
+        with open(file_output, 'w', encoding='utf-8') as dwc_list_file:
             for term in self.properties:
                 dwc_list_file.write(term + "\n")
 
@@ -276,7 +299,7 @@ class DwcDigester(object):
         file_output : str
             relative path and filename to write the resulting list
         """
-        with codecs.open(file_output, 'w', 'utf-8') as dwc_header_file:
+        with open(file_output, 'w', encoding='utf-8') as dwc_header_file:
             dwc_header_file.write(",".join(self.properties))
             dwc_header_file.write("\n")
 
